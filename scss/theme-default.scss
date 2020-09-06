@@ -1,7 +1,9 @@
 
 /* 1. Theme default css */
-
+@import './_varriable';
+@import './_mixins.scss';
 body {
+	font-family: $font1;
 	font-weight: normal;
     font-style: normal;
     
