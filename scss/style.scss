@@ -1,66 +1,66 @@
 
-@import 'extend';
-@import 'responsive.scss';
-@import 'theme-default.scss';
-@import 'btn';
-@import 'section_title';
-@import 'slick-nav.scss';
+@import './_extend.scss';
+@import './_responsive.scss';
+@import './theme-default.scss';
+@import './_btn.scss';
+@import './_section_title.scss';
+@import './_slick-nav.scss';
 
 
 
 // header
-@import 'header';
+@import './_header.scss';
 
 // slider
-@import 'slider';
+@import './_slider.scss';
 
 // about
-@import 'features';
+@import './_features.scss';
 
 // counter
-@import 'counter';
+@import './_counter.scss';
 // counter
-@import 'about';
+@import './_about.scss';
 
 // gallery
-@import '_gallery';
+@import './_gallery.scss';
 
 // about
-@import 'footer';
+@import './_footer.scss';
 
-@import 'bradcam';
+@import './_bradcam.scss';
 
-@import 'department';
+// @import './_department';
 
-@import 'tesmonial';
+// @import './_tesmonial';
 
-@import 'discuss';
+// @import './_discuss';
 
-@import 'service';
+// @import './_service';
 
-@import 'video';
+// @import 'video';
 
-@import 'portfolio';
+// @import 'portfolio';
 
-@import 'experts';
+// @import 'experts';
 
-@import 'emergency_contact';
+// @import 'emergency_contact';
 
-@import 'prising';
-
-
-// other pages default
-
-// contact
-@import 'contact';
-
-// elements
-@import 'elements.scss';
-
-// blog
-@import 'blog';
+// @import 'prising';
 
 
-// blog part
-@import 'blog_part';
+// // other pages default
+
+// // contact
+// @import 'contact';
+
+// // elements
+// @import 'elements.scss';
+
+// // blog
+// @import './blog';
+
+
+// // blog part
+// @import './_blog_part';
 
