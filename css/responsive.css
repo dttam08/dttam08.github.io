@@ -1,0 +1,175 @@
+@media screen and (max-width: 1200px) {
+  #wrapper {
+    padding: 0 3%;
+  }
+  #main {
+    margin: 3% auto;
+  }
+}
+@media screen and (max-width: 768px) {
+h1, h2, h3, h4, h5, h6, input, button, textarea, select, p, blockquote, th, td, pre, address, li, dt, dd {
+	font-size: 140%;
+}
+#wrapper {
+	min-width: 100%;
+}
+#main {
+  padding: 0 0 30px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: none;
+}
+.container {
+	width: 100%;
+	padding: 0 4%;
+}
+.sp {
+	display: block;
+}
+.pc {
+	display: none;
+}
+#totop {
+  bottom: 60px;
+  right: 3%;
+  width: 40px;
+}
+section:not(:last-child) {
+  margin-bottom: 30px;
+}
+/****************** Mainvisual *****************/
+#mainvisual {
+	height: auto;
+  padding: 30px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+#mainvisual h2 {
+	font-size: 4vw;
+}
+.main-img {
+  height: 24vw;
+  width: 24vw;
+}
+.main-des {
+  max-width: calc(100% - 28vw);
+}
+#gnavi {
+  display: none;
+}
+h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.idx-tlt {
+  font-size: 14px;
+}
+.idx-tlt span {
+  font-size: 12px;
+}
+.idx-list li {
+  padding-left: 15px;
+}
+.idx-list li::before {
+  top: 12px;
+}
+.idx-project li {
+  max-width: 48%;
+}
+.idx-list li:nth-child(n + 2) {
+  margin-top: 10px;
+}
+.idx-project li:nth-child(n + 3), .idx-project li:nth-child(n + 4) {
+  margin-top: 20px;
+}
+.idx-project span {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.f-call {
+  display: flex;
+  width: 100%;
+  border-top: #fff 1px solid;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.f-call.show {
+  opacity: 1;
+  visibility: visible;
+}
+.f-call li {
+  width: 50%;
+}
+.f-call li:first-child {
+  border-right: #fff 1px solid;
+}
+.f-call li:last-child a {
+    background: #151935 url('../images/ico_mail.png') top 5px center no-repeat;
+    background-size: 20px;
+}
+.f-call li a {
+  height: 100%;
+  display: flex;
+  background: #ffa500 url('../images/ico_tel.png') top 5px center no-repeat;
+  background-size: 20px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.4em;
+  padding: 25px 10px 2px;
+}
+
+}
+@media only screen and (max-width: 640px) {
+  #wrapper {
+    padding: 0 3% 47px;
+  }
+  #mainvisual h2 {
+    font-size: 5vw;
+  }
+  .main-list li {
+    padding-left: 20px;
+    background-size: 15px !important;
+    background-position: top 5px left;
+  }
+  .main-list li:nth-child(2) {
+    background-position: top 6px left;
+  }
+  .main-list li:nth-child(3) {
+    background-position: top 7px left;
+  }
+  .main-content {
+    display: block;
+  }
+  .main-img {
+    height: 30vw;
+    width: 30vw;
+    margin: 0 auto 30px;
+  }
+  .main-des {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .main-img {
+    height: 45vw;
+    width: 45vw;
+    margin: 0 auto 20px;
+  }
+}
+@media not all and (min-resolution:0.001dpcm) {
+  @media {
+    .idx-list li::before {
+      top: 14px;
+    }
+  }
+}
