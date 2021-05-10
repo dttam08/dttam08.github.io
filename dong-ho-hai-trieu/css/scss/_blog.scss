@@ -1,0 +1,35 @@
+
+/*section news*/
+.section-list-news{
+    padding:40px 0;
+    .content-list-news{
+        
+        .content-left{
+         
+            .nav-pagination{
+                ul{
+                    li{
+                        margin:0 12px;
+                        &.active{
+                            background-color: $primary!important;
+                            color:$w;
+                            a{
+                                background-color: $primary!important;
+                            color:$w;
+                            }
+                        }
+                        a{
+                            color:#222222;
+                        }
+                    }
+                }
+            }
+          
+        }
+     
+       
+    }
+}
+/*Responsive*/
+
+

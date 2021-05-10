@@ -1,0 +1,94 @@
+.section-contact{
+    padding:40px 0;
+    .content-1{
+        .title-contact{
+            padding-bottom: 15px;
+            position: relative;
+            margin-bottom: 25px;
+            font-weight: 500;
+            background: $primary;
+            color:$w;
+            padding:10px;
+            font-size: 18px;
+        }
+       
+        .info-summary{
+            li{
+                margin:15px 0;
+                img{
+                    margin-right: 10px;
+                    width:24px;
+                    height: 24px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .content-2{
+        .title-contact{
+            padding-bottom: 15px;
+            position: relative;
+            margin-bottom: 25px;
+            font-weight: 500;
+            background: $primary;
+            color:$w;
+            padding:10px;
+            font-size: 18px;
+        }
+        margin-top:20px;
+    }
+}
+@media screen and (max-width:400px){ 
+    .section-contact{
+        .content-1{
+           
+                .row{
+                    div[class^='col-']{
+                        margin:10px 0;
+                       
+                    }
+                } 
+          
+        }
+    }
+}
+ @media screen and (min-width:401px) and (max-width:768px){
+    .section-contact{
+        .content-1{
+           
+                .row{
+                    div[class^='col-']{
+                        margin:10px 0;
+                       
+                    }
+                } 
+          
+        }
+    }
+}
+ 
+ /*tablet*/
+ @media screen and (min-width:769px) and (max-width:992px) {
+    .section-contact{
+        .content-1{
+           
+                .row{
+                    div[class^='col-']{
+                        margin:10px 0;
+                       
+                    }
+                } 
+          
+        }
+    }
+ }
+ /*tablet*/
+ @media screen and (min-width:993px) and (max-width:1024px) {
+  
+ }    
+ 
+ /*Desktop*/
+ @media screen and (min-width:1025px) and (max-width:1920px) {
+   
+ }
+ 

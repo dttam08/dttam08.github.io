@@ -1,0 +1,38 @@
+.section-info-user{
+    .form-change-pass{
+        background: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        form{
+            padding:25px 45px;
+            width:50%;
+            label{
+                font-weight: 700;
+            }
+            input{
+                padding: 0.7rem 0.75rem;
+            }
+            .title-form{
+                font-size: 18px;
+                  
+                text-align: center; 
+                margin-bottom:10px;
+                font-weight:600;
+            }
+            
+            .btn-change-pass{
+                margin-top:10px;
+                padding:5px 35px;
+                background: $primary;
+                    a{
+                        color:$w;
+                        text-decoration: none;
+                        
+                    }
+                    &:hover{
+                        background: $color_text1;
+                    }
+                }
+            }
+        }
+}

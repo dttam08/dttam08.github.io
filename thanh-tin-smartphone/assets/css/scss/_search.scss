@@ -1,0 +1,1574 @@
+//Section banner list product
+.section-lp-banner-sale{
+    margin-top:20px;
+    .banner-sale-right{
+        &:last-child{
+
+            margin-top:10px;
+        }
+    }
+}
+//Carousel list brand
+.section-carousel-list-brand{
+    margin-top:20px;
+    .owl-carousel{
+        -ms-border:solid 1px $border_color;
+        -o-border:solid 1px $border_color;
+        -webkit-border:solid 1px $border_color;
+        -moz-border:solid 1px $border_color;
+        border:solid 1px $border_color;
+        .owl-stage-outer{
+            height: 100px;
+            .item{
+                .img-product{
+                   img{
+                        &:first-child{
+                            margin-left: 15px;
+                        }
+                        border:solid 1px $border_color;
+                        width:115px;
+                        height: 70px;
+                        margin:30px 12px;
+                    }
+                  
+                }
+            }
+        }
+        
+        .owl-nav{
+            text-align: center;
+            button{
+                background:transparent;
+                color:#a1a1a1;
+                width:20px;
+                height: 20px;
+                margin:10px;
+                font-size: 32px;
+                text-align: center;
+                &:first-child{
+                    position: absolute;
+                    left:-12px;
+                    top:27%;
+                }
+                &:last-child{
+                    position: absolute;
+                    right:-12px;
+                    top:27%;
+                }
+            }
+        }
+    }
+}
+//Filter list product
+.section-filter-list-product{
+    margin-top:15px;
+    .nav-filter{
+           nav{
+               padding:0!important;
+                >ul{
+                    >li{
+                        
+                        display: inline-block;
+                        >a{
+                            color:#2889d6;
+                            padding:0 20px;
+                            text-decoration: none;
+                        }
+                        &:first-child{
+                            >a{
+                                color:#505050;
+                                padding-left: 0;
+                            }
+                        }
+                        &.dropdown-feature {
+                            >a{
+                                text-decoration: none;
+                                color:#2889d6;                
+                                &:hover{
+                                    cursor: pointer;
+                                }
+                            }
+
+                            >ul{
+                                position: absolute;
+                                top:40px;
+                                right:0;
+                                left:unset;
+                                min-width:400px;
+                                &::before{
+                                    position: absolute;
+                                    right:45px;
+                                    content:'';
+                                    top:-20px;
+                                    height: 0; 
+                                    border-left: 15px solid transparent;
+                                    border-right: 15px solid transparent;
+                                    
+                                    border-bottom: 15px solid $border_color;
+                                  
+                                }
+                                &::after{
+                                    position: absolute;
+                                    right:48px;
+                                    content:'';
+                                    top:-18px;
+                                    height: 0; 
+                                    border-left: 15px solid transparent;
+                                    border-right: 15px solid transparent;
+                                    
+                                    border-bottom: 15px solid $w;
+                                  
+                                }
+                                >li{
+                                   
+                                    i{
+                                        position: absolute;
+                                        right:10px;
+                                        top:10px;
+                                        display: block;
+                                        cursor: pointer;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                                .row{
+                                   
+                                    div[class^='col-']{
+                                        >li{
+                                            line-height: 20px;
+                                            padding:10px;
+                                            display: block;
+                                            width:100%;
+                                            white-space: nowrap;
+                                            &:first-child{
+                                                margin-top:10px;
+                                            }
+                                            label{
+                                                display: block;
+                                                position: relative;
+                                                padding-left: 35px;
+                                                margin-bottom: 12px;
+                                                cursor: pointer;
+                                                font-size: 14px;
+                                                -webkit-user-select: none;
+                                                -moz-user-select: none;
+                                                -ms-user-select: none;
+                                                user-select: none;
+                                                .checkmark {
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: 0;
+                                                    height: 20px;
+                                                    width: 20px;
+                                                    background-color: transparent;
+                                                    border:solid 1px $color_text;
+                                                    &:after {
+                                                        position: absolute;
+                                                        content: '';
+                                                        left: 6px;
+                                                        top: 2px;
+                                                        width: 5px;
+                                                        height: 10px;
+                                                        border: solid $w;
+                                                        border-width: 0 3px 3px 0;
+                                                        -webkit-transform: rotate(45deg);
+                                                        -ms-transform: rotate(45deg);
+                                                        transform: rotate(45deg);
+                                                        display: none;
+                                                        }
+                                                }
+                                                input[type='checkbox']{
+                                                    margin-right: 5px;
+                                                    margin-top:5px;
+                                                    vertical-align: middle;
+                                                    margin-top:-4px;
+                                                    position: absolute;
+                                                    opacity: 0;
+                                                    cursor: pointer;
+                                                    height: 0;
+                                                    width: 0;
+                                               
+                                                    &:checked{
+                                                        &~.checkmark {
+                                                            background-color: $color_text1;
+                                                            &:after{
+                                                                display: block;
+                                                            }
+                                                        }
+                                                    }
+                                                  
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                               
+                            
+                            }
+                        }
+                        &.dropdown-sort{
+                            position: absolute;
+                            right: 0;
+                            text-align: right;
+                            >a{
+                                text-decoration: none;
+                                color:#2889d6;     
+                                &:hover{
+                                    cursor: pointer;
+                                }           
+                               
+                            }
+                            >ul{
+                                position: relative;
+                                top:10px;
+                               
+                                &::before{
+                                    position: absolute;
+                                    right:45px;
+                                    content:'';
+                                    top:-15px;
+                                    height: 0; 
+                                    border-left: 15px solid transparent;
+                                    border-right: 15px solid transparent;
+                                    
+                                    border-bottom: 15px solid $border_color;
+                                  
+                                }
+                                &::after{
+                                    position: absolute;
+                                    right:30%;
+                                    content:'';
+                                    top:-15px;
+                                    height: 0; 
+                                    border-left: 15px solid transparent;
+                                    border-right: 15px solid transparent;
+                                    
+                                    border-bottom: 15px solid $w;
+                                  
+                                }
+                                i{
+                                    position: absolute;
+                                    right:10px;
+                                    top:10px;
+                                    display: block;
+                                    cursor: pointer;
+                                    margin-bottom: 10px;
+                                }
+                               
+                               
+                                // right:0!important;
+                              
+                               
+                                >li{
+                                    line-height: 20px;
+                                    padding:10px;
+                                    display: block;
+                                    width:100%;
+                                    white-space: nowrap;
+                                    &:first-child{
+                                        margin-top:10px;
+                                    }
+                                    label{
+                                        display: block;
+                                        position: relative;
+                                        padding-left: 35px;
+                                        margin-bottom: 12px;
+                                        cursor: pointer;
+                                        font-size: 14px;
+                                        -webkit-user-select: none;
+                                        -moz-user-select: none;
+                                        -ms-user-select: none;
+                                        user-select: none;
+                                        .checkmark {
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            height: 20px;
+                                            width: 20px;
+                                            background-color: transparent;
+                                            border:solid 1px $color_text;
+                                            &:after {
+                                                position: absolute;
+                                                content: '';
+                                                left: 6px;
+                                                top: 2px;
+                                                width: 5px;
+                                                height: 10px;
+                                                border: solid $w;
+                                                border-width: 0 3px 3px 0;
+                                                -webkit-transform: rotate(45deg);
+                                                -ms-transform: rotate(45deg);
+                                                transform: rotate(45deg);
+                                                display: none;
+                                                }
+                                        }
+                                        input[type='checkbox']{
+                                            margin-right: 5px;
+                                            margin-top:5px;
+                                            vertical-align: middle;
+                                            margin-top:-4px;
+                                            position: absolute;
+                                            opacity: 0;
+                                            cursor: pointer;
+                                            height: 0;
+                                            width: 0;
+                                       
+                                            &:checked{
+                                                &~.checkmark {
+                                                    background-color: $color_text1;
+                                                    &:after{
+                                                        display: block;
+                                                    }
+                                                }
+                                            }
+                                          
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                }   
+                 
+            }
+           
+        }
+      
+    }
+
+    .content-filter-list-product{
+        .card{
+            margin:15px 0;
+        }
+        .pagination-filter-list-product{
+            .page-item{
+                a{
+                    background: #f3f3f3;
+                    color: #9f9f9f;
+                    
+                }
+                &.active,&:hover{
+                    a{
+                        color:$w;
+                        background: #2889d6!important;
+                    }
+                }
+            }
+        }
+    }
+}
+//Policy delivcery
+.section-policy-delivery{
+    margin-top: 20px;
+    .content-policy-delivery{
+        -moz-border:solid 2px $border_color;
+        -webkit-border:solid 2px $border_color;
+        -ms-border:solid 2px $border_color;
+        border:solid 2px $border_color;
+        padding:15px;
+        .list-delivery{
+            padding:0;
+            &-item{
+                width : calc(20% - 8px);
+                float: left;
+                padding: 0px 4px;
+                img{
+                    width: 25px;
+                    height: auto;
+                    float: left;
+                }
+                &:last-child{
+                    .list-delivery-body{
+                    
+                        p{
+                           white-space: nowrap;
+                            
+                        }
+                    }
+                }
+                
+            }
+            &-body{
+                width : calc( 100% - 25px);
+                float: left;
+                p{
+                    padding-left: 15px;
+                    margin-bottom: 0;
+                    
+                }
+            }
+        }
+       
+    }
+}
+
+/*Resposive*/
+
+/*Mobile */
+@media screen and (max-width:400px){
+    //Section banner list product
+    .section-lp-banner-sale{
+       
+        .banner-sale-right{
+            margin-top: 10px;
+        }
+    }
+    //Carousel list brand
+    .section-carousel-list-brand{
+        .owl-carousel   {
+            .owl-stage-outer{
+                .item{
+                    .img-product{
+                        img{
+                            &:first-child{
+                                margin-left: 30px;
+                            }
+                        }
+                    
+                    }
+                }
+            }
+        }
+    }
+    //Filter list product
+    .section-filter-list-product{
+        margin-top:15px;
+        .nav-filter{
+            nav{
+                padding:0!important;
+                >ul{
+                    width:100%;
+                    display: block;
+
+                    >li{
+                        width:50%;
+                        float:left;    
+                        >a{
+                            color:#2889d6;
+                            padding:0;
+                            text-decoration: none;
+                        }
+                        &:first-child{
+                            >a{
+                                color:#505050;
+                                padding-left: 0;
+                            }
+                        }
+                        &.dropdown-feature {
+                            display: none;
+                    
+                        }
+                        &.dropdown-sort{
+                            display: none;
+                        }
+                    
+                    }   
+                }
+            }
+        }
+        .dropdpwn-feauture-content-res{
+            p{
+                font-size: 14px;
+                color:$color_text1;
+                margin-left:-15px;
+            }
+            .title-dropdown{
+                margin-bottom: 15px;
+            }
+            label{
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 14px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 20px;
+                    width: 20px;
+                    background-color: transparent;
+                    border:solid 1px $color_text;
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        left: 6px;
+                        top: 2px;
+                        width: 5px;
+                        height: 10px;
+                        border: solid $w;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                        display: none;
+                        }
+                }
+                input[type='checkbox']{
+                    margin-right: 5px;
+                    margin-top:5px;
+                    vertical-align: middle;
+                    margin-top:-4px;
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+               
+                    &:checked{
+                        &~.checkmark {
+                            background-color: $color_text1;
+                            &:after{
+                                display: block;
+                            }
+                        }
+                    }
+                  
+                }
+            }
+        }
+        .dropdown-sort-content-res{
+            p{
+                font-size: 14px;
+                color:$color_text1;
+                margin-left:-15px;
+            }
+            label{
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 14px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 20px;
+                    width: 20px;
+                    background-color: transparent;
+                    border:solid 1px $color_text;
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        left: 6px;
+                        top: 2px;
+                        width: 5px;
+                        height: 10px;
+                        border: solid $w;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                        display: none;
+                        }
+                }
+                input[type='checkbox']{
+                    margin-right: 5px;
+                    margin-top:5px;
+                    vertical-align: middle;
+                    margin-top:-4px;
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+               
+                    &:checked{
+                        &~.checkmark {
+                            background-color: $color_text1;
+                            &:after{
+                                display: block;
+                            }
+                        }
+                    }
+                  
+                }
+            }
+        }
+    }
+    //Policy delivcery
+    .section-policy-delivery{
+        margin-top: 20px;
+        .content-policy-delivery{
+            -moz-border:solid 2px $border_color;
+            -webkit-border:solid 2px $border_color;
+            -ms-border:solid 2px $border_color;
+            border:solid 2px $border_color;
+            padding:15px;
+            .list-delivery{
+                padding:0;
+                &-item{
+                    width : 100%;
+                    float: left;
+                    padding: 0px 4px;
+                    margin-bottom: 20px;
+                    img{
+                        width: auto;
+                        height: auto;
+                        float: left;
+                       
+                    }
+                    
+                }
+                &-body{
+                    width : unset;
+                    float:none;
+                    p{
+                        padding-left: 45px;
+                        
+                        margin-bottom: 0;
+                    
+                    }
+                }
+            }
+        
+        }
+    }
+}
+@media screen and (min-width:401px) and (max-width:768px){
+    //Section banner list product
+    .section-lp-banner-sale{
+        .banner-sale-right{
+            margin-top: 10px;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    //Carousel list brand
+    .section-carousel-list-brand{
+        .owl-carousel   {
+           border:unset;
+           .owl-stage-outer{
+                .item{
+                    .img-product{
+                        img{
+                            &:first-child{
+                                margin-left: 0px;
+                            }
+                        }
+                    
+                    }
+                }
+            }
+            .owl-nav{
+                text-align: center;
+                button{
+                    background:transparent;
+                    color:#a1a1a1;
+                    width:20px;
+                    height: 20px;
+                    margin:10px;
+                    font-size: 32px;
+                    text-align: center;
+                    &:first-child{
+                        position: absolute;
+                        left:-12px;
+                        bottom:0%;
+                        top:unset;
+                    }
+                    &:last-child{
+                        position: absolute;
+                        right:-12px;
+                        bottom:0%;
+                        top:unset;
+                    }
+                }
+            }
+        }
+    }
+   //Filter list product
+   .section-filter-list-product{
+         margin-top:15px;
+        .nav-filter{
+            nav{
+                padding:0!important;
+                >ul{
+                    width:100%;
+                    display: block;
+
+                    >li{
+                        width:50%;
+                        float:left;    
+                        >a{
+                            color:#2889d6;
+                            padding:0;
+                            text-decoration: none;
+                        }
+                        &:first-child{
+                            >a{
+                                color:#505050;
+                                padding-left: 0;
+                            }
+                        }
+                        &.dropdown-feature {
+                            display: none;
+                    
+                        }
+                        &.dropdown-sort{
+                            display: none;
+                        }
+                    
+                    }   
+                }
+            }
+        }
+        .dropdpwn-feauture-content-res{
+            p{
+                font-size: 14px;
+                color:$color_text1;
+                margin-left:-15px;
+            }
+            .title-dropdown{
+                margin-bottom: 15px;
+            }
+            label{
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 14px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 20px;
+                    width: 20px;
+                    background-color: transparent;
+                    border:solid 1px $color_text;
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        left: 6px;
+                        top: 2px;
+                        width: 5px;
+                        height: 10px;
+                        border: solid $w;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                        display: none;
+                        }
+                }
+                input[type='checkbox']{
+                    margin-right: 5px;
+                    margin-top:5px;
+                    vertical-align: middle;
+                    margin-top:-4px;
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+            
+                    &:checked{
+                        &~.checkmark {
+                            background-color: $color_text1;
+                            &:after{
+                                display: block;
+                            }
+                        }
+                    }
+                
+                }
+            }
+        }
+        .dropdown-sort-content-res{
+            p{
+                font-size: 14px;
+                color:$color_text1;
+                margin-left:-15px;
+            }
+            label{
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 14px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 20px;
+                    width: 20px;
+                    background-color: transparent;
+                    border:solid 1px $color_text;
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        left: 6px;
+                        top: 2px;
+                        width: 5px;
+                        height: 10px;
+                        border: solid $w;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                        display: none;
+                        }
+                }
+                input[type='checkbox']{
+                    margin-right: 5px;
+                    margin-top:5px;
+                    vertical-align: middle;
+                    margin-top:-4px;
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+            
+                    &:checked{
+                        &~.checkmark {
+                            background-color: $color_text1;
+                            &:after{
+                                display: block;
+                            }
+                        }
+                    }
+                
+                }
+            }
+        }
+    }
+        //Policy delivcery
+    .section-policy-delivery{
+        margin-top: 20px;
+        .content-policy-delivery{
+            -moz-border:solid 2px $border_color;
+            -webkit-border:solid 2px $border_color;
+            -ms-border:solid 2px $border_color;
+            border:solid 2px $border_color;
+            padding:15px;
+            .list-delivery{
+                padding:0;
+                &-item{
+                    width : 100%;
+                    float: left;
+                    padding: 0px 4px;
+                    margin-bottom: 20px;
+                    img{
+                        width: auto;
+                        height: auto;
+                        float: left;
+                    
+                    }
+                    
+                }
+                &-body{
+                    width : unset;
+                    float:none;
+                    p{
+                        padding-left: 45px;
+                    
+                        margin-bottom: 0;
+                    
+                    }
+                }
+            }
+        
+        }
+    }
+}
+
+/*tablet*/
+@media screen and (min-width:769px) and (max-width:992px) {
+    //Section banner list product
+    .section-lp-banner-sale{
+        .banner-sale-left{
+            margin-top: 10px;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .banner-sale-right{
+            margin-top: 10px;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    //Carousel list brand
+    .section-carousel-list-brand{
+        .owl-carousel   {
+        border:unset;
+        .owl-stage-outer{
+                .item{
+                    .img-product{
+                        img{
+                            &:first-child{
+                                margin-left: 0px;
+                            }
+                        }
+                    
+                    }
+                }
+            }
+            .owl-nav{
+                text-align: center;
+                button{
+                    background:transparent;
+                    color:#a1a1a1;
+                    width:20px;
+                    height: 20px;
+                    margin:10px;
+                    font-size: 32px;
+                    text-align: center;
+                    &:first-child{
+                        position: absolute;
+                        left:-12px;
+                        bottom:0%;
+                        top:unset;
+                    }
+                    &:last-child{
+                        position: absolute;
+                        right:-12px;
+                        bottom:0%;
+                        top:unset;
+                    }
+                }
+            }
+        }
+    }
+     //Filter list product
+   .section-filter-list-product{
+    margin-top:15px;
+   .nav-filter{
+       nav{
+           padding:0!important;
+           >ul{
+               width:100%;
+               display: block;
+
+               >li{
+                   width:50%;
+                   float:left;    
+                   >a{
+                       color:#2889d6;
+                       padding:0;
+                       text-decoration: none;
+                   }
+                   &:first-child{
+                       >a{
+                           color:#505050;
+                           padding-left: 0;
+                       }
+                   }
+                   &.dropdown-feature {
+                       display: none;
+               
+                   }
+                   &.dropdown-sort{
+                       display: none;
+                   }
+               
+               }   
+           }
+       }
+   }
+   .dropdpwn-feauture-content-res{
+       p{
+           font-size: 14px;
+           color:$color_text1;
+           margin-left:-15px;
+       }
+       .title-dropdown{
+           margin-bottom: 15px;
+       }
+       label{
+           display: block;
+           position: relative;
+           padding-left: 35px;
+           margin-bottom: 12px;
+           cursor: pointer;
+           font-size: 14px;
+           -webkit-user-select: none;
+           -moz-user-select: none;
+           -ms-user-select: none;
+           user-select: none;
+           .checkmark {
+               position: absolute;
+               top: 0;
+               left: 0;
+               height: 20px;
+               width: 20px;
+               background-color: transparent;
+               border:solid 1px $color_text;
+               &:after {
+                   position: absolute;
+                   content: '';
+                   left: 6px;
+                   top: 2px;
+                   width: 5px;
+                   height: 10px;
+                   border: solid $w;
+                   border-width: 0 3px 3px 0;
+                   -webkit-transform: rotate(45deg);
+                   -ms-transform: rotate(45deg);
+                   transform: rotate(45deg);
+                   display: none;
+                   }
+           }
+           input[type='checkbox']{
+               margin-right: 5px;
+               margin-top:5px;
+               vertical-align: middle;
+               margin-top:-4px;
+               position: absolute;
+               opacity: 0;
+               cursor: pointer;
+               height: 0;
+               width: 0;
+       
+               &:checked{
+                   &~.checkmark {
+                       background-color: $color_text1;
+                       &:after{
+                           display: block;
+                       }
+                   }
+               }
+           
+           }
+       }
+   }
+   .dropdown-sort-content-res{
+       p{
+           font-size: 14px;
+           color:$color_text1;
+           margin-left:-15px;
+       }
+       label{
+           display: block;
+           position: relative;
+           padding-left: 35px;
+           margin-bottom: 12px;
+           cursor: pointer;
+           font-size: 14px;
+           -webkit-user-select: none;
+           -moz-user-select: none;
+           -ms-user-select: none;
+           user-select: none;
+           .checkmark {
+               position: absolute;
+               top: 0;
+               left: 0;
+               height: 20px;
+               width: 20px;
+               background-color: transparent;
+               border:solid 1px $color_text;
+               &:after {
+                   position: absolute;
+                   content: '';
+                   left: 6px;
+                   top: 2px;
+                   width: 5px;
+                   height: 10px;
+                   border: solid $w;
+                   border-width: 0 3px 3px 0;
+                   -webkit-transform: rotate(45deg);
+                   -ms-transform: rotate(45deg);
+                   transform: rotate(45deg);
+                   display: none;
+                   }
+           }
+           input[type='checkbox']{
+               margin-right: 5px;
+               margin-top:5px;
+               vertical-align: middle;
+               margin-top:-4px;
+               position: absolute;
+               opacity: 0;
+               cursor: pointer;
+               height: 0;
+               width: 0;
+       
+               &:checked{
+                   &~.checkmark {
+                       background-color: $color_text1;
+                       &:after{
+                           display: block;
+                       }
+                   }
+               }
+           
+           }
+       }
+   }
+}
+
+}
+/*tablet*/
+@media screen and (min-width:993px) and (max-width:1024px) {
+    //Section banner list product
+    .section-lp-banner-sale{
+        .banner-sale-left{
+            margin-top: 10px;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .banner-sale-right{
+            margin-top: 10px;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    //Carousel list brand
+    .section-carousel-list-brand{
+        .owl-carousel   {
+        border:unset;
+        .owl-stage-outer{
+                .item{
+                    .img-product{
+                        img{
+                            &:first-child{
+                                margin-left: 0px;
+                            }
+                        }
+                    
+                    }
+                }
+            }
+            .owl-nav{
+                text-align: center;
+                button{
+                    background:transparent;
+                    color:#a1a1a1;
+                    width:20px;
+                    height: 20px;
+                    margin:10px;
+                    font-size: 32px;
+                    text-align: center;
+                    &:first-child{
+                        position: absolute;
+                        left:-12px;
+                        bottom:0%;
+                        top:unset;
+                    }
+                    &:last-child{
+                        position: absolute;
+                        right:-12px;
+                        bottom:0%;
+                        top:unset;
+                    }
+                }
+            }
+        }
+    }
+    //Filter list product
+    .section-filter-list-product{
+        margin-top:15px;
+       .nav-filter{
+           nav{
+               padding:0!important;
+               >ul{
+                   width:100%;
+                   display: block;
+
+                   >li{
+                       width:25%;
+                       float:left;    
+                       >a{
+                           color:#2889d6;
+                           padding:0;
+                           text-decoration: none;
+                       }
+                       &:first-child{
+                           >a{
+                               color:#505050;
+                               padding-left: 0;
+                           }
+                       }
+                       &.dropdown-feature {
+                           display: none;
+                   
+                       }
+                       &.dropdown-sort{
+                           display: none;
+                       }
+                   
+                   }   
+               }
+           }
+       }
+       .dropdpwn-feauture-content-res{
+         
+           p{
+               font-size: 14px;
+               color:$color_text1;
+               margin-left:-15px;
+           }
+           .title-dropdown{
+               margin-bottom: 15px;
+           }
+           label{
+               display: block;
+               position: relative;
+               padding-left: 35px;
+               margin-bottom: 12px;
+               cursor: pointer;
+               font-size: 14px;
+               -webkit-user-select: none;
+               -moz-user-select: none;
+               -ms-user-select: none;
+               user-select: none;
+               .checkmark {
+                   position: absolute;
+                   top: 0;
+                   left: 0;
+                   height: 20px;
+                   width: 20px;
+                   background-color: transparent;
+                   border:solid 1px $color_text;
+                   &:after {
+                       position: absolute;
+                       content: '';
+                       left: 6px;
+                       top: 2px;
+                       width: 5px;
+                       height: 10px;
+                       border: solid $w;
+                       border-width: 0 3px 3px 0;
+                       -webkit-transform: rotate(45deg);
+                       -ms-transform: rotate(45deg);
+                       transform: rotate(45deg);
+                       display: none;
+                       }
+               }
+               input[type='checkbox']{
+                   margin-right: 5px;
+                   margin-top:5px;
+                   vertical-align: middle;
+                   margin-top:-4px;
+                   position: absolute;
+                   opacity: 0;
+                   cursor: pointer;
+                   height: 0;
+                   width: 0;
+           
+                   &:checked{
+                       &~.checkmark {
+                           background-color: $color_text1;
+                           &:after{
+                               display: block;
+                           }
+                       }
+                   }
+               
+               }
+           }
+       }
+       .dropdown-sort-content-res{
+         
+           p{
+               font-size: 14px;
+               color:$color_text1;
+               margin-left:-15px;
+           }
+           label{
+               display: block;
+               position: relative;
+               padding-left: 35px;
+               margin-bottom: 12px;
+               cursor: pointer;
+               font-size: 14px;
+               -webkit-user-select: none;
+               -moz-user-select: none;
+               -ms-user-select: none;
+               user-select: none;
+               .checkmark {
+                   position: absolute;
+                   top: 0;
+                   left: 0;
+                   height: 20px;
+                   width: 20px;
+                   background-color: transparent;
+                   border:solid 1px $color_text;
+                   &:after {
+                       position: absolute;
+                       content: '';
+                       left: 6px;
+                       top: 2px;
+                       width: 5px;
+                       height: 10px;
+                       border: solid $w;
+                       border-width: 0 3px 3px 0;
+                       -webkit-transform: rotate(45deg);
+                       -ms-transform: rotate(45deg);
+                       transform: rotate(45deg);
+                       display: none;
+                       }
+               }
+               input[type='checkbox']{
+                   margin-right: 5px;
+                   margin-top:5px;
+                   vertical-align: middle;
+                   margin-top:-4px;
+                   position: absolute;
+                   opacity: 0;
+                   cursor: pointer;
+                   height: 0;
+                   width: 0;
+           
+                   &:checked{
+                       &~.checkmark {
+                           background-color: $color_text1;
+                           &:after{
+                               display: block;
+                           }
+                       }
+                   }
+               
+               }
+           }
+       }
+   }
+}
+/*Desktop*/
+@media screen and (min-width:1025px) and (max-width:1129px) {
+    //Carousel list brand
+    .section-carousel-list-brand{
+        .owl-carousel   {
+        border:unset;
+        .owl-stage-outer{
+                .item{
+                    .img-product{
+                        img{
+                            &:first-child{
+                                margin-left: 0px;
+                            }
+                        }
+                    
+                    }
+                }
+            }
+            .owl-nav{
+                text-align: center;
+                button{
+                    background:transparent;
+                    color:#a1a1a1;
+                    width:20px;
+                    height: 20px;
+                    margin:10px;
+                    font-size: 32px;
+                    text-align: center;
+                    &:first-child{
+                        position: absolute;
+                        left:-12px;
+                        bottom:0%;
+                        top:unset;
+                    }
+                    &:last-child{
+                        position: absolute;
+                        right:-12px;
+                        bottom:0%;
+                        top:unset;
+                    }
+                }
+            }
+        }
+    }
+   
+    //Filter list product
+    .section-filter-list-product{
+        margin-top:15px;
+    .nav-filter{
+        nav{
+            padding:0!important;
+            >ul{
+                width:100%;
+                display: block;
+
+                >li{
+                    width:25%;
+                    float:left;    
+                    >a{
+                        color:#2889d6;
+                        padding:0;
+                        text-decoration: none;
+                    }
+                    &:first-child{
+                        >a{
+                            color:#505050;
+                            padding-left: 0;
+                        }
+                    }
+                    &.dropdown-feature {
+                        display: none;
+                
+                    }
+                    &.dropdown-sort{
+                        display: none;
+                    }
+                
+                }   
+            }
+        }
+    }
+    .dropdpwn-feauture-content-res{
+        p{
+            font-size: 14px;
+            color:$color_text1;
+            margin-left:-15px;
+        }
+        .title-dropdown{
+            margin-bottom: 15px;
+        }
+        label{
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 14px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                background-color: transparent;
+                border:solid 1px $color_text;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    left: 6px;
+                    top: 2px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid $w;
+                    border-width: 0 3px 3px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    display: none;
+                    }
+            }
+            input[type='checkbox']{
+                margin-right: 5px;
+                margin-top:5px;
+                vertical-align: middle;
+                margin-top:-4px;
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+        
+                &:checked{
+                    &~.checkmark {
+                        background-color: $color_text1;
+                        &:after{
+                            display: block;
+                        }
+                    }
+                }
+            
+            }
+        }
+    }
+    .dropdown-sort-content-res{
+        p{
+            font-size: 14px;
+            color:$color_text1;
+            margin-left:-15px;
+        }
+        label{
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 14px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                background-color: transparent;
+                border:solid 1px $color_text;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    left: 6px;
+                    top: 2px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid $w;
+                    border-width: 0 3px 3px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    display: none;
+                    }
+            }
+            input[type='checkbox']{
+                margin-right: 5px;
+                margin-top:5px;
+                vertical-align: middle;
+                margin-top:-4px;
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+        
+                &:checked{
+                    &~.checkmark {
+                        background-color: $color_text1;
+                        &:after{
+                            display: block;
+                        }
+                    }
+                }
+            
+            }
+        }
+    }
+    }
+}
+/*Desktop*/
+@media screen and (min-width:1025px) and (max-width:1920px) {
+    .dropdpwn-feauture-content-res{
+        display: none;    
+    }
+    .dropdown-sort-content-res{
+        display: none;
+    }
+}

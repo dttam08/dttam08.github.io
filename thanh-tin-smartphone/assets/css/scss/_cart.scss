@@ -1,0 +1,143 @@
+
+.section-list-cart{
+    table{
+        margin-top:40px;
+        tr{
+            th{
+                background: #f8f8f8;
+                text-align: center;
+            }
+            td{
+                text-align: center;
+                vertical-align: middle;
+                .img-wishlist{
+                    position: relative;
+                    width:200px;
+                    max-height: 200px;
+                    margin:0 auto;
+                    overflow: hidden;
+                    img{
+                        border:solid 1px $border_color;
+                    }
+                }
+                .custom-quantity-cart.input-group{
+                    justify-content: center;
+                    input{
+                  
+                        line-height: 24px;
+                        background: transparent;
+                        border: solid 2px #dee2e6;
+                        text-align: center;
+                        &:focus{
+                            border: solid 2px #dee2e6!important;
+                        }
+                      
+                    }
+                    .btn-increase,.btn-decrease{
+                        background: $primary;
+                        color:$w;
+                        transition: $trans;
+                        &:hover{
+                            opacity: 0.7;
+                            transition: $trans;
+                        }
+                    }
+                }
+                .btn-remove{
+                    background: transparent;
+                    i{
+                        color:$color_text1;
+                        font-size: 18px;
+                    }
+                }
+                &.td-name-product{
+                    a{
+                        display: block;
+                        display: -webkit-box;
+                        max-height: 3.2rem;
+                       -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: normal;
+                        -webkit-line-clamp: 2;
+                        line-height: 1.6rem;
+                        &:hover{
+                            color:$primary;
+                            transition: $trans;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .continue-or-order{
+        text-align: right;
+        a{
+            
+            background: $primary;
+            
+            padding:10px;
+            color:$w;
+            text-decoration: none;
+            margin:10px;
+            &:hover{
+                transition: $trans;
+                opacity: 0.7;
+            }
+        }
+    }
+     //Mobile
+     .list-product-table-mobile{
+        .card {
+            .list-button{
+                .btn-view-quantity{
+                    background: $primary;
+                    color:$w;
+                    .icon-editor{
+                        margin-left: 5px;
+                    }
+                }
+            }
+            .card-body{
+                a.name-product{
+                    display: block;
+                    width: 100%;
+                    padding: 10px 0;
+                }
+                .btn-edit-quantity{
+                    .input-group {
+                
+                        max-width: 200px;
+                        margin: 15px auto;
+                        span{
+                            background: $primary;
+                            color:$w;
+                        }
+                        input{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .continue-or-order-mobile{
+        text-align: center;
+        display: flex;
+        padding:0;
+        justify-content: center;
+        a{
+            display: block;
+            background: $primary;
+            
+            padding:10px;
+            color:$w;
+            text-decoration: none;
+            margin:10px;
+            &:hover{
+                transition: $trans;
+                background:$primary;
+            }
+        }
+    }
+}

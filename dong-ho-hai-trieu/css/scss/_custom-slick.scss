@@ -1,0 +1,98 @@
+//Custom width slick on page product detail
+.list-img-thumbail-slick{
+  
+    margin: auto;
+    .slick-prev{
+        left:0;
+        z-index: 20;
+        background: $primary;
+        &:hover{
+            background: $bg_hover!important;
+        }
+    }
+    .slick-next{
+        right: 0;
+        z-index: 20;
+        background: $primary;
+        &:hover{
+            background: $bg_hover!important;
+        }
+    }
+    .slick-arrow.slick-prev:before {
+        font-family: 'Font Awesome\ 5 Pro';
+        opacity: 1;
+        content: '\f104'; 
+        color: $w!important;
+    }
+    .slick-arrow.slick-next {
+        background: $primary;
+      right: 0px; }
+      .slick-arrow.slick-next:before {
+        font-family: 'Font Awesome\ 5 Pro';
+        opacity: 1;
+        content: '\f105'; 
+        color: $w!important;
+    }
+    .slick-list{
+        padding:0!important;
+        
+        .slick-track{
+            .slick-slide{
+                margin: 5px;
+                .slick-slider-item{
+                    width: auto;
+                    padding: 5px;
+                    img{
+                    
+                
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+               
+            }
+        }
+        .slick-current.slick-center.slick-active {
+            .slick-slider-item {
+                border:solid 2px $primary!important;
+                cursor: pointer;
+               
+            }
+        }
+    }
+}
+
+.img-big-slick{
+    .slick-list{
+        .slick-slide{
+            .slick-slider-item{
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+                &::before{
+                    content: "";
+                    display: block;
+                    padding-bottom: 100%;
+                }
+                a{
+                    display: inline-block;
+                    height: 100%;
+                    left: 0;
+                    overflow: hidden;
+                    position: absolute;
+                    text-align: center;
+                    top: 0;
+                    width: 100%;
+                    z-index: 1;
+                    padding:0 10px;
+                    img{
+                        object-fit:cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

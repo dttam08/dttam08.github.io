@@ -1,0 +1,38 @@
+
+.block{
+  margin:30px 0;
+  .description{
+    @include clamp-line(8);
+    padding: 0;
+    margin: 10px 0;
+  }
+}
+.block-flex{
+  @include flex;
+  align-items: center;
+
+}
+.bg-block-about{
+  background-color: #f5f3f0;
+  .description{
+    @include clamp-line(4);
+    padding: 0;
+    margin: 10px 0;
+    font-size: 15px;
+    a{
+      color: $text;
+    }
+  }
+  .block-inline{
+    .fa{
+      font-size: 50px;
+      color: $theme-color;
+    }
+  }
+}
+.title-page{
+  text-transform: uppercase;
+  &:hover{
+    color: $theme-color;
+  }
+}

@@ -1,0 +1,110 @@
+.section-policy-article{
+ 
+    >ul{
+        &.payback{
+            list-style-type:none;
+            li{
+                font-weight:600;  font-style: italic; 
+               
+            }
+        }
+    }
+    .content{
+        >ol{
+            list-style-type: upper-roman;
+            padding: 10px;
+            >li{
+                font-weight:600; 
+                margin-bottom: 25px;
+            }
+            .table{
+                &.tb-np{
+                    tbody{
+                        tr{
+                            td{
+                                &.head-table{
+                                    font-weight:600; 
+                                    text-transform: uppercase;
+                                }
+                                padding:18px;
+                                -ms-border: solid 1px $border_color;
+                                -webkit-border: solid 1px $border_color;
+                               -moz-border: solid 1px $border_color;
+                                -o-border: solid 1px $border_color;
+                                border: solid 1px $border_color;
+                                &.list-type-check{
+                                    >ul{
+                                        position: relative;
+                                        list-style: none;
+                                        padding:0;
+                                        padding-left:20px;
+                                        li{
+                                          
+                                            &:before{
+                                                font-family: $font-awesome;
+                                                position: absolute;
+                                                content:'\f00c';
+                                                color:#7db11c;
+                                                left:0;
+                                                margin-right: 20px;
+                                            }
+                                        }
+                                       
+                                    }
+                                   
+                                }
+                            }
+    
+                        }
+                    }
+                }
+               
+                &.tb-na{
+                    tbody{
+                        tr{
+                            td{
+                                &.head-table{
+                                    font-weight:600; 
+                                    text-transform: uppercase;
+                                }
+                                padding:18px;
+                                width:50%;
+                                -ms-border: solid 1px $border_color;
+                                -webkit-border: solid 1px $border_color;
+                               -moz-border: solid 1px $border_color;
+                                -o-border: solid 1px $border_color;
+                                border: solid 1px $border_color;
+                                &.list-type-check{
+                                    >ul{
+                                        position: relative;
+                                        list-style: none;
+                                        padding:0;
+                                        padding-left:20px;
+                                        li{
+                                            
+                                            &:before{
+                                                font-family: $font-awesome;
+                                                position: absolute;
+                                                content:'\f00c';
+                                                color:#7db11c;
+                                                left:0;
+                                                margin-right: 20px;
+                                            }
+                                        }
+                                       
+                                    }
+                                    p{
+                                        font-weight:600; 
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+}

@@ -1,0 +1,40 @@
+.widget-guideline{
+  margin-top: -130px;
+  @media(max-width: 768px){
+      margin-top:0px;
+  }
+  .box-flex{
+    height: 100%;
+    >div{
+      flex: 1 0 auto;    margin-bottom: 15px;
+    }
+  }
+  .box{
+    height: 100%;
+    background: #fff;
+    text-align: center;
+    padding:15px;
+    box-shadow: $box-shadow;
+    transition: $trans;
+    .fa{
+      font-size: 56px;
+    }
+    .name{
+      font-size: 24px;
+      @include font-page($font-bold);
+    }
+    .description{
+      font-size: 14px;
+      color: $text-gray;
+      margin: 10px 0;
+    }
+    &:hover{
+      z-index: 10;
+      box-shadow: $box-shadow-hover;
+      color: $theme-color2;
+      .description{
+        color: $theme-color2;
+      }
+    }
+  }
+}

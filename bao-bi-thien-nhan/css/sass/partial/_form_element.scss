@@ -1,0 +1,201 @@
+$heading-color: #444444;
+$subheading-color: #acacac;
+$bg-light: #f7f7f7;
+$bg-dark: #171717;
+$dark-grey: #424242;
+$light-grey: #a3a3a3;
+$border-color: #ebebeb;
+$main-color: #00c9d0;
+/*-------------------------------------------------------*/
+/* Form Elements
+/*-------------------------------------------------------*/
+.form-control{
+  border-radius: 0px;
+}
+select.form-control{
+  background-image: url(../images/icons/dropdown.png);
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="search"],
+select,
+textarea {
+
+}
+
+textarea {
+  height: auto;
+  padding: 8px 16px;
+  margin-bottom: 25px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
+  border-color: $theme-color !important;
+  background-color: #fff;
+  outline: none;
+  box-shadow: none !important;
+}
+
+input:not([type=checkbox]):not([type=radio]),
+textarea {
+  -webkit-appearance: none;
+}
+
+/* Change Color of Placeholders */
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: $text;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: $text;
+  opacity: 1;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: $text;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: $text;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  padding-left: 12px;
+
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+
+/* Checkboxes & Radio Buttons
+-------------------------------------------------------*/
+.radio, .checkbox {
+    clear: both;
+}
+input[type="checkbox"] {
+  display: inline-block;
+  width:100%;
+  display: none;
+  margin-left: 0;
+}
+
+input[type="checkbox"] + label:before {
+  width: 20px;
+  height: 20px;
+  background-color: $bg-light;
+  content: "";
+  display: inline-block;
+  font-size: 13px;
+  margin: -4px 12px 0 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid $border-color;
+}
+
+input[type="checkbox"]:checked + label:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  color: $bg-dark;
+  font-size: 10px;
+  line-height: 18px;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  cursor: pointer;
+  margin-bottom: 0;
+  text-transform: none;
+  letter-spacing: normal;
+  color: $text;
+  font-size: 14px;
+  padding-left: 0;
+}
+
+.radio-buttons > li,
+.checkboxes > li {
+  padding: 7px 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label:before {
+  display: inline-block;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: #ededed;
+  border-radius: 40px;
+  margin: -3px 10px 0 0;
+  outline: none;
+  vertical-align: middle;
+  cursor: pointer;  margin-bottom: 0;
+}
+
+input[type="radio"]:checked + label:before  {
+  background-color: $bg-dark;
+  border: 5px solid #ededed;
+  padding: 1px;
+}
+
+input[type="radio"]:focus {
+  outline: none;
+}
+
+label {
+  font-size: 14px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+
+
+/*  Buttons
+-------------------------------------------------------*/
+
+.submit-message {
+  background-color: $theme-color;
+  padding: 14px 28px;
+  font-size: 15px;
+  float: left;
+  &:hover {
+    background-color: darken( $text, 7% );
+    color: #fff;
+  }
+}

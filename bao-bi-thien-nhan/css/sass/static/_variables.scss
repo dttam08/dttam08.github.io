@@ -1,0 +1,54 @@
+//main variable
+$text                : #212121;
+$bg-body             : #ecf0f5;
+$light-body          : #f0f2f5;
+$text-gray: #717c7c;
+$theme-color: #008cf7;
+$theme-color2: #b14653;
+$bg-gray:#f5f8fa;
+
+/* font variable */
+$font-normal:'Roboto';
+$font-bold:'Roboto-Bold';
+$font-Black:'Roboto-Black';
+$font-BoldItalic:'Roboto-BoldItalic';
+$font-Italic:'Roboto-Italic';
+$font-Light:'Roboto-Light';
+$font-Medium:'Roboto-Medium';
+
+// color variable
+$gray-darker:  lighten(#000, 13.5%); // #222
+$gray-dark:    lighten(#000, 20%);   // #333
+$gray:         lighten(#000, 33.5%); // #555
+$gray-light:   lighten(#000, 46.7%); // #777
+$gray-lighter: lighten(#000, 93.5%); // #eee
+
+$primary             : darken(#428bca, 6.5%);
+$success             : #5cb85c;
+$info                : #5bc0de;
+$danger              : #d9534f;
+$warning             : #f0ad4e;
+$black               : #2d2d2d;
+$gray                : #b0bec5;
+$dark                : #e2e2e2;
+$blue                : #247abb;
+$light-blue          : #009bff;
+$green: #4997fd;
+$yellow: #ffd183;
+$red:#dc281f;
+
+$box-shadow:  0px 1px 1px rgba(0, 0, 0, 0.15);
+$box-shadow-hover:0 22px 60px rgba(0, 0, 0, 0.15);
+$border-radius:5px;
+$border-color: #dddddd;
+$mg-bottom:30px;
+$trans: all ease 0.5s;
+$trans-menu: all ease 0.2s;
+
+
+/* page variable*/
+$height-top: 100px;
+$height-menu: 60px;
+$height-menu-mobile: 60px;
+$hei-search:60px;
+$bg-left-light: #f5f3f0;

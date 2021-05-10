@@ -1,0 +1,51 @@
+.nav-tabs{
+  text-align: center;
+  margin:20px 0;    border: none;
+  li{
+    display: inline-block;
+    float: inherit;
+    a{
+      color: $text;
+      text-transform: uppercase;
+      border: none;
+      background: transparent;
+      @include font-page($font-bold);
+      &:hover,&:focus,&:active{
+        background: transparent;
+        border: none;
+      }
+    }
+    &.active{
+      a{
+      border: none;
+        background: transparent;
+        color: $theme-color;
+        &:hover,&:focus,&:active{
+          background: transparent;
+          border: none;
+              color: $theme-color;
+        }
+      }
+    }
+  }
+}
+.tab-content{
+  border-top: none;
+  margin-bottom: $mg-bottom;
+  .tab-pane {
+    &.active{
+
+    }
+  }
+}
+@media (max-width: 440px) {
+  .nav-tabs{
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    >li {
+      float: none !important;    display: inline-block;
+    }
+  }
+}

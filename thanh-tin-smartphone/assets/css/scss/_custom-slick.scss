@@ -1,0 +1,133 @@
+.slick-slider{
+    .slick-prev {
+        color:$color_text1;
+        &:before{
+            font-family: $font-awesome;
+            content: '\f104';
+           
+        }
+    }
+    .slick-next {
+        color:$color_text1;
+        &::before{
+            font-family: $font-awesome;
+            content: '\f105';
+           
+        }
+    }
+}
+.slick-prev{
+    &:focus{
+       
+            &:before{
+                color:$color_text1!important;
+            }
+       
+    }
+    &:hover{
+        &:before{
+            color:$color_text1!important;
+        }
+    }
+    &:before{
+        color:$color_text1!important;
+    }
+  
+}
+.slick-next{
+    &:before{
+        color:$color_text1!important;
+    }
+    &:hover{
+        &:before{
+            color:$color_text1!important;
+        }
+    }
+    &:focus{
+        
+             &:before{
+                 color:$color_text1!important;
+             }
+        
+     }
+}
+.slick-prev, .slick-next{
+  color:$color_text1;
+}
+//Custom width slick on page product detail
+.list-img-thumbail-slick{
+    width:80%;
+    margin: auto;
+    .slick-prev,.slick-next{
+        top: calc(25% + 18px);
+        
+    }
+    
+    .slick-list{
+        padding:0!important;
+        
+        .slick-track{
+            .slick-slide{
+          
+                .slick-slider-item{
+                    width: auto;
+                    img{
+                        border:solid 1px $border_color!important;
+                
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+               
+            }
+        }
+        .slick-current.slick-center.slick-active {
+            .slick-slider-item {
+                border:solid 2px #ff7f59!important;
+                cursor: pointer;
+                
+            }
+        }
+    }
+}
+
+
+/*Resposive*/
+
+/*Mobile */
+@media screen and (max-width:400px){
+  .slick-slider-item {
+      img{
+        margin: 0 auto;
+        width:50%;
+      }
+  
+  }
+}
+@media screen and (min-width:401px) and (max-width:768px){
+.slick-slider-item {
+    img{
+        margin: 0 auto;
+    }
+ 
+}
+}
+
+/*tablet*/
+@media screen and (min-width:769px) and (max-width:992px) {
+  .slick-slider-item{
+      img{
+        margin: 0 auto;
+      }
+   
+  }
+}
+/*tablet*/
+@media screen and (min-width:993px) and (max-width:1024px) {
+  
+}
+/*Desktop*/
+@media screen and (min-width:1025px) and (max-width:1920px) {
+
+}

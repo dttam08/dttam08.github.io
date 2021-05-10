@@ -1,0 +1,90 @@
+#menu-right-fixed{
+  position:fixed;
+  right:0;
+  top: 50%;
+  transform: translateY(-50%);
+  .toogle-fixed{
+    display: none;
+  }
+  li{
+    float: right;
+    clear: both;
+    min-width: 90px;
+    transition: $trans-6m;
+    &:hover{
+      transition: $trans-img;
+      margin-right:10px;
+    }
+    img{
+      display: block;
+      margin:0 auto;
+    }
+    $price: #fdaf49;
+    $promotion: #fdbf6d;
+    $chat: #fecf92;
+    $contact: #fedfb6;
+    $social-colours: $price, $promotion, $chat, $contact;
+    @for $i from 1 through length($social-colours) {
+      &:nth-of-type(#{$i}) a {
+        background: nth($social-colours, $i);
+      }
+    }
+    a{
+      display: block;
+      text-align: center;
+      margin: auto;
+      color: #000;
+      padding: 5px;
+      span{
+        white-space: nowrap;
+      }
+    }
+  }
+
+}
+@media only screen and (max-width: 992px), only screen and (max-device-width: 992px) {
+  .toogle-fixed{
+    display: block !important;
+    width:40px;
+    height:40px;
+    font-size: 20px;
+    background:$yellow;
+    text-align: center;
+    color: #fff;
+    line-height: 37px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -1px 0px 3px #606060;
+    background:$yellow;
+    position: relative;
+    z-index: 9999;
+
+    &.show .fa{
+      transform: rotate(-180deg);
+    }
+  }
+  #menu-right-fixed{
+    top: 30%;
+    transform: translateY(-50%);
+    ul{
+      position: fixed;
+      right: -150px;
+      z-index:999;
+      top: 60px;
+      display: block !important;
+      transition: $trans-menu;
+      &.show {
+        right: 0px;
+        transition: $trans-menu;
+      }
+    }
+
+
+  }
+}
+@media only screen and (max-device-width: 768px) and (orientation: landscape) {
+  #menu-right-fixed{
+    ul img{
+      display: none !important;
+    }
+  }
+}

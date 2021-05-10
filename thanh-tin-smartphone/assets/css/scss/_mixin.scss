@@ -1,0 +1,169 @@
+
+@mixin css3-compatible($atribute, $params) {
+  #{$atribute}: #{$params};
+  -webkit-#{$atribute}: #{$params};
+  -khtml-#{$atribute}: #{$params};
+  -moz-#{$atribute}: #{$params};
+  -ms-#{$atribute}: #{$params};
+  -o-#{$atribute}: #{$params};
+}
+// @include css3-compatible(transition, all 0.3s ease 0s);
+
+@mixin clamp-line ($line...) {
+	display: -webkit-box;
+	-webkit-line-clamp: $line;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+@mixin flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@mixin font-page($font-style...) {
+	font-family: $font-style;
+}
+
+@mixin box-shadow{
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+@mixin absolute-Y{
+	top:50%;
+	transform: translateY(-50%);
+}
+@mixin absolute-X{
+	left:50%;
+	transform: translateX(-50%);
+}
+@mixin absolute-center{
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+@mixin  center{
+  margin-left: auto;
+  margin-right: auto;
+}
+@mixin  a-usual{
+  text-decoration: none;
+  color: black;
+  &:hover,&:focus,&:active {
+    color: $page-color;
+}
+}
+@mixin mid-X{
+	margin-left:50%;
+	transform: translateX(-50%);
+}
+@mixin mid-Y{
+	margin-top:50%;
+	transform: translateY(-50%);
+}
+@mixin buttonpage{
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  &:hover,&:focus,&:active {
+    background-color: $page-color;
+    cursor: pointer;
+  }
+}
+@mixin socialicon{
+  font-size: 17px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid;  
+  border-radius: 50%;
+  text-decoration: none;
+  &:hover,&:active,&:focus{
+      background-color: $page-color;
+  }
+}
+
+@mixin getboder{
+  border: 1px solid $page-color;
+}
+@mixin pageinput{
+  width: 100%;
+  border-radius: 5px;
+  // border: none;
+  border:1px solid #eee;
+  background-color: $bg-color;
+  padding: 10px 20px;
+}
+@mixin editnumber{
+  border-radius: 20px;
+  background-color: $bg-color;
+  width: fit-content;
+  padding: 3px 10px;
+  color: $text-content;
+  i{
+      font-size: 15px;
+      cursor: pointer;
+  }
+  input{
+      border: none;
+      background-color: $bg-color;
+      width: 20px;
+      text-align: center;
+  }
+}
+@mixin button-page($page-color) {
+	&:hover,&:focus,&:active {
+        color:$page-color;
+        border: 1px solid $page-color;
+        border-radius:20px; 
+	}
+}
+
+
+@mixin img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@mixin clear{
+  content : '';
+  display: table;
+  clear: both;
+}
+@mixin fontawesome{
+    font-family: "FontAwesome";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+@mixin text-overflow{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@mixin btn{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}

@@ -1,0 +1,88 @@
+
+/*section news*/
+.section-news-detail{
+    padding:40px 0;
+    .content-news-detail{
+        
+        .content-left{
+            .date-news{
+                margin: 25px 0;
+                list-style-type: none;
+                padding-left:0;
+                li{
+                    padding-right:13px;
+                    border-right:solid 1px #999999; 
+                    color:#999999;
+                    display: inline-block;
+                    &:last-child{
+                        border-right:0;
+                        padding-left:13px;
+                        padding-right:0;
+                    }
+                }
+            }
+            .title-news-detail{
+                font-size: 24px;
+                color:#4e4e4e;
+                font-weight: 700;
+                text-align: left;
+            }
+            
+            h3{
+                font-size: 14px;
+             
+                font-weight: 700;
+            }
+          
+            .section-same-news{
+                margin-top:25px;
+                .title-section{
+                    &:before{
+                        display: none;
+                    }
+                    &:after{
+                        display: none;
+                    }
+                }
+                .owl-carousel{
+                    margin-top:38px;
+                  
+                    .owl-nav{
+                        text-align: center;
+                        position: absolute;
+                        top: 0;
+                        width:100%;
+                        transform: translateY(-20px);
+                        button{
+                            background-color: transparent;
+                            font-size: 14px;
+                            
+                            width:24px;
+                            height: 24px;
+                            &:hover{
+                                background: $bg_hover!important;
+                            }
+                        }
+                        button.owl-prev{
+                            position: absolute;
+                            background:$primary;
+                            color:$w;
+                            left:0;
+                        }
+                        button.owl-next{
+                            position: absolute;
+                            background:$primary;
+                            color:$w;
+                            right:0;
+                        }
+                    }
+                }
+               
+            }
+           
+        }
+   
+       
+    }
+}
+

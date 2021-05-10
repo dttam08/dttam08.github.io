@@ -1,0 +1,38 @@
+.bg-breakcrumb{
+  background-color: $theme-color2;
+  padding:5px;
+}
+.breadcrumb{
+  padding: 0;
+  li{
+    position:relative;
+    display: inline-block;
+    a{
+      color: $text;
+      padding:10px;
+      display: block;
+    }
+    &+li{
+      &:before{
+        content: "\f105";
+        position:absolute;
+        font-family: FontAwesome;
+        font-size: 13px;
+        left: -3px;
+        @include absolute-Y;
+      }
+    }
+    &:last-child{
+      a{
+        color: $theme-color2;
+      }
+    }
+  }
+}
+@media (max-width:768px) {
+  .breakcrumb{
+    li{
+      a{
+        padding:2px 5px;
+      }}}
+}

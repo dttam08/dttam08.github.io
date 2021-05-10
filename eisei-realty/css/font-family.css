@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Harenosora';
+  src: url('font/Harenosora.woff2') format('woff2'),
+       url('font/Harenosora.woff') format('woff'),
+       url('font/Harenosora.otf')  format('truetype');
+}
+@font-face {
+  font-family: 'Bedini';
+  src: url('font/Bedini.eot');
+  src: url('font/Bedini.eot?#iefix') format('embedded-opentype'),
+       url('font/Bedini.woff') format('woff'),
+       url('font/Bedini.ttf')  format('truetype');
+}

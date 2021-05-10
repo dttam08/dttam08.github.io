@@ -1,0 +1,696 @@
+//////////////////////////////////////////
+//Info user 
+/////////////////////////////////////////
+
+.section-info-user{
+    padding: 40px 0;
+    .title-form{
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        
+        margin-bottom:20px;
+    }
+    .div-btn-back{
+        .btn-back{
+            background: $primary!important;
+        
+            transition: $trans;
+            color:$w;
+            &:hover{
+                transition: $trans;
+                opacity: 0.7;
+            }
+            i{
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+        }
+    }
+   
+    /*menu nav vertical info user*/
+    .menu-info-user{
+        background: #f7f7f7;
+      
+        .hide{
+            opacity: 0;
+            visibility: hidden;
+        }
+        .row{
+            padding:35px 0;
+            .image-user{
+                position: relative;
+                left:0;
+                top:0;
+                width:118px;
+                height: 118px;
+                overflow: hidden;
+                img{
+                    max-width: 100%;
+                    height: 100%;
+                }
+                &:before{
+                    position: absolute;
+                    content:'';
+                    width: 100%;
+                    left:0%;
+                    top:0%;    
+                    height: 100%;    
+                    opacity: 0;
+                 
+                    transition: .5s ease;
+                    background: #767676;
+                }
+               
+            
+                &:hover{
+                    cursor: pointer;
+                    img{
+                        transition: $trans;
+                    }
+                    &:before{
+                        opacity: 1;
+                        transition: $trans;
+                    }
+              
+                }
+            
+            }
+
+        }
+        .change-avatar{
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #f1f1f1;
+            background: #fafafc;
+            position: relative;
+            label.avatar-content{
+                color: #252525;
+                cursor: pointer;
+                &:before{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    height: 50px;
+                    transition: all 0.5s ease;
+                    background: rgba(0, 0, 0, 0.3);
+                    transform: translateY(0%);//Muon cho hover thi tranform 100%
+                    content: '\f030';
+                    font-family: "FontAwesome";
+                    -moz-osx-font-smoothing: grayscale;
+                    -webkit-font-smoothing: antialiased;
+                    display: inline-block;
+                    font-style: normal;
+                    font-variant: normal;
+                    text-rendering: auto;
+                    line-height: 1;
+                    font-weight: 600;
+                    text-align: center;
+                    line-height: 50px;
+                    font-size: 35px;
+                    color: #fff;
+                }
+                p{
+                    display: inline-flex;
+                    i{
+                       
+                        font-size: 18px;
+                        margin-left:5px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        
+        }
+        .full-name{
+            text-align: center;
+            padding:10px 0;
+        }
+        .card-body{
+            padding:0;
+            -ms-border-top:solid 4px $primary;
+            -webkit-border-top:solid 4px $primary;
+            -moz-border-top:solid 4px $primary;
+            border-top:solid 4px $primary;
+            .list-group{
+                a{
+                    text-decoration: none;
+                    color:#414141;
+                    display: block;
+                    width:100%;
+                    border:0;
+                    i{
+                        width:15px;
+                        margin-right:5px;
+
+                        vertical-align: inherit;
+                    }
+                    &.active-menu-info-user{
+                        color:$primary!important;
+                        font-weight: 700;
+                    }
+                    &:hover{
+                        color:$primary;
+                        transition: $trans;
+                        font-weight: 700;
+                        background-color: #f4f4f4;
+                    }
+                }
+            }
+           
+        }
+    }
+    /*Profile*/
+    .form-info-user-detail{
+       
+        padding:  45px;
+        background:#f7f7f7;
+        label{
+            font-weight: 700;
+        }
+        .title-form{
+            font-size: 18px;
+            font-weight: 700; 
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .btn-update-info{
+            margin-top:10px;
+            padding:6px 35px;
+            background: $primary;
+          
+            color:$w;
+            text-decoration: none;
+                
+          
+            &:hover{
+                opacity: 0.7;
+                transition: $trans;
+            }
+            
+        }
+    }
+    //Change Pass
+    .form-change-pass{
+        background: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        padding: 45px;
+        form{
+            
+            width:100%;
+            .btn-change-pass{
+                margin-top:10px;
+                padding:6px 35px;
+                background: $primary;
+                    a{
+                        color:$w;
+                        text-decoration: none;
+                        
+                    }
+                    &:hover{
+                        opacity: 0.7;
+                        transition: $trans;
+                    }
+                }
+            }
+    }
+    //History order
+    .section-customer-history{
+        padding:45px 0;
+        background: #f7f7f7;
+      
+            .title-form{
+                font-size: 18px;
+                font-weight: 700;
+                text-align: center;
+                
+                margin-bottom:20px;
+            }
+     
+        table{
+        
+            width: 100% ;
+        
+            text-align: center;
+        
+            tbody{
+               
+                tr{
+                    th{
+                        font-weight: 500;
+                    }
+                    td{
+                        text-align: center;
+                        padding:25px 0;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                        a{
+                            color:#414141;
+                            &:hover{
+                                color:#2164ed;
+                                cursor: pointer;
+                            }
+                        }
+                        &.td-status{
+                        
+                            label{
+                                color:$w;
+                                padding:2px 8px;
+                            
+                                a{
+                                    color:$w!important;
+                                    font-weight: normal;
+                                }
+                                &.badge-delivered{
+                                    background: #00a65a!important;
+                                }
+                                &.badge-being-delivered{
+                                    background:#00c0ef;
+                                }
+                                
+                                &.badge-pending{
+                                    background:#f39c12;
+                                }
+                            }
+                            
+                         
+                            
+                        }
+                    
+                        
+                    }
+                }
+            }
+        }                
+        
+    }
+    //History order on mobile
+    .section-customer-history-mobile  {
+        padding:15px 0;
+        p.title{
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .row{
+            div[class^="col-"]{
+                padding:0;
+                .card{
+                    margin:25px 0;
+                    .list-group{
+                        .list-group-item{
+                            .list-title{
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    .card-footer{
+                        text-align: center;
+                        a.btn-view-detail{
+                            background:$primary;
+                            color:$w;
+                            
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+    // .section-customer-history-mobile  {
+    //     padding:15px 0;
+    //        p.title{
+    //         font-size: 18px;
+    //         font-weight: 500;
+    //     }
+    //     div[class^="col-"]{
+            
+    //         border-top: 1px solid #ebebeb;
+    //         padding:0;
+    //             .thumbnail{
+    //                 margin-bottom: 0;
+    //                 border:0;
+            
+    //             .caption{
+                
+    //                 .id-vs-price-order{
+    //                     list-style: none;
+    //                     li{
+    //                         float: left;
+    //                         width:50%;
+    //                         &:last-child{
+    //                             text-align: right;
+    //                         }
+                            
+    //                     }
+    //                     li.id{
+    //                         font-size: 16px;
+    //                     }
+    //                     li.total-price{
+    //                         font-size: 14px;
+    //                     }
+                       
+    //                 }
+    //                 .status-order{
+    //                     span{
+    //                         font-size: 10px;
+    //                         padding:5px!important;
+    //                     }
+    //                 }
+    //             }
+    //         }    
+    //     }
+   
+    // }
+    //Order detail
+    .order-detail-info{
+        padding:0 15px;
+        .panel-back{
+            padding:15px;
+            background: #fafafa;
+            a{
+                text-decoration: none;
+                color:#666666;
+                &:hover{
+                    font-weight: 700;
+                    color:$primary;
+                }
+            }
+        }
+        .info-user{
+            margin-top:40px;
+            padding:15px;
+            .title-info{
+                font-size: 16px;
+                font-weight: 700;
+            
+            }
+            ul{
+            padding-left:0;
+            }
+        }
+        .order-detail-table{
+            table{
+                
+                 width: 100% ;
+                 padding:15px;
+                 background: #f7f7f7;
+                 text-align: center;
+                thead{
+                    tr{
+                        th{
+                            -ms-border:solid 1px #ebebeb;
+                            -moz-border:solid 1px #ebebeb;
+                            -webkit-border:solid 1px #ebebeb;
+                            border:solid 1px #ebebeb;
+                            
+                            font-family: 700;
+                            font-size: 18px;
+                          
+        
+                        }
+                        
+                    }
+                 }
+                 tbody{
+                    tr{
+                        -ms-border:solid 1px #ebebeb;
+                        -moz-border:solid 1px #ebebeb;
+                        -webkit-border:solid 1px #ebebeb;
+                        border:solid 1px #ebebeb;
+                    background: $w;
+                    td{
+                        -ms-border:solid 1px #ebebeb;
+                        -moz-border:solid 1px #ebebeb;
+                        -webkit-border:solid 1px #ebebeb;
+                        border:solid 1px #ebebeb;
+                        padding:25px 0;
+                        
+                        &.td-name-product{
+                           
+                            border:0;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        
+                            display: -webkit-box;
+                            line-height: 30px;     /* fallback */
+                            max-height:32px;      /* fallback */
+                            -webkit-line-clamp: 1; /* number of lines to show */
+                            -webkit-box-orient: vertical;
+                            -ms-line-clamp: 1; 
+                            -ms-box-orient: vertical;
+                            -moz-line-clamp: 1; 
+                            -moz-box-orient: vertical;
+                            padding:20px 0px;
+                            width:100%;
+                        }
+                        
+                        
+                        a{
+                            color:#414141;
+                            &:hover{
+                                color:#2164ed;
+                            }
+                        }
+                        span{
+                            color:$w;
+                            padding:5px;
+                        }
+                        span.delivered{
+                            background: #00a65a;
+                        }
+                        span.being-delivered{
+                            background:#00c0ef;
+                        }
+                        span.pending{
+                            background:#f39c12;
+                        }
+                        
+                    }
+        
+                    }
+                }
+                tfoot{
+                    tr{
+                        
+                        td{
+                            &:last-child{
+                             
+                                border:solid 1px #ebebeb;
+                            }
+                            &.text-sum-bill{
+                                font-size: 16px;
+                                font-weight: 700;
+                            }
+                            &.sum-bill{
+                                font-size: 30px;
+                                color:$primary;
+                                font-weight: 700;
+                                padding:1px 15px;
+        
+                            }
+                            &.text-footer-table{
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+                         
+                
+            }
+        }
+        .order-content{
+            padding:10px 0;
+        }
+    }
+    //Order detail on mobile
+    .order-detail-table-mobile{
+        .row{
+            div[class^="col-"]{
+                padding:0;
+                .card{
+                    margin:25px 0;
+                    .list-group{
+                        .list-group-item{
+                            .list-title{
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    .card-footer{
+                        text-align: center;
+                        button.btn-view-detail{
+                            background:$primary;
+                            color:$w;
+                            
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+}
+
+
+
+////////////////////////////////////////////
+//User Forgot password
+////////////////////////////////////////////
+.section-form-recovery-pass{  
+        display: flex;
+        justify-content: center;
+        .form-recovery-pass{
+            width: 50%;
+            margin: auto;
+            form{
+                background: #f1f1f1;
+                padding:50px 30px;
+                margin:40px 0;
+                 .title-form{
+                     font-size: 30px;
+                     font-weight: 700;     
+                     text-align: center; 
+                    margin-bottom: 10px;
+                    line-height: 24px;
+                 }
+                 .decription-form{
+                     font-size: 14px;
+               
+                     font-weight: 400;
+                     text-align: center;
+                     margin-bottom:25px;
+                 }
+                label{
+                    font-weight: 700;
+                }
+                 .btn-continue{
+                     padding:10px 35px;
+                     background: $primary;
+                     color:$w;
+                    a{
+                        color:$w;
+                        text-decoration: none;
+                        
+                    }
+                    &:hover{
+                        opacity: 0.7;
+                        transition: $trans;
+                    }
+                 }
+            }
+      
+        } 
+ }
+ 
+/////////////////////////////////////////////
+//Form user type new password
+///////////////////////////////////////////
+.section-form-enter-new-pass{
+  
+        display: flex;
+        justify-content: center;
+        .form-enter-new-pass{
+            width:50%;
+            form{
+                background: #f1f1f1;
+                padding:50px 30px;
+                margin:40px 0;
+                 
+                 .title-form{
+                     font-size: 30px;
+                     font-weight: 700;     
+                     text-align: center; 
+                     margin-bottom:25px;
+                 }
+                 .decription-form{
+                     font-size: 14px;
+                    
+                     font-weight: 400;
+                     text-align: center;
+                     margin-bottom:25px;
+                }
+                i {
+                    color:$primary;
+                }
+                label{
+                    font-weight: 700;
+                }
+                .btn-continue{
+                
+                    background: $primary;
+                    color:$w;
+                    padding:10px 32px;  
+                    a{
+                        color: $w;
+                        text-decoration: none;
+                    }
+                    &:hover{
+                        opacity: 0.7;
+                        transition: $trans;
+                    }
+                }
+            }
+        }
+     
+  
+ }
+@media screen and (max-width:992px) {
+    .section-info-user{
+        .form-info-user-detail{
+            label{
+                font-weight: 700;
+                margin: 10px 0;
+            }
+           
+        }
+        .form-change-pass{
+            background: #f7f7f7;
+            display: flex;
+            padding:25px;
+           
+            justify-content: center;
+       
+        
+        }
+        .sum-order-detail{
+          
+               
+            .list-group{
+                .list-group-item{
+                    .list-title{
+                        font-weight: 700;
+                    }
+                }
+            }
+           
+        }
+    }
+    .section-info-user{
+        .div-btn-back{
+            text-align: center;
+        }
+      
+    }
+    .section-form-recovery-pass{
+       .form-recovery-pass{
+            width: 100%;
+         
+      
+        }
+           
+    }
+    .section-form-enter-new-pass{
+        padding:0 10px;
+        .form-enter-new-pass{
+            width:100%;
+        }
+     }
+}

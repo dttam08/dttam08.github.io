@@ -1,0 +1,80 @@
+.section-form-recovery-pass{
+  
+    .form-recovery-pass{
+        display: flex;
+        justify-content: center;
+        form{
+            background: #f1f1f1;
+            padding:50px 30px;
+            margin:40px 0;
+           
+             width:44%;
+             .title-form{
+                 font-size: 18px;
+                 font-weight:600;
+                 text-align: center; 
+               
+             }
+             .decription-form{
+              
+                 text-align: center;
+                 margin-bottom:25px;
+             }
+            
+             .btn-continue{
+                 padding:10px 35px;
+                 background: $primary;
+                 color:$w;
+                 a{
+                     color:$w;
+                     text-decoration: none;
+                     
+                 }
+                 &:hover{
+                     background: $color_text1;
+                 }
+             }
+        }
+    }
+}
+
+
+ 
+@media screen and (max-width:400px){ 
+    .section-form-recovery-pass{
+
+          .form-recovery-pass{
+
+              form{
+                   width:100%;
+              }
+          }
+      }
+}
+ @media screen and (min-width:401px) and (max-width:768px){
+    .section-form-recovery-pass{
+        
+        .form-recovery-pass{
+
+            form{
+                width:100%;
+            }
+        }
+    }
+      
+}
+ 
+ /*tablet*/
+ @media screen and (min-width:769px) and (max-width:992px) {
+    
+ }
+ /*tablet*/
+ @media screen and (min-width:993px) and (max-width:1024px) {
+    
+ }    
+ 
+ /*Desktop*/
+ @media screen and (min-width:1025px) and (max-width:1920px) {
+   
+ }
+ 

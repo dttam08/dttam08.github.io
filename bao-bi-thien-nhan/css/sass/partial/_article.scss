@@ -1,0 +1,79 @@
+.box-article{
+  transition: $trans;
+  background: #fafafa;
+   margin-bottom: 10px;
+  &:hover{
+  background: #f1f1f1;
+
+   }
+  .article-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    padding-bottom: 30px;
+    DISPLAY: BLOCK;
+    // padding: 10px;
+    transition: $trans;
+
+    .art-img, .art-name, .description, .art-meta{
+      display: block;
+      text-align: left;
+    }
+
+    .art-img {
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transition: $trans;
+        &:hover{
+          transition: $trans;
+          transform: scale(1.2);
+        }
+      }
+    }
+    .art-info{
+
+          padding: 10px;
+      .art-date{
+        padding:10px 0 0 0;
+        color: $text-gray;
+      }
+      .art-name, .description{
+        padding:0;
+        margin:0 0 10px 0;
+      }
+      .art-name{
+        @include clamp-line(2);
+      }
+      .description{
+        @include clamp-line(4);
+        @include font-page($font-normal);
+      }
+      .link-detail{
+        transition: $trans;
+        position: relative;
+        overflow: hidden;
+        float: left;
+        margin-bottom: 15px;
+        &:before{
+            content: "\f061";
+             transition: $trans;
+          font-family: FontAwesome;
+          position: absolute;
+          left: -30px;
+          @include absolute-Y;
+        }
+        &:hover{
+          &:before{
+            left: 10px;
+          }
+          padding-left: 30px;
+          color: $theme-color2;
+        }
+      }
+    }
+  }
+}

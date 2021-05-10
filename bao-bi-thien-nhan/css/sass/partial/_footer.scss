@@ -1,0 +1,168 @@
+
+/*=============================== Footer ==============================>*/
+footer{
+	clear:both;
+	background-color:#252B2E;
+	padding:0 0 30px 0 ;
+	color: rgba(255, 255, 255, 0.74);
+	background: url(../images/bg/bg_footer.jpg);
+	a:hover{
+		color: $blue;
+	}
+	.form-control{
+		color:#fff;
+	}
+	.footer-heading{
+		background-size: 100% 100%;
+		height: 120px;
+		margin-bottom: 30px;
+		text-align: center;
+		-webkit-transform-origin: left center;
+		transform-origin: left center;
+		overflow: hidden;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		background-color: transparent;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center top;
+		position: relative;
+		&:before {
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			width: 110%;
+			left: -5%;
+			height: 100%;
+			border-radius: 300px;
+			border-bottom: 400px solid rgba(115,115,115,0.1);
+			border-left: 0px solid transparent;
+			border-right: 180px solid transparent;
+			border-top: 0px solid transparent;
+			content: "";
+			position: absolute;
+			bottom: 3px;
+			-webkit-box-shadow: 0px 0px 1px #008cf7;
+			box-shadow: 0px 0px 1px #008cf7;
+		}
+		h5 {
+			color:$theme-color;
+			margin-top: 25px;
+			display: inline-block;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			@include font-page($font-bold);
+		}
+		h3 {
+			font-size: 20px;
+			margin: 20px 0 0 0;
+			color: #fff;
+			a{
+				color: #fff;
+				&:hover{
+					color: $theme-color2;
+				}
+			}
+
+		}
+	}
+	.title-footer{
+		position:relative;
+		font-size:18px;
+		color:#fff;
+		margin-bottom:20px;
+		text-transform: uppercase;
+		padding:8px 0;
+		&:before{
+			content: '';
+			position:absolute;
+			height: 1px;
+			width: 120px;
+			background-color: #555;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+		}
+	}
+	.widgets-company{
+		font-size: 14px;
+		li{
+			padding: 5px 0;
+			display: inline-block;
+			width: 100%;
+		}
+		.fa{
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			text-align: center;
+			float: left;
+			color:$theme-color;
+		}
+		.info{
+			color: rgba(255, 255, 255, 0.74);
+		}
+	}
+	.footer-social{
+		li{
+			display: inline-block;
+		}
+	}
+	.widget-calculator{
+		position: relative;
+		width: 100%;
+		background: rgba(115, 115, 115, 0.1);
+		padding: 15px 30px ;
+		border:1px solid rgba(33, 150, 243, 0.28);
+		.name{
+			padding: 15px 0px;
+			font-size: 18px;
+			text-transform: uppercase;
+			color: #fff;
+			&:before {
+				content: "";
+				background-color: #2196f3;
+				width: 10px;
+				display: inline-block;
+				height: 15px;
+				position: absolute;
+				left: 0px;
+			}
+		}
+		form {
+			display: inline-block;
+			width: 100%;
+			margin-top: 15px;
+			.btn{
+				padding: 10px 20px;
+				display: inline-block;
+				background-color: #f3e721;
+				color: #000;
+				text-transform: uppercase;
+				border: none;
+				font-weight: bold;
+				font-size: 12px;
+			}
+			.form-control{
+				background-color: #fff0;
+				border: 1px solid #696969;
+			}
+		}
+	}
+	.copyright{
+		margin-top: 20PX;
+		text-align:center;
+		padding:15px 0 0;
+		border-top: 1px solid #555;
+	}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+
+}
+@media only screen and (max-width: 992px), only screen and (max-device-width: 992px) {
+	.widgets{
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #555;;
+	}
+}

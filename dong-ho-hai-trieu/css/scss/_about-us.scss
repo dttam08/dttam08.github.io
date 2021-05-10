@@ -1,0 +1,91 @@
+
+.section-target{
+    
+    .content-target{
+        margin-top:40px;
+        .title-about-us{
+            padding-bottom: 15px;
+            position: relative;
+            margin-bottom: 25px;
+            font-size: 30px;
+            font-weight: 700;
+            &:after{
+                position: absolute;
+                left:0;
+                bottom:0;
+                content:'';
+                background: $primary;
+                width:60px;
+                height: 5px;
+            }
+        }
+        .target-desc{
+   
+            ul{
+                padding-left:20px;
+                li{
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+.section-intro{
+
+    .content-intro{
+        margin-top:40px;
+        .title-about-us{
+            padding-bottom: 15px;
+            position: relative;
+            margin-bottom: 25px;
+            font-size: 30px;
+            font-weight: 700;
+            &:after{
+                position: absolute;
+                left:0;
+                bottom:0;
+                content:'';
+                background: $primary;
+                width:60px;
+                height: 5px;
+            }
+        }
+        .image-about-us{
+            margin-top:50px;
+        }
+        .intro-desc{
+
+            ul{
+                padding-left: 20px;
+                li{
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+.section-intro-service{
+    .content-intro-service{
+        margin-top:40px;
+        .title-about-us{
+            padding-bottom: 15px;
+            position: relative;
+            margin-bottom: 25px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .intro-service-desc{
+           
+            ul{ 
+                padding-left:20px;
+                li{
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+/*Resposive*/
+

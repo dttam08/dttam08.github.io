@@ -1,0 +1,321 @@
+/*slide slick slide-home*/
+.slide-home{
+  border-bottom: 1px solid #e6e6e6;
+  .slick-slide {
+    position:relative;
+    margin: auto;
+    .info-slide{
+      position:absolute;
+      z-index: 1;
+      top: 50%;
+      -webkit-transform: translateY(-60%);
+      transform: translateY(-60%);
+      .title,  .description {
+        width:90%;
+        color: #fff;
+        text-shadow: 1px 2px 1px #000;
+      }
+      .title{
+        font-size: 60px;
+        @include font-page($font-bold);
+      }
+      .description{
+        font-size: 18px;
+        padding:0;
+        margin:30px 0;
+      }
+      .group{
+        font-size: 40px;
+        color: $text;
+        opacity: 0.7;
+      }
+      .btn{
+        font-size: 20px;
+        padding: 10px 20px 15px;
+      }
+    }
+    &:before{
+      // content: '';
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      background: -webkit-gradient(left top, left bottom, color-stop(56%, transparent), color-stop(85%, rgba(0,0,0,0.66)), color-stop(100%, #000));
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(56%, transparent), color-stop(85%, rgba(0,0,0,0.66)), to(#000));
+      background: linear-gradient(to bottom, transparent 56%, rgba(0,0,0,0.66) 85%, #000 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+    }
+  }
+  .slick-arrow{
+    width:40px;
+    height: 40px;
+    z-index: 10;
+    background-image: url(../vendor/slick/arrows.png);
+    &.slick-next{
+      right:0;
+      background-position: 40px 0;
+    }
+    &.slick-prev{
+      left:0;
+      background-position: 0 0;
+    }
+    &:before {
+      content: "";
+    }
+    &:hover{
+      background: url(../vendor/slick/arrows.png);
+      &.slick-next{
+        background-position: 40px 40px;
+      }
+      &.slick-prev{
+        left:0;
+        background-position: 0 40px;
+      }
+    }
+  }
+  .slick-dots{
+    bottom:100px;
+    @media(max-width: 768px){
+      bottom:5px;
+    }
+    li {
+      button {
+        height: 6px;
+        width: 6px;
+        background: #fff;
+        &:before{
+          content: "";
+        }
+      }
+      &.slick-active{
+        button {
+          background: transparent;
+          border:2px solid #fff;
+        }
+      }
+    }
+  }
+}
+/*product-thumbnails in detail product page*/
+.product-thumbnails{
+  .slider-for{
+    .slick-slide{
+      width: 100%;
+    }
+  }
+  .slider-for .slick-slide{
+    height: 350px;
+    max-height: 700px;
+  }
+  .slider-nav{
+    &:hover{
+      .slick-arrow{
+        &:before{
+          display:block;
+        }
+      }
+    }
+    .slick-slide{
+      height:100px;
+      padding: 4px;
+    }
+    .slick-arrow{
+      z-index:10;
+      top:50%;
+      &:before{
+        color: #fff;
+        display:none;
+      }
+      &.slick-next{
+        right:0;
+      }
+      &.slick-prev{
+        left:0;
+      }
+    }
+
+  }
+}
+.slide-logo{
+  &:hover {
+    .slick-arrow{
+      display:block !important;
+    }
+  }
+  .slick-slide{
+    padding: 20px 0;
+    >a{
+      display: block;
+      background: #fff;
+      margin:10px;
+      box-shadow: $box-shadow;
+      transition:$trans;
+      z-index: 1;
+      &:hover{
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+  }
+  .slick-arrow{
+    z-index: 10;
+    display: none !important;
+    transition: $trans;
+    &:before{
+      color:#a9a9a9;
+    }
+    &.slick-next{
+      right:10px;
+    }
+    &.slick-prev{
+      left:0;
+    }
+
+  }
+}
+
+.slider-certificates{
+  .slick-slide {
+    padding: 10px;
+  }
+  .slick-arrow{
+    z-index: 10;
+    top: -20px;
+    border: 2px solid $theme-color;
+    width: 32px;
+    height: 32px;
+    box-shadow: 1px 2px 0px #bdcdd9;
+    &:hover{
+      border: 2px solid $theme-color2;
+      &:before {
+        color: $theme-color2;
+      }
+    }
+    &:before {
+      // content: "";
+      color: $text;
+      font-size: 22px;
+    }
+    &.slick-prev{
+      right: 50px;
+      left: initial;
+      &:before {
+        content:"\f104";
+        font-family: FontAwesome;
+      }
+    }
+    &.slick-next{
+      right:10px;
+      &:before {
+        content: "\f105";
+        font-family: FontAwesome;
+      }
+    }
+  }
+}
+.slider-articles {
+  .slick-track{
+    display: flex;
+flex-direction: row;
+align-items: unset;
+justify-content: center;
+  }
+  .slick-slide {
+    padding:0 10px;
+    display: flex;
+    height:auto;
+    .box-article .article-item .art-img{
+      width:100%;
+    }
+  }
+  .slick-arrow{
+    z-index: 10;
+    top: -30px;
+    border: 2px solid $theme-color;
+    width: 32px;
+    height: 32px;
+    box-shadow: 1px 2px 0px #bdcdd9;
+    &:hover{
+      border: 2px solid $theme-color2;
+      &:before {
+        color: $theme-color2;
+      }
+    }
+    &:before {
+      // content: "";
+      color: $text;
+      font-size: 22px;
+    }
+    &.slick-prev{
+      right: 50px;
+      left: initial;
+      &:before {
+        content:"\f104";
+        font-family: FontAwesome;
+      }
+    }
+    &.slick-next{
+      right: 10px;
+      &:before {
+        content: "\f105";
+        font-family: FontAwesome;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px), only screen and (max-device-width: 992px)  {
+  /*slide slick slide-home*/
+  .slide-home{
+    .info-slide{
+      .title,.description,.btn{
+        margin-left:5% !important;
+      }
+      .title{
+        font-size: 26px !important;
+      }
+
+      .description{
+        font-size: 14px !important;
+      }
+      .btn{
+        font-size: 14px !important;
+        padding: 5px 10px 8px !important;
+      }
+    }
+
+  }
+  .product-thumbnails  .slider-for .slick-slide, .product-thumbnails .slider-nav .slick-list{
+    height:420px!important;
+  }
+}
+@media only screen and (max-width: 768px), only screen and (max-device-width: 768px)  {
+
+}
+@media only screen and (max-device-width: 420px)  and (orientation : portrait){
+
+}
+@media only screen and (max-width: 420px), only screen and (max-device-width: 420px)  {
+  /*slide slick slide-home*/
+  .slide-home{
+    .info-slide{
+
+      .title{
+        font-size: 18px !important;
+      }
+      .description{
+        font-size: 13px!important;
+        text-shadow: 0px 1px 2px #000;
+        @include clamp-line(3);
+      }
+    }
+
+  }
+
+  .product-thumbnails  .slider-for .slick-slide, .product-thumbnails .slider-nav .slick-list{
+    height:320px!important;
+  }
+
+}

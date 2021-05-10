@@ -179,7 +179,6 @@ body.loaded::before {
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .main-des {
-	max-width: calc(100% - 240px);
 	width: 100%;
 	text-align: center;
 	color: #fff;
@@ -242,12 +241,23 @@ h3 {
 	line-height: 1.4em;
 	margin-bottom: 25px;
 }
+h4{
+	font-size: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	line-height: 1.4em;
+	margin-bottom: 25px;
+}
 .idx-list li {
 	position: relative;
 	margin: 0;
 	letter-spacing: 0.06em;
 	line-height: 2.2em;
 	padding-left: 20px;
+}
+.idx-list{
+	margin-bottom: 30px;
 }
 .idx-list li:nth-child(n + 2) {
 	margin-top: 20px;
@@ -326,7 +336,18 @@ h3 {
 	font-size: 12px;
 	text-align: center;
 }
-section:not(:last-child) {
+section:not(:last-child), .section:not(:last-child) {
 	margin-bottom: 60px;
 }
+section p:last-child, .section p:last-child {
+	margin-bottom: 0;
+}
 
+.idx-list a{
+	transition: all 0.5s ease;
+	color: #fff;
+}
+.idx-list a:hover{
+	transition: all 0.5s ease;
+	text-decoration: underline;
+}

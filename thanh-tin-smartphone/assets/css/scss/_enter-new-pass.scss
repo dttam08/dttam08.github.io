@@ -1,0 +1,79 @@
+.section-form-enter-new-pass{
+    .form-enter-new-pass{
+        background: #f1f1f1;
+        padding:50px 30px;
+        margin:40px 0;
+        width:44%;
+        form{
+          
+            .title-form{
+                font-size: 18px;
+                font-weight:600;
+                text-align: center; 
+            
+            }
+            .decription-form{
+            
+                margin-bottom:25px;
+            }
+            label{
+                font-weight: 700;
+            }
+            input{
+                padding: 0.7rem 0.75rem;
+            }
+            .btn-continue{
+                padding:10px 35px;
+                background: $primary;
+                a{
+                    color:$w;
+                    text-decoration: none;
+                    
+                }
+                &:hover{
+                    background: $color_text1;
+                }
+            }
+        }
+    }
+ }
+ 
+ @media screen and (max-width:400px){ 
+    .section-form-enter-new-pass{
+        .form-enter-new-pass{
+            background: #f1f1f1;
+            padding:50px 30px;
+            margin:40px 0;
+            width:100%;
+         
+        }
+    }
+}
+ @media screen and (min-width:401px) and (max-width:768px){
+    .section-form-enter-new-pass{
+        .form-enter-new-pass{
+            background: #f1f1f1;
+            padding:50px 30px;
+            margin:40px 0;
+            width:100%;
+         
+        }
+    }
+}
+ 
+ /*tablet*/
+ @media screen and (min-width:769px) and (max-width:992px) {
+  
+ }
+ /*tablet*/
+ @media screen and (min-width:993px) and (max-width:1024px) {
+
+ }    
+ 
+ /*Desktop*/
+ @media screen and (min-width:1025px) and (max-width:1920px) {
+   
+ }
+ 
+
+ 

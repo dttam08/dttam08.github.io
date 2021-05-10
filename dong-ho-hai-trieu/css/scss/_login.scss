@@ -1,0 +1,151 @@
+
+.section-form-login{
+    form{
+        background: #f1f1f1;
+        padding:50px 30px;
+        margin:40px 0;
+         width:44%;
+         .title-form{
+             font-size: 30px;
+             font-weight: 700;     
+             text-align: center; 
+           
+         }
+      
+        .link-forget-pass{
+            float:right;
+            color:$primary;
+        }
+        label{
+            font-weight: 500;
+        }
+        input{
+            padding: 0.7rem 0.75rem;
+        }
+        .form-check{
+            padding-left:0;
+            label{
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 14px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 20px;
+                    width: 20px;
+                    background-color: transparent;
+                    border:solid 1px $color_01;
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        left: 6px;
+                        top: 2px;
+                        width: 5px;
+                        height: 10px;
+                        border: solid $w;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                        display: none;
+                        }
+                }
+                input[type='checkbox']{
+                    margin-right: 5px;
+                    margin-top:5px;
+                    vertical-align: middle;
+                    margin-top:-4px;
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+               
+                    &:checked{
+                        &~.checkmark {
+                            background-color: $primary;
+                            &:after{
+                                display: block;
+                            }
+                        }
+                    }
+                  
+                }
+            }
+        }
+       
+        .btn-login{
+             padding:10px 35px;
+             background: $primary;
+            a{
+                color:$w;
+                text-decoration: none;
+                
+            }
+            &:hover{
+               transition: $trans;
+               opacity: 0.7;
+            }
+         }
+    }
+}
+ 
+@media screen and (max-width:400px){ 
+    .section-form-login{
+        form{
+            background: #f1f1f1;
+            padding:50px 30px;
+            margin:40px 0;
+            width:100%;   
+            .form-check{
+                padding-left:0;
+                label{
+                    white-space: nowrap;
+                    padding-left:25px;
+                }
+            }  
+        }
+    }     
+}
+ @media screen and (min-width:401px) and (max-width:768px){
+    .section-form-login{
+        form{
+             background: #f1f1f1;
+             padding:50px 30px;
+             margin:40px 0;
+              width:100%;   
+             
+        }
+    }
+      
+}
+ 
+ /*tablet*/
+ @media screen and (min-width:769px) and (max-width:992px) {
+    
+ }
+ /*tablet*/
+ @media screen and (min-width:993px) and (max-width:1024px) {
+     .section-form-login{
+         form{
+            background: #f1f1f1;
+            padding:50px 30px;
+            margin:40px 0;
+            width:100%;
+        }
+    }
+ }    
+ 
+ /*Desktop*/
+ @media screen and (min-width:1025px) and (max-width:1920px) {
+   
+ }
+ 

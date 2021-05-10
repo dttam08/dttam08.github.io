@@ -1,0 +1,158 @@
+
+/*Footer*/
+footer{
+    font-size: 13px;
+   
+    border-top:solid 2px $w;
+   
+    /*Footer 1*/
+    .footer-1{
+      
+        background: $bg_footer;
+        padding:50px 0;
+        .title-footer{
+            color:$color_01;
+            font-weight: 700;
+        }
+        /*Cột 1 footer 1*/
+        .col-1-footer-1{
+            p.col-1-p-1{
+                color:$text_menu_footer;
+                margin-bottom: unset;
+                margin-top:20px;
+                .fa-phone-square{
+                    -ms-transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
+                    -webkit-transform: rotate(90deg);
+                    transform: rotate(90deg);
+                    -moz-transform: rotate(90deg);
+                }
+            }
+            .social-link-icon{
+                margin-top:25px;
+                .list-group-social{
+                    button{
+                        padding:8px;
+                        color:$w;
+                        margin-right: 5px;
+                        width: 25px;
+                        height: 25px;
+                        i{
+                            position: absolute;
+                          
+                            margin-top:-6px;
+                            font-size: 14px;
+                        }
+                        &:first-child{
+                            &:hover{
+                                background: #668cdf;
+                            }
+                            i{
+                                margin-left:-3px;
+                            }
+                        }
+                        &:last-child{
+                            &:hover{
+                                background: #e67268;
+                            }
+                            margin-right: 0;
+                            i{
+                                margin-left: -8px;
+                            }
+                        }
+                    }
+                    button.btn-icon-fb{
+                        background: #44619f;
+                    }
+                    button.btn-icon-gg{
+                        background: #e33729;
+                    }
+                   
+                    
+                }
+            }   
+            .img-bo-cong-thuong{
+                margin-top:15px;
+              
+            }
+           
+        }
+        /*Cột 2 footer 1*/
+        .col-2-footer-1{
+            .content-col-2-footer-1{
+                margin-top:25px;
+                div{
+                    a{
+                        color:$text_menu_footer;
+                        display: block;
+                        line-height:30px;
+                        font-weight: 400;
+                        text-decoration: none;
+                        transition: $trans;
+                    }
+                    &:hover{
+                        a{
+                            transition: $trans;
+                            padding-left:5px;
+                            color:$primary;
+                        }
+                    }
+                }
+            }
+        }
+        /*Cột 3 footer 1*/
+        .col-3-footer-1{
+            .content-col-3-footer-1{
+                margin-top:25px;
+                div{
+                    a{
+                        color:$text_menu_footer;
+                        display: block;
+                        line-height:30px;
+                        font-weight: 400;
+                        text-decoration: none;
+                        transition: $trans;
+                    }
+                    &:hover{
+                    
+                        a{
+                            transition: $trans;
+                            padding-left:5px;
+                            color:$primary;
+                        }
+                    
+                    }
+                }
+            }
+        }
+       
+    }
+    //Footer 2
+    .footer-2{
+        text-align: center;
+        background: $primary;
+        color:$w;
+        padding:15px 0;
+        a{
+            color:$w;
+            text-decoration: none;
+            &:hover{
+                font-weight: bold;
+                transition: $trans;
+            }
+        }
+       
+        
+    }
+}
+@media screen and (max-width:768px){
+    footer{
+        .footer-1{
+            .row{
+                div[class^='col-']{
+                    padding:10px 15px ;
+                }
+            }
+        }
+    }
+}

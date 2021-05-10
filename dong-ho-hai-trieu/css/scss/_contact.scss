@@ -1,0 +1,146 @@
+
+/*section-subscribe-contacts*/
+.section-info-contact{
+    padding:40px 0;
+    .content-info-contact{
+        .title-contact{
+            padding-bottom: 15px;
+            position: relative;
+            margin-bottom: 25px;
+            font-weight: 700;
+            &:after{
+                position: absolute;
+                left:0;
+                bottom:0;
+                content:'';
+                background: $primary;
+                width:60px;
+                height: 5px;
+            }
+        }
+        .list-group{
+            .list-group-item{
+                border:0;
+                padding-left:0;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                    button{
+                        -ms-border: solid 1px #eeeeee;
+                        -o-border: solid 1px #eeeeee;
+                        -moz-border: solid 1px #eeeeee;
+                        -webkit-border: solid 1px #eeeeee;
+                        border: solid 1px #eeeeee;
+                        background: transparent;
+                        margin-right:10px;
+                        i{
+                            color:$primary;
+                            &.fa-phone{
+                                -ms-transform: rotate(90deg);
+                                -o-transform: rotate(90deg);
+                                -moz-transform: rotate(90deg);
+                                -webkit-transform: rotate(90deg);
+                                transform: rotate(90deg);
+                                
+                            }
+                        }
+                    }
+                }
+           
+        }
+    }
+}
+.section-subscribe-contact{
+    .content-subscribe-contact{
+        -ms-border: solid 1px #eeeeee;
+        -o-border: solid 1px #eeeeee;
+        -moz-border: solid 1px #eeeeee;
+        -webkit-border: solid 1px #eeeeee;
+        border: solid 1px #eeeeee;
+        padding:25px;
+        .title-contact{
+            font-size: 22px;
+            font-weight: 500;
+
+            color:#222222;
+        }
+        .description{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            margin-top:15px;
+
+        }
+        form{
+            margin-top:15px;
+            div.form-group{
+                width:100%;
+                input.form-control{
+                    -webkit-border-radius: 50px;
+                    -moz-border-radius: 50px;
+                    border-radius: 50px;
+                    line-height: 45px;
+                    width:100%;
+                }
+                button{
+                    position: absolute;
+                    right:5%;
+                    background: transparent;
+                    color:#222222;
+                    &:hover{
+                        color:$primary;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .work-time{
+            padding-left: 20px;
+            list-style: none;
+            li{
+                &:before {
+                content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                color: #dddddd; /* Change the color */
+                font-weight: bold; /* If you want it to be bold */
+                display: inline-block; /* Needed to add space between the bullet and the text */ 
+                width: 1em; /* Also needed for space (tweak if needed) */
+                margin-left: -1em; /* Also needed for space (tweak if needed) */
+                font-size: 15px;
+              
+                }
+            }    
+        }
+    }
+}
+.google-map{
+    margin-top:65px;
+}
+@media screen and (max-width:400px){
+    .section-subscribe-contact{
+        .content-subscribe-contact{
+            form{
+                margin-top:15px;
+                div.form-group{
+                    width:100%;
+                    input.form-control{
+                       
+                        border-radius: unset;
+                        line-height: 45px;
+                        width:100%;
+                    }
+                    button{
+                        top:10px;
+                        position: relative;
+                        right:unset;
+                        background: $primary;
+                        color:$w;
+                        &:hover{
+                            color:$w;
+                            background: $bg_hover;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+          
+        }
+    }
+}

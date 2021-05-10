@@ -1,0 +1,388 @@
+.section-check-out{
+    padding:40px 0;
+    .left-content{
+        .left-content-item{
+            &:first-child{
+                border:0;
+                padding-top:0;
+            }
+        
+            border-top:solid 2px #e9e9e9; 
+            padding:30px 0;
+            .title-checkout{
+                h5{
+                    font-size: 20px;
+                    font-weight:600;
+                   i{
+                        position: absolute;
+                        right:2%;
+                    }
+                }
+            }
+            .radio-info-customer-checkout{
+                padding-left:0;
+                list-style: none;
+                label{
+                    display: block;
+                    margin:15px 0;
+                    
+                    
+                    position: relative;
+                    padding-left: 35px;
+                    cursor: pointer;
+                    input {
+                        height: 1px;
+                        width: 1px;
+                        opacity: 0;
+                    }
+                    input:checked + .outside .inside {
+                        -webkit-animation: radio-select 0.1s linear;
+                        animation: radio-select 0.1s linear;
+                        -webkit-transform: scale(1, 1);
+                        transform: scale(1, 1);
+                    }
+                    .outside {
+                        display: inline-block;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        margin-top: -10px;
+                        width: 20px;
+                        height: 20px;
+                        border: 2px solid #c2c2c2;
+                        border-radius: 50%;
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                        background: none;
+                        .inside {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            -webkit-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
+                            display: inline-block;
+                            border-radius: 50%;
+                            width: 10px;
+                            height: 10px;
+                            background: $primary;
+                            left: 3px;
+                            top: 3px;
+                            -webkit-transform: scale(0, 0);
+                            transform: scale(0, 0);
+                        }
+                        .no-transforms .inside {
+                            left: auto;
+                            top: auto;
+                            width: 0;
+                            height: 0;
+                        }
+                        .no-transforms input:checked + .outside .inside {
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+          
+            .radio-login-content{
+                display: none;
+                form{
+                    button{
+                        color:$w;
+                        background: $primary;
+                        padding:10px 20px;
+                        &:hover{
+                            background: $color_01;
+                            transition: $trans;
+                        }
+                    }
+                }
+            }
+            .radio-create-account-content{
+                form{
+                    button{
+                        color:$w;
+                        background: $primary;
+                        padding:10px 20px;
+                        &:hover{
+                            background: $color_01;
+                            transition: $trans;
+                        }
+                    }
+                }
+            }
+           
+            .info-form-delivery{
+                form{
+                    .form-check{
+                        padding-left:0;
+                        label{
+                            display: block;
+                            position: relative;
+                            padding-left: 35px;
+                            margin-bottom: 12px;
+                            cursor: pointer;
+                            font-size: 14px;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            .checkmark {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 20px;
+                                width: 20px;
+                                background-color: transparent;
+                                border:solid 1px $color_01;
+                                &:after {
+                                    position: absolute;
+                                    content: '';
+                                    left: 6px;
+                                    top: 2px;
+                                    width: 5px;
+                                    height: 10px;
+                                    border: solid $w;
+                                    border-width: 0 3px 3px 0;
+                                    -webkit-transform: rotate(45deg);
+                                    -ms-transform: rotate(45deg);
+                                    transform: rotate(45deg);
+                                    display: none;
+                                    }
+                            }
+                            input[type='checkbox']{
+                                margin-right: 5px;
+                                margin-top:5px;
+                                vertical-align: middle;
+                                margin-top:-4px;
+                                position: absolute;
+                                opacity: 0;
+                                cursor: pointer;
+                                height: 0;
+                                width: 0;
+                           
+                                &:checked{
+                                    &~.checkmark {
+                                        background-color: $primary;
+                                        &:after{
+                                            display: block;
+                                        }
+                                    }
+                                }
+                              
+                            }
+                        }
+                    }
+                    textarea{
+                        width:100%;
+                        padding:10px;
+                        border: 1px solid #ced4da;
+                    }
+                   
+                }
+            }
+            .radio-payment{
+                padding-left:0;
+                list-style: none;
+                label{
+                    display: block;
+                    margin:15px 0;
+                    
+                    
+                    position: relative;
+                    padding-left: 35px;
+                    cursor: pointer;
+                    input {
+                        height: 1px;
+                        width: 1px;
+                        opacity: 0;
+                    }
+                    input:checked + .outside .inside {
+                        -webkit-animation: radio-select 0.1s linear;
+                        animation: radio-select 0.1s linear;
+                        -webkit-transform: scale(1, 1);
+                        transform: scale(1, 1);
+                    }
+                    .outside {
+                        display: inline-block;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        margin-top: -10px;
+                        width: 20px;
+                        height: 20px;
+                        border: 2px solid #c2c2c2;
+                        border-radius: 50%;
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                        background: none;
+                        .inside {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            -webkit-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
+                            display: inline-block;
+                            border-radius: 50%;
+                            width: 10px;
+                            height: 10px;
+                            background: $primary;
+                            left: 3px;
+                            top: 3px;
+                            -webkit-transform: scale(0, 0);
+                            transform: scale(0, 0);
+                        }
+                        .no-transforms .inside {
+                            left: auto;
+                            top: auto;
+                            width: 0;
+                            height: 0;
+                        }
+                        .no-transforms input:checked + .outside .inside {
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right-content{
+        .title-checkout{
+            h5{
+                font-size: 20px;
+                font-weight: 700;
+                font-weight:600;
+            }
+        }
+        table{
+            tbody{
+                tr{
+                    &.tr-form{
+                     
+                      
+                       td{
+                      
+                        border-top:1px solid #dee2e6;
+                     
+                        border-bottom:1px solid #dee2e6;
+                            form{
+                                input{
+                                    width:100%;
+                                    line-height: 30px;
+                                }
+                                button{
+                                    position: absolute;
+                                    right:15px;
+                                    color:$w;
+                                    transition: $trans;
+                                    background: $primary;
+                                    padding:10px 20px;
+                                    &:hover{
+                                        opacity: 0.7;
+                                        transition: $trans;
+                                    } 
+                                }
+                            }
+                        }
+                    }
+                    td{
+                        border:0;
+                      
+                    }
+                  
+                }
+            }
+            tfoot{
+                tr{
+                    td{
+                        text-align: right;
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .btn-payment{
+           
+            color:$w;
+            background: $primary;
+            padding:10px ;
+            width:100%;
+            transition: $trans;
+            border-radius: 40px;
+            &:hover{
+                opacity: 0.7;
+                transition: $trans;
+            }
+        }
+        //Mobile
+        .checkout-table-mobile{
+            .thumbnail{
+                margin-bottom: 20px;
+                p.product-name{
+                color: #313131;
+                }
+            }
+            .coupon-mobile{
+                margin:15px 0;
+                .input-group{
+                    width:100%;
+                    text-align: center;
+                    input{
+                        padding:22px 15px;
+                        height: 25px;
+                    }
+                    button{
+                        background: $primary;
+                        width:auto;
+                        color:$w;
+                     
+                        padding:10px 22px;
+                    }
+                }
+            }
+            .order-button-payment{
+                text-align: center;
+                button{
+                    background: $primary;
+                    width:auto;
+                    color:$w;
+                    margin:15px 0;
+                    padding:10px 22px;
+                }
+            }
+        }
+    }
+  
+
+}
+
+ 
+@media screen and (max-width:768px){ 
+    .section-check-out{
+        padding:40px 0;
+        .left-content{
+            .left-content-item{
+                .radio-create-account-content{
+                    .emailRegister{
+                        margin-bottom: 1rem;
+                    }
+                }
+                .info-form-delivery{
+                    form{
+                        .emailCustomer,.provinceCustomer{
+                            margin-bottom: 1rem;
+                        }
+                        
+                    }
+                }
+            }
+        }
+       
+    }
+    
+}
+
+ 

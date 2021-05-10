@@ -1,0 +1,168 @@
+
+/*Footer*/
+footer{
+    margin-top:30px;
+    /*Footer 1*/
+    .footer-1{  
+        background: $bg_footer;
+        padding:21px 0px 0px 0px;
+         color:$color_text;
+      
+        /*Cột 1 footer 1*/
+        .col-1-footer-1{
+            .logo-footer{
+                position: relative;
+                overflow: hidden;
+                max-width: 65%;
+            }
+            .info-summary{
+                padding-left:0;
+                margin-top:25px;
+                .media{
+                    i{
+                        color:#999999;
+                    }
+                    .fa-phone{
+                        -ms-transform: rotate(90deg);
+                        -o-transform: rotate(90deg);
+                        -webkit-transform: rotate(90deg);
+                        transform: rotate(90deg);
+                        -moz-transform: rotate(90deg);
+                    }
+                    .media-body{
+                        color:#505050;;
+                        margin-bottom: unset;
+                        padding-right: 90px;
+                      
+                    }
+                }
+            }     
+        }
+        /*Cột 2 footer 1*/
+        .col-2-footer-1{
+            margin-top:30px;
+            .content-col-2-footer-1{
+                margin-top:30px;
+                div{
+                    a{
+                        display: block;
+                        line-height:30px;  
+                        color:$color_text;
+                        text-decoration: none;
+                        transition: $trans;
+                        &:hover{
+                              
+                            font-weight: 700;
+                            color:$primary;
+                            transition: $trans;
+                            padding-left:15px;
+                           
+                        }
+                    }
+                    
+                }
+            }
+        }
+        /*Cột 3 footer 1*/
+        .col-3-footer-1{
+            margin-top:30px;
+            .content-col-3-footer-1{
+                margin-top:30px;
+                div{
+                    a{
+                        display: block;
+                        line-height:30px;  
+                        color:$color_text;
+                        text-decoration: none;
+                        transition: $trans;
+                        &:hover{
+                              
+                            font-weight: 700;
+                            color:$primary;
+                            transition: $trans;
+                            padding-left:15px;
+                           
+                        }
+                    }
+                    img{
+                        margin-left: -10px;
+                    }
+                }
+            }
+        }
+       
+    }
+    .footer-2{
+        text-align: center;
+        background: $bg_footer_bottom;
+        color:$w;
+        padding:22px 0;
+       
+        a{
+            color:$primary;
+            text-decoration: none;
+            &:hover{
+                font-weight: bold;
+                -webkit-transition: all 0.8s ease-out;
+                -ms-transition: all 0.8s ease-out;
+                -moz-transition: all 0.8s ease-out;
+                -o-transition: all 0.8s ease-out;
+                transition: $trans;
+                color:#f75b5b;
+            }
+        } 
+    }
+}
+/*Resposive*/
+
+/*Mobile */
+@media screen and (max-width:400px){
+    
+    /*Footer*/
+    footer{
+        /*Footer 1*/
+        .footer-1{  
+           padding:16px 0;
+        }
+    }
+}
+@media screen and (min-width:401px) and (max-width:768px){
+    /*Footer*/
+    footer{
+        /*Footer 1*/
+        .footer-1{  
+           padding:16px 0;
+        }
+    }
+}
+/*tablet*/
+@media screen and (min-width:769px) and (max-width:992px) {
+ 
+    /*Footer*/
+    footer{
+        /*Footer 1*/
+        .footer-1{  
+           padding:16px 0;
+        }
+    }
+}
+
+@media screen  and (max-width:992px) {
+     /*Footer*/
+    footer{ 
+    /*Footer 1*/
+        .footer-1{  
+            /*Cột 1 footer 1*/
+            .col-1-footer-1{
+                .info-summary{
+                    .media{
+                        .media-body{
+                            padding-right: unset;
+                        }
+                    }
+                }     
+            }
+        
+        }
+    }   
+}
