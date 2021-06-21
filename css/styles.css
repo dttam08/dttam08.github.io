@@ -351,3 +351,10 @@ section p:last-child, .section p:last-child {
 	transition: all 0.5s ease;
 	text-decoration: underline;
 }
+.ref_list a{
+	color: #fff;
+	text-decoration: underline;
+}
+.ref_list li{
+	margin-bottom: 20px;
+}
