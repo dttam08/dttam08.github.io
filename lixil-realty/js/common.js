@@ -68,27 +68,30 @@ $(function () {
             $('.over').mouseenter(function(){
 				if($(this).hasClass('flag')){
 					return false;
-				} else {
-					$(this).find('.sub-menu').stop().slideDown();
+                } 
+                else {
+                    $(this).find('.wrap-sub-menu').stop().slideDown();
+                    $(this).addClass('show');
 				}
 			});
 			$('.over').mouseleave(function(){
 				if($(this).hasClass('flag')){
 					return false;
 				} else {
-					$(this).find('.sub-menu').stop().slideUp();
+                    $(this).find('.wrap-sub-menu').stop().slideUp();
+                    $(this).removeClass('show');
 				}
             });
             $('.over').click(function(){
 				if($(this).hasClass('flag')){
 					if($(this).hasClass('active')){
-						$('.sub-menu').stop().slideUp();
+                        $('.wrap-sub-menu').stop().slideUp();
 						$(this).removeClass('active');
 					} else {
 						$('.over').removeClass('active');
-						$('.sub-menu').stop().slideUp();
-						$(this).addClass('active');
-						$(this).find('.sub-menu').stop().slideToggle();
+						$('.wrap-sub-menu').stop().slideUp();
+                        $(this).toggleClass('active');
+						$(this).find('.wrap-sub-menu').stop().slideToggle();
 					}
 				}
 			});
@@ -96,7 +99,7 @@ $(function () {
                 if ($(this).hasClass('active')) {
                     $('.menu-icon').removeClass('active');
                     $('.gnavi-ctn').slideUp();
-                    $('.sub-menu').stop().slideUp();
+                    $('.wrap-sub-menu').stop().slideUp();
                     $('.over').removeClass('active');
                 } else {
                     $(this).toggleClass('active');
@@ -117,6 +120,9 @@ $(function () {
                         $('.gnavi-ctn').css({"top":headerH,"height":"100%"});
                     }
                 }
+                else{
+                    $('.gnavi-ctn').removeAttr('style');
+                }
             });
       
             $(window).bind("load resize", function () {
@@ -125,12 +131,12 @@ $(function () {
                     $(".menu-icon").removeClass('active')
                     $('.over').removeClass('flag');
                     $('.over').removeClass('active');
-                    $('.sub-menu').removeAttr('style');
+                    $('.wrap-sub-menu').removeAttr('style');
 
                 } else {
                     $('.over').addClass('flag');
-                    $('.over').removeClass('active');
-                    $('.sub-menu').removeAttr('style');
+                    $('.gnavi-menu>li').removeClass('mega');
+    
    				}
             });
          
