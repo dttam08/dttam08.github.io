@@ -1,0 +1,147 @@
+
+
+.pc{
+    display: block;
+}
+.sp{
+    display: none;
+}
+.no1_wrap{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.no1_wrap .img{
+    width: 100%;
+    text-align: center;
+}
+.no1_wrap .img img{
+    max-width: 100%;
+    height: auto;
+}
+.no1_grp_txt span{
+    display: inline-block;
+}
+.no1_grp_txt span:first-child{
+    width: 80px;
+    flex-shrink: 0;
+}
+
+.no1_grp_txt {
+    width: 100%;
+    margin: 40px auto;
+}
+.no1_grp_txt p {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 1.8em;
+    font-weight: bold;
+}
+.under .no1_h3{
+    color: #333;
+    border-bottom: 0;
+    padding: 0;
+    margin: 0 0 30px;
+}
+.under .no1_h3 .txt_red{
+    font-size: 25px;
+}
+.under .no1_h4{
+    color: #1588c4;
+    font-weight: bold;
+    background: none;
+    padding: 0;
+    text-align: center;
+    border-bottom: 1px solid #1588c4;
+    padding: 0 0 15px;
+    margin: 0 0 30px;
+}
+.no1_wrap_h5{
+    display: flex;
+    align-items: center;
+    margin: 0 0 30px 0;
+}
+.under .no1_h5{
+    position: relative;
+    text-align: left;
+    line-height: 1.3em;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 0;
+    background: #1588c4;
+    padding: 11px 15px 9px;
+    flex-grow: 1;
+}
+.no1_wrap_h5 .num{
+    color: #333;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 1.5em;
+    padding: 7px 10px 5px;
+}
+
+.no1_frame{
+    border: solid 2px #333;
+    padding: 20px 30px;
+    text-align: center;
+}
+.no1_frame p:last-child{
+    margin-bottom: 0;
+}
+.no1_frame .des{
+    font-weight: bold;
+}
+.no1_frame .des a{
+   color: #1588c4;
+   text-decoration: none;
+}
+.no1_frame .des a:hover{
+    text-decoration: underline;
+}
+@media screen and (min-width: 641px) and (max-width:1500px){
+    .no1_grp_txt span:first-child {
+        width: 90px;
+    }
+}
+@media screen and (max-width: 640px){
+    .no1_grp_txt p , .no1_grp_txt span{
+        font-size: 14px;
+    }
+    .under .no1_h4{
+        font-size: 20px;
+    }
+    .under .no1_h5{
+        padding: 8px 10px;
+    }
+    .no1_wrap_h5 .num{
+        font-size: 23px;
+    }
+    .no1_wrap{
+        max-width: 80%;
+    }
+    .sp{
+        display: block;
+    }
+}
+@media screen and (max-width: 475px){
+
+    .no1_frame{
+        padding: 20px 15px;
+    }
+}
+@media screen and (max-width: 375px){
+    .under .no1_h5{
+        font-size: 17px;
+    }
+    .no1_wrap{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 320px)
+{
+    .no1_frame .des{
+        font-size: 13px;
+    }
+}
