@@ -1,0 +1,43 @@
+@media screen and (max-width: 640px){
+    h1, h2, h3, h4, h5, h6, input, button, textarea, select, p, blockquote, th, td, pre, address, li, dt, dd {
+	    font-size: 140%;
+	}
+	#wrapper {
+		min-width: 100%;
+	}
+	.container {
+		width: 100%;
+		padding: 0 3%;
+    }
+    #index .tbl-scroll,#index .img-scroll {
+		overflow-x: scroll;
+	}
+	#index  .tbl-scroll > table, .img-scroll img {
+		min-width: 750px;
+	}
+	#index .tbl-scroll > table > table {
+		min-width: 100%;
+	}
+	.sp {
+		display: block !important;
+	}
+	.pc {
+		display: none !important;
+	}
+    .box02-menu-tab{
+		flex-wrap: wrap;
+    }
+    .box02-tab-ctn{
+        padding: 0;
+    }
+	.box02-menu-tab li{
+		width: 50%;
+		margin: 0;
+	}
+	.box02-menu-tab li a.active{
+		padding: 15px 10px;
+	}
+	.box02-menu-tab li a.active::after{
+		bottom: 8px;
+	}
+}

@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=-100%, user-scalable=yes" />
+		<meta name="format-detection" content="telephone=no">
+		<title>Jquery custom mCustomScrollbar</title>
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	</head>
+	<body id="index">
+		<div id="wrapper">
+			<main id="main">
+				<div id="box02">
+					<div class="container">
+						<p class="ttl" data-in-effect="rollIn">Tab + mCustomScrollbar + Textillate</p>	
+						<div class="box02-ctn">
+                            <ul class="box02-menu-tab clearfix">
+								<li class="menu-tab-item"><a class="active" data-tab="box02-tab-ctn01">浜名中学校</a></li>
+								<li class="menu-tab-item"><a data-tab="box02-tab-ctn02">北浜中学校</a></li>
+								<li class="menu-tab-item"><a data-tab="box02-tab-ctn03">浜北中学校</a></li>
+								<li class="menu-tab-item"><a data-tab="box02-tab-ctn04">麁玉中学校</a></li>
+								<li class="menu-tab-item"><a data-tab="box02-tab-ctn05">北浜東部中学校</a></li>
+							</ul>
+							<div class="box02-tab-ctn">
+								<div id="box02-tab-ctn01" class="tab-ctn show">
+									<p class="sp note">※表は左右にスクロールして確認することができます。</p>
+									<div class="idx-tbl tbl-scroll">
+									<table>
+										<tr>
+											<th>物件種目</th>
+											<th>売却価格</th>
+											<th>土地面積</th>
+											<th>建物専有面積</th>
+											<th>売却時期</th>
+										</tr>
+										<tr>
+											<td>戸建</td>
+											<td>0,000万円台</td>
+											<td>000.00m<sup>2</sup></td>
+											<td>000.00m<sup>2</sup></td>
+											<td>0000年00月</td>
+										</tr>
+										<tr>
+											<td>マンション</td>
+											<td>0,000万円台</td>
+											<td>000.00m<sup>2</sup></td>
+											<td>000.00m<sup>2</sup></td>
+											<td>0000年00月</td>
+										</tr>
+										<tr>
+											<td>戸建</td>
+											<td>0,000万円台</td>
+											<td>000.00m<sup>2</sup></td>
+											<td>000.00m<sup>2</sup></td>
+											<td>0000年00月</td>
+										</tr>
+										<tr>
+											<td>マンション</td>
+											<td>0,000万円台</td>
+											<td>000.00m<sup>2</sup></td>
+											<td>000.00m<sup>2</sup></td>
+											<td>0000年00月</td>
+										</tr>
+										<tr>
+											<td>戸建</td>
+											<td>0,000万円台</td>
+											<td>000.00m<sup>2</sup></td>
+											<td>000.00m<sup>2</sup></td>
+											<td>0000年00月</td>
+										</tr>
+										<tr>
+											<td>マンション</td>
+											<td>0,000万円台</td>
+											<td>000.00m<sup>2</sup></td>
+											<td>000.00m<sup>2</sup></td>
+											<td>0000年00月</td>
+										</tr>
+										<tr>
+											<td>戸建</td>
+											<td>0,000万円台</td>
+											<td>000.00m<sup>2</sup></td>
+											<td>000.00m<sup>2</sup></td>
+											<td>0000年00月</td>
+										</tr>
+										<tr>
+											<td>マンション</td>
+											<td>0,000万円台</td>
+											<td>000.00m<sup>2</sup></td>
+											<td>000.00m<sup>2</sup></td>
+											<td>0000年00月</td>
+										</tr>
+									</table>
+									</div>
+								</div>
+								<div id="box02-tab-ctn02" class="tab-ctn">
+									<p class="sp note">※表は左右にスクロールして確認することができます。</p>
+									<div class="tbl-scroll idx-tbl">
+										<table>
+											<tr>
+												<th>物件種目</th>
+												<th>売却価格</th>
+												<th>土地面積</th>
+												<th>建物専有面積</th>
+												<th>売却時期</th>
+											</tr>
+											<tr>
+												<td>戸建</td>
+												<td>0,000万円台</td>
+												<td>000.00m<sup>2</sup></td>
+												<td>000.00m<sup>2</sup></td>
+												<td>0000年00月</td>
+											</tr>
+											<tr>
+												<td>マンション</td>
+												<td>0,000万円台</td>
+												<td>000.00m<sup>2</sup></td>
+												<td>000.00m<sup>2</sup></td>
+												<td>0000年00月</td>
+											</tr>
+											<tr>
+												<td>戸建</td>
+												<td>0,000万円台</td>
+												<td>000.00m<sup>2</sup></td>
+												<td>000.00m<sup>2</sup></td>
+												<td>0000年00月</td>
+											</tr>
+											<tr>
+												<td>マンション</td>
+												<td>0,000万円台</td>
+												<td>000.00m<sup>2</sup></td>
+												<td>000.00m<sup>2</sup></td>
+												<td>0000年00月</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div id="box02-tab-ctn03" class="tab-ctn">
+									<p class="sp note">※表は左右にスクロールして確認することができます。</p>
+									<div class="tbl-scroll idx-tbl">
+										<table>
+											<tr>
+												<th>物件種目</th>
+												<th>売却価格</th>
+												<th>土地面積</th>
+												<th>建物専有面積</th>
+												<th>売却時期</th>
+											</tr>
+											<tr>
+												<td>戸建</td>
+												<td>0,000万円台</td>
+												<td>000.00m<sup>2</sup></td>
+												<td>000.00m<sup>2</sup></td>
+												<td>0000年00月</td>
+											</tr>
+											<tr>
+												<td>マンション</td>
+												<td>0,000万円台</td>
+												<td>000.00m<sup>2</sup></td>
+												<td>000.00m<sup>2</sup></td>
+												<td>0000年00月</td>
+											</tr>
+											<tr>
+												<td>戸建</td>
+												<td>0,000万円台</td>
+												<td>000.00m<sup>2</sup></td>
+												<td>000.00m<sup>2</sup></td>
+												<td>0000年00月</td>
+											</tr>
+											<tr>
+												<td>マンション</td>
+												<td>0,000万円台</td>
+												<td>000.00m<sup>2</sup></td>
+												<td>000.00m<sup>2</sup></td>
+												<td>0000年00月</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div id="box02-tab-ctn04" class="tab-ctn">
+									<p class="sp note">※表は左右にスクロールして確認することができます。</p>
+									<div class="tbl-scroll idx-tbl">
+										<table>
+											<tr>
+												<th>物件種目</th>
+												<th>売却価格</th>
+												<th>土地面積</th>
+												<th>建物専有面積</th>
+												<th>売却時期</th>
+											</tr>
+											<tr>
+												<td>戸建</td>
+												<td>0,000万円台</td>
+												<td>000.00m<sup>2</sup></td>
+												<td>000.00m<sup>2</sup></td>
+												<td>0000年00月</td>
+											</tr>
+											<tr>
+												<td>マンション</td>
+												<td>0,000万円台</td>
+												<td>000.00m<sup>2</sup></td>
+												<td>000.00m<sup>2</sup></td>
+												<td>0000年00月</td>
+											</tr>
+											<tr>
+												<td>戸建</td>
+												<td>0,000万円台</td>
+												<td>000.00m<sup>2</sup></td>
+												<td>000.00m<sup>2</sup></td>
+												<td>0000年00月</td>
+											</tr>
+											<tr>
+												<td>マンション</td>
+												<td>0,000万円台</td>
+												<td>000.00m<sup>2</sup></td>
+												<td>000.00m<sup>2</sup></td>
+												<td>0000年00月</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div id="box02-tab-ctn05" class="tab-ctn">
+									<p class="sp note">※表は左右にスクロールして確認することができます。</p>
+									<div class="tbl-scroll idx-tbl">
+										<table>
+											<tr>
+												<th>物件種目</th>
+												<th>売却価格</th>
+												<th>土地面積</th>
+												<th>建物専有面積</th>
+												<th>売却時期</th>
+											</tr>
+											<tr>
+												<td>戸建</td>
+												<td>0,000万円台</td>
+												<td>000.00m<sup>2</sup></td>
+												<td>000.00m<sup>2</sup></td>
+												<td>0000年00月</td>
+											</tr>
+											<tr>
+												<td>マンション</td>
+												<td>0,000万円台</td>
+												<td>000.00m<sup>2</sup></td>
+												<td>000.00m<sup>2</sup></td>
+												<td>0000年00月</td>
+											</tr>
+											<tr>
+												<td>戸建</td>
+												<td>0,000万円台</td>
+												<td>000.00m<sup>2</sup></td>
+												<td>000.00m<sup>2</sup></td>
+												<td>0000年00月</td>
+											</tr>
+											<tr>
+												<td>マンション</td>
+												<td>0,000万円台</td>
+												<td>000.00m<sup>2</sup></td>
+												<td>000.00m<sup>2</sup></td>
+												<td>0000年00月</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="idx_tab">
+					<div class="container">
+						<ul class="anchor_list col02 under_tab_link">
+							<li><a class="tab_link active" data-tab="01">唾液検査</a></li>
+							<li><a class="tab_link" data-tab="02">口臭外来</a></li>
+						</ul>
+						<div class="section under_tab_content">
+							<div id="reason01" class="tab_content active">
+								<section>
+									<h3 class="has_border">唾液検査について</h3>   
+									<div class="under_box img_small">
+										<p class="image_l"><img loading="lazy" src="../images/badbreath_prevention_img01.jpg" alt="初診の流れ"></p>
+										<div class="under_box_main">
+											<h4><span>初診の流れ</span></h4>
+											<p>唾液には様々な機能が備わっています。自分自身の唾液の特性を知り、むし歯や歯周病のリスクを認識していただくことを目的とした検査が唾液検査です。</p>
+											<p>当院では多項目の唾液因子を短時間で測定できる唾液検査システム（SMT）を使用しております。</p>
+											<p class="clearfix">SMTとはSalivary Multi Testの略称で、「多項目・短時間唾液検査」という意味があります。 今までの唾液検査は唾液を採取してから菌を培養する必要があったために検査結果が出るまでに2週間程かかることがほとんどでしたが、 この唾液検査では唾液を採取してから検査結果が出るまでに従来よりはるかに短い時間での測定が可能になっています。
+											</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<h4><span>唾液検査からわかること</span></h4>
+									<h5><span>むし歯菌の数</span></h5>
+									<p>むし歯菌が多いと、歯の表面に歯垢（プラーク）が付着しやすく、歯の健康を損なう事が知られています。</p>
+								</section>
+								<section>
+									<h5><span>酸性度</span></h5>
+									<p>唾液の酸性度が高いと、口腔環境は酸性となり、エナメル質などの歯質が溶解（脱灰）しやすいことが知られており、むし歯菌も活動しやすくなります。</p>
+								</section>
+								<section>
+									<h5><span>緩衝能</span></h5>
+									<p>唾液には、むし歯菌や植物由来の酸を中和する機能（緩衝能）がありますが、その働きが弱いと、エナメル質などの歯質が溶解（脱灰）しやすいことが知られています。</p>
+								</section>
+								<section>
+									<h5><span>白血球</span></h5>
+									<p>歯と歯ぐきの間で細菌や異物が増加すると、生体の防御作用により唾液中の白血球が増加することが知られています。</p>
+								</section>
+			
+								<section>
+									<h5><span>タンパク質</span></h5>
+									<p>口腔内細菌や、歯と歯ぐきの間にあるバイオフィルム（プラーク）の影響により、唾液中のタンパク質が多くなることが知られています。</p>
+								</section>
+			
+								<section>
+									<h5><span>アンモニア</span></h5>
+									<p>口腔内の細菌総数が多いと、唾液中のアンモニアが多くなることが知られており、口臭等の原因になるといわれています。</p>
+								</section>
+								
+								<section>
+									<h4><span>当院の唾液検査について</span></h4>
+									<p>歯とお口の健康を守る為には、歯科医院での定期的なメインテナンスを通じた「プロフェッショナルケア」と、歯科医師や歯科衛生士の指導に基づき自分自身で行う「セルフケア」の両方を合わせて実践していく、「予防歯科」がとても重要です。</p>
+									<p>メインテナンス時に唾液検査を行うことで唾液に含まれる成分や菌の数を調べ、歯と歯茎の健康や口腔内の清潔度を調べることができます。</p>
+									<p>全身の健康状態を知る上でも、唾液検査でお口の健康を知ることから始めてみてはいかがでしょうか？<br>毎日きちんと磨いているのにむし歯ができてしまうとお悩みの方、自分自身のお口の状態を知りたいという方にもおすすめです。</p>
+									<p>ウィズ歯科クリニックでは検査結果をもとに、患者様一人ひとりに合わせたオーダーメイドの口腔ケアを行っています。オーラルケアに関するアドバイスやより効果的な予防ケアの実践が可能です。<br>まずはご相談から、お気軽に当院までお問い合わせください。</p>
+									<p class="center"><img src="../images/badbreath_prevention_img02.jpg" alt="当院の唾液検査について"></p>
+								</section>
+								<section>
+									<h4><span>検査の流れ</span></h4>
+									<ul class="under_step">
+										<li class="has_img img_small">
+											<div class="step_body">
+												<div class="step_wrap_ttl">
+													<p class="step_ttl"><span class="step">Step</span><span class="num">01</span></p>
+													<p class="step_ttl01">採取</p>
+												</div>
+												<p class="step_des">少量の水でお口全体を10秒間軽くゆすぎ、紙コップに吐き出すだけ！</p>
+											</div>
+											<p class="step_img img_r"><span><img src="../images/badbreath_prevention_img03.jpg" alt="STEP01:採取"></span></p>
+										</li>
+										<li class="has_img img_small">
+											<div class="step_body">
+												<div class="step_wrap_ttl">
+													<p class="step_ttl"><span class="step">Step</span><span class="num">02</span></p>
+													<p class="step_ttl01">測定</p>
+												</div>
+												<p class="step_des">専用機器を使用して、歯の健康・歯ぐきの健康、お口の清潔度に関する6項目を測定します。測定時間は、わずか5分です！</p>
+											</div>
+											<p class="step_img img_r"><span><img src="../images/badbreath_prevention_img04.jpg" alt="STEP02:測定"></span></p>
+										</li>
+										<li class="has_img img_small">
+											<div class="step_body">
+												<div class="step_wrap_ttl">
+													<p class="step_ttl"><span class="step">Step</span><span class="num">03</span></p>
+													<p class="step_ttl01">結果のお知らせ</p>
+												</div>
+												<p class="step_des">測定結果は、わかりやすいグラフにしてお渡しします。何か気になることがあれば、その場でスタッフにおたずねください！また、測定結果を元にして、個別の状況に合わせた口腔ケアアドバイスを行っています。</p>
+											</div>
+											<p class="step_img img_r"><span><img src="../images/badbreath_prevention_img05.jpg" alt="STEP03:結果のお知らせ"></span></p>
+										</li>
+										<li>
+											<div class="step_body">
+												<div class="step_wrap_ttl">
+													<p class="step_ttl"><span class="step">Step</span><span class="num">04</span></p>
+													<p class="step_ttl01">最後に</p>
+												</div>
+												<p class="step_des">唾液の性質はずっと一定、というわけではありません。適切な口腔ケアを行う事で改善出来ることもあれば、ケアを疎かにすることで状態が悪くなってしまうこともあります。 大切なのは現状を知り、現状に合わせた対策を行うこと。 私たちと一緒に、歯とお口の健康について考えていきましょう。</p>
+											</div>
+										</li>
+									</ul>
+								</section>
+								<section>
+									<h4><span>当日の注意事項</span></h4>
+									<p>唾液の状態は、お口の中の環境や体調によって変化します。<br>できるだけ安定した状態の唾液を測定するために下記の点にご注意ください。</p>
+									<ul class="under_list">
+										<li>検査前2時間以内は飲食、歯磨き、洗口はお控えください。</li>
+										<li>口腔内に傷や口内炎がある場合はスタッフまでお知らせください。</li>
+									</ul>
+								</section>
+								<section>
+									<h4><span>唾液検査の特徴</span></h4>
+									<p class="under_ttl01">◆特徴</p>
+									<p>当院では受診時に担当医の性別を患者様ご自身でお選びいただけます。<br>プライバシーに配慮し、個室にてカウンセリングが可能です。ご予約時にご希望をお伝えください。<br>唾液検査を使用し、短時間で正確な診断が可能です。</p>
+									<p class="under_ttl01">◆料金</p>
+									<p>2,000円（税別）</p>
+								</section>
+								<section>
+									<h5><span>唾液検査紹介動画</span></h5>
+									<p>＜動画タイトル＞「SMT患者様向け動画」／51秒／ライオン<br>＜出典元＞ LionOfficialMovieより</p>
+									<p class="under_video">
+										<iframe src="https://www.youtube.com/embed/MjHMc_qP0Ok?version=3&amp;rel=0&amp;loop=1&amp;playlist=MjHMc_qP0Ok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
+									</p>
+								</section>
+							</div>
+							<div id="reason02" class="tab_content">
+								<section>
+									<h3 class="has_border">口臭外来について</h3>   
+									<div class="under_box img_small">
+										<p class="image_l"><img loading="lazy" src="../images/badbreath_prevention_img06.jpg" alt="口臭について"></p>
+										<div class="under_box_main">
+											<h4><span>口臭について</span></h4>
+											<p class="clearfix">自分の『口臭』、気になりますか？この質問に約9割もの人が「はい」と答えるほど、多くの人が口臭を気にしています。口臭とひと言でいっても、大きく5つに分けられ原因もそれぞれ違います。</p>
+										</div>
+									</div>
+								</section>
+								<div class="section">
+									<div class="under_frame mb10">
+										<div class="frame_content">
+											<p class="frame_ttl">口臭に関する5つの原因</span></p>
+											<ul class="under_list">
+												<li>起床時や空腹時などに一時的に起こる<span class="txt_brown bold">【生理的口臭】</span></li>
+												<li>ニンニクや酒・タバコなどが原因の<span class="txt_brown bold">【食べ物・嗜好品による口臭】</span></li>
+												<li>強いストレスから唾液量が減ってしまう<span class="txt_brown bold">【ストレスからくる口臭】</span></li>
+												<li>自分の口臭がひどいと思いこんでしまい発生する<span class="txt_brown bold">【心理的口臭】</span></li>
+												<li>虫歯や歯周病、内臓疾患が原因で引き起こされる<span class="txt_brown bold">【病的口臭】</span></li>
+											  </ul>
+										</div>
+									</div>
+									<p class="mb10">とくに【病的口臭】には、虫歯・歯周病・口腔内が原因の「口腔由来」のものと、呼吸・消化器系など身体機能が原因の「全身由来」のものがあり、治療しなければ治ることはありません。</p>
+									<p class="mb10">また【心理的要因】についてですが、処置は基本的に行わず数値を確認していただき、客観的な診断を行うことにより患者様にご安心いただければと思います。</p>
+									<p>柏市の「ウィズ歯科クリニック」では、高性能の口臭測定器（オーラルクロマ）を使った口臭外来を行っています。口臭の原因を突き止め、根本から治療。口臭が気になるという方は一度ご相談ください。</p>
+								</div>
+								<section>
+									<div class="under_box">
+										<p class="image_r"><img loading="lazy" src="../images/badbreath_prevention_img14.jpg" alt="口臭の原因"></p>
+										<div class="under_box_main">
+											<h4><span>口臭の原因</span></h4>
+											<p class="clearfix">病的口臭にもさまざまな原因がありますが、そのほとんどが口腔由来からくるものです。当院の口臭外来では口腔由来の原因を突き止め治療を行っていきます。</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<h5><span>口腔由来の口臭の原因</span></h5>
+									<p><span class="under_box_txt">虫歯</span> 虫歯の穴に食べかすが詰まる、神経まで虫歯が達している <span class="under_box_txt">歯周病</span>歯周病が進行している、膿がでている<span class="under_box_txt"> 口腔内の汚れ</span> 歯垢や歯石、磨き残しがある<span class="under_box_txt">舌苔</span> 舌に歯垢がつく<span class="under_box_txt">ドライマウス</span>口腔内が乾燥し菌が繁殖する（口腔乾燥症）</p>
+								</section>
+								<section>
+									<h5><span>全身由来の口臭の原因</span></h5>
+									<ul class="under_list mb10">
+										<li>胃炎、肝炎などの<span class="bold">消化器系</span></li>
+										<li>肺がん、気管支炎などの<span class="bold">呼吸器系</span></li>
+										<li>鼻、のどなどの<span class="bold">耳鼻咽喉疾患</span></li>
+									</ul>
+									<p>一日中きつい臭いを発しているにも関わらず、本人は気づきにくいというのが病的口臭の特徴です。周りの人から指摘されて、初めて自分の口臭に気づくというのは恥ずかしく誰しも嫌なものです。原因を治せば口臭は治ります。口臭外来でどこに原因があるのかを突き止め、適切な治療を行いましょう。</p>
+								</section>
+								<section>
+									<div class="under_box">
+										<p class="image_r"><img loading="lazy" src="../images/badbreath_prevention_img07.jpg" alt="当院の口臭測定器について"></p>
+										<div class="under_box_main">
+											<h4><span>当院の口臭測定器について</span></h4>
+											<p class="clearfix">柏市のウィズ歯科クリニックでは、高性能口臭測定器「オーラルクロマ」を導入しています。お口の中の臭いを高感度計測できるため、口臭の有無はもちろんのこと、口臭の発生源が虫歯・歯周病からなのか、舌苔や内臓疾患からくるものなのかまで判定可能。測定も4分ほどで完了しますので、患者様のご負担も軽減できます。</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<h5><span>口臭の主要成分まで測定可能</span></h5>
+									<p class="center"><img src="../images/badbreath_prevention_img08.jpg" alt="口臭の主要成分まで測定可能"></p>
+									<p class="mb10">この「オーラルクロマ」は、口臭の主要成分VSC（揮発性硫黄化合物）といわれる3つの原因物質の測定が可能です。</p>
+									<p><span class="under_box_txt">原因物質1</span><span class="bold">「硫化水素」</span><span class="under_box_txt">原因物質2</span><span class="bold">「メチルメルカプタン」</span><span class="under_box_txt">原因物質3</span><span class="bold">「ジメチルサルファイド」</span>上記はそれぞれ、臭いが発生する箇所が異なります。</p>
+								</section>
+								<section>
+									<h4><span>臭いの揮発箇所</span></h4>
+									<h5><span>「硫化水素」は主に舌苔によるもの</span></h5>
+									<p>表面を覆う白っぽい汚れのことを舌苔（ぜったい）といいます。これは細菌同士が分解した代謝物が舌の上に溜まったものです。<br>
+										約6割の口臭の原因は舌苔からきており、適切な処置を行うことで改善することができます。舌専用のブラシや柔らかい歯ブラシで優しく除去することで日々のケアが行えます。力を加えすぎると舌を傷つけてしまうので、優しく行うようにしましょう。 </p>
+								</section>
+								<section>
+									<h5><span>「メチルメルカプタン」は歯周病によるものでプロケアが必要</span></h5>
+									<p>メチルメルカプタンは主に歯周ポケットで揮発し臭いを発生させます。歯周ポケットとは歯と歯肉の間にできた隙間のことで、ここに入ってしまった汚れは歯磨きでは完全に除去することができません。歯科医院にて専門的な器具を用いての歯石除去や歯周病治療を行うことで改善が期待できます。</p>
+								</section>
+								<section>
+									<h5><span>「ジメチルサルファイド」は一過性のものや内臓疾患が原因</span></h5>
+									<p>ジメチルサルファイドは飲食物による一過性のものや、内臓疾患などが原因で起こります。 このオーラルクロマでは内臓疾患による揮発成分まで特定できるため、何度も不必要な治療を行うことなく、内科での治療が必要か否かの判断を行うことができます。</p>
+									<p>このように、当院ではより正確かつ多角的な診断が行えるので、普段、不安から手で口を覆いながら話しをしていたり、常に不安を抱いている方は悩まずお気軽にご連絡ください。</p>
+								</section>
+								<section>
+									<h4><span>口臭の計測方法</span></h4>
+									<ul class="under_col_list col03 has_arrow01 badbreath_prevention_col_list">
+										<li>
+											<div class="under_col_main">
+												<p class="img"><img src="../images/badbreath_prevention_img09.jpg" alt="前歯でシリンジを固定します"></p><span class="tit">前歯でシリンジを固定します</span>
+											</div>
+										</li>
+										<li>
+											<div class="under_col_main">
+												<p class="img"><img src="../images/badbreath_prevention_img10.jpg" alt="唇をしっかり閉じ、30秒放置します"></p>
+												<span class="tit">唇をしっかり閉じ、30秒放置します</span>
+											</div>
+										</li>
+										<li>
+											<div class="under_col_main">
+												<p class="img"><img src="../images/badbreath_prevention_img11.jpg" alt="プランジャーをゆっくり引いて、再度押し戻し、もう一度引いてから口から離します"></p>
+												<span class="tit">プランジャーをゆっくり引いて、再度押し戻し、もう一度引いてから口から離します</span>
+											</div>
+										</li>
+										<li>
+											<div class="under_col_main">
+												<p class="img"><img src="../images/badbreath_prevention_img12.jpg" alt="プランジャーの位置を1.0ｍｌに調整します"></p>
+												<span class="tit">プランジャーの位置を1.0mlに調整します</span>
+											</div>
+										</li>
+										<li>
+											<div class="under_col_main">
+												<p class="img"><img src="../images/badbreath_prevention_img13.jpg" alt="オーラルクロマ本体に注入後、自動で測定が開始します"></p>
+												<span class="tit">オーラルクロマ本体に注入後、自動で測定が開始します</span>
+											</div>
+										</li>
+									  </ul>
+									<p>測定方法は以上です。患者様へはご説明を行いながら測定いたしますのでご安心ください。</p>
+								</section>
+									 
+								<div class="section">
+									<div class="under_frame">
+										<div class="frame_content">
+											<p class="frame_ttl">口臭測定当日までの注意事項</span></p>
+											<p class="mb10">普段の口臭を正確に測定するために、下記の点にご注意ください。</p>
+											<ul class="under_list">
+												<li>来院の前日は臭いの強い食べ物（ニンニク料理、カレー等）、アルコールは控える</li>
+												<li>来院の3時間前から飲食は控える（ガム・飴・お茶・コーヒー等）</li>
+												<li>ブレスケア製品（洗口剤など）は使用しない</li>
+												<li>喫煙は来院の30分前から控える</li>
+												<li>歯磨きは通常通り行い、直前は控える</li>
+											  </ul>
+										</div>
+									</div>
+								</div>
+								<section>
+									<h4><span>当院の口臭治療の特徴</span></h4>
+									<ul class="under_list">
+										<li>担当医の性別を患者様ご自身でお選びいただけます。</li>
+										<li>プライバシーに配慮し、個室にてカウンセリングが可能。ご予約時にご希望をお伝えください。</li>
+										<li>高性能口臭測定器「オーラルクロマ」による測定を行いますので、短時間で正確な診断が可能です。</li>
+									  </ul>
+								</section>
+								<section>
+									<h4><span>料金</span></h4>
+									<table class="under_tbl tbl_block mb10">
+										<tbody>
+											<tr>
+												<th class="w30">初回検査<br>（口臭測定のみの場合）</th>
+												<td>5,000円（税別）<br>※当日口臭検査、その他治療を希望の場合は2,000円（税別）となります。</td>
+											</tr>
+											<tr>
+												<th>当院がかかりつけの方</th>
+												<td>2,000円（税別）</td>
+											</tr>
+											<tr>
+												<th>3ヶ月以内再検査	</th>
+												<td>1,000円（税別）</td>
+											</tr>
+										</tbody>
+									</table>
+									<p class="mb10">原因特定のために初診時にレントゲン撮影を行う歯科医院もございますが、当院では口臭測定検査希望の場合、レントゲン撮影は行っておりません。高性能口臭測定器「オーラルクロマ」を導入しておりますので、レントゲン撮影をすることなく口臭の原因を突き止めることができます。これにより、患者様にかかる身体的負担を減らせるほか、費用もかなり抑えられます。</p>
+									<p>口臭が気になる、悩んでいるという方が安心して受診できる環境を整えておりますので、お気軽に当院の口臭外来へお問い合わせください。</p>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script src="js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+		<script src="js/jquery.fittext.js" type="text/javascript"></script>
+		<script src="js/jquery.lettering.js" type="text/javascript"></script>
+		<script src="js/jquery.textillate.js" type="text/javascript"></script>
+		<script src="js/common.js" type="text/javascript"></script>
+	</body>
+</html>
