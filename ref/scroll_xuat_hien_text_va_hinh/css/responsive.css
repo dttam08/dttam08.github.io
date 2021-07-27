@@ -1,0 +1,1558 @@
+@media screen and (min-width: 751px) {
+    .sp {
+        display: none !important;
+    }
+
+    .to-top:hover {
+        background: #004870;
+    }
+
+    .btn-mail:hover {
+        opacity: 0.8;
+    }
+
+    #main .btn-mail:hover {
+        transform: translateY(3px);
+    }
+
+    #main .btn-mail:after {
+        transition: all 0.2s;
+    }
+
+    #main .btn-mail:hover:after {
+        top: 4px;
+        left: -3px;
+    }
+
+    .animation-wrap {
+        opacity: 0;
+        display: block;
+        overflow: hidden;
+    }
+
+    .animation-wrap.action {
+        opacity: 1;
+        width: 0;
+    }
+
+    .animation-content {
+        display: block;
+        position: relative;
+    }
+
+    .problem-section .problem-btn:hover {
+        opacity: 0.8;
+    }
+
+    .child-ortho-map .map-img .link-sp li {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .child-ortho-map .map-img .link-sp li:nth-child(1) {
+        left: 38%;
+    }
+
+    .child-ortho-map .map-img .link-sp li:nth-child(2) {
+        left: 20%;
+    }
+
+    .child-ortho-map .map-img .link-sp li:nth-child(3) {
+        left: 56%;
+    }
+}
+
+/* screen-min:751px */
+
+@media screen and (max-width: 1800px) and (min-width: 751px) {
+    .main-visual .visual-ttl-01 img {
+        width: 35vw;
+        min-width: 427px;
+    }
+
+    .main-visual .visual-ttl-02 {
+        font-size: 3.2vw;
+    }
+
+    .main-visual .visual-ttl-en {
+        font-size: 6vw;
+    }
+
+    .main-visual .visual-decor-bottom {
+        width: 36vw;
+    }
+
+    .adult-orthodontic h3 .ttl-tag {
+        right: 0;
+        width: 120px;
+    }
+
+    .children-orthodontic h3 .ttl-tag {
+        left: 0;
+        width: 120px;
+    }
+
+    .children-orthodontic h3 .ttl-img {
+        width: 950px;
+    }
+
+    .contact-info .col-left {
+        padding: 14px;
+        background: rgba(255, 255, 255, 0.6);
+        margin-right: 0;
+    }
+
+    .body-scrolled .contact-info .col-left {
+        margin-right: 40px;
+        background: none;
+    }
+
+    .main-visual .text-address {
+        width: 11vw;
+        height: 11vw;
+        font-size: 1.1vw;
+        padding-top: 0.5vw;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 751px) {
+    .problem-section .wrap-content {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .group-stage-section .first-stage:before {
+        background-position: right -250px top;
+    }
+
+    .group-stage-section .first-stage>.inner {
+        padding-left: 100px;
+    }
+
+    .side-ttl {
+        font-size: 90px;
+    }
+
+    .group-stage-section .block-stage.second-stage .inner {
+        padding-right: 100px;
+        padding-left: 190px;
+    }
+
+    .group-stage-section .block-stage.second-stage:before {
+        background-position: left -200px top;
+    }
+
+    .payments-section .inner {
+        width: 1000px;
+    }
+
+    .payments-section .block-table table {
+        max-width: 900px;
+    }
+
+    .adult-orthodontic:before {
+        background-position: left calc(50% + 80px) top;
+    }
+
+    .group-stage-section .block-stage.treatment-devices .inner {
+        padding-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1220px) and (min-width: 751px) {
+    .main-visual .text-address {
+        width: 135px;
+        height: 135px;
+        font-size: 14px;
+        padding-top: 0.5vw;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    img {
+        max-width: 100%;
+    }
+
+    #wrapper,
+    #header,
+    #main,
+    #footer,
+    .inner,
+    .under {
+        width: 100% !important;
+        min-width: unset !important;
+    }
+
+    .inner {
+        box-sizing: border-box;
+        padding: 0 15px;
+    }
+
+    .pc {
+        display: none !important;
+    }
+
+    .to-top {
+        width: 40px;
+        height: 40px;
+        right: 10px;
+    }
+
+    p {
+        margin-bottom: 1.2em;
+    }
+
+    #nav-sp {
+        position: absolute;
+        right: 0;
+        top: 56px;
+        width: 230px;
+        height: calc(100vh - 56px);
+        background: rgba(255, 255, 255, 0.95);
+        padding: 20px 20px 80px;
+        overflow: auto;
+        box-shadow: -2px 2px 2px rgb(0 0 0 / 1%);
+        transition: all 0.3s;
+        transform: translateX(250px);
+    }
+
+    .open-nav #nav-sp {
+        transform: translateX(0);
+    }
+
+    #nav-sp .list-nav li {
+        margin-bottom: 10px;
+    }
+
+    #nav-sp .list-nav li.sub+li:not(.sub),
+    #nav-sp .list-nav li:not(.sub)+li:not(.sub) {
+        margin-top: 30px;
+    }
+
+    #nav-sp .list-nav li.sub {
+        margin-left: 20px;
+    }
+
+    #nav-sp .list-nav li a {
+        text-decoration: none;
+        padding-left: 17px;
+        position: relative;
+        color: inherit;
+    }
+
+    #nav-sp .list-nav li a:before {
+        content: "";
+        border-left: solid 8px #e9d0a1;
+        border-top: solid 6px transparent;
+        border-bottom: solid 6px transparent;
+        position: absolute;
+        left: 0;
+        top: 0.3em;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .header-left {
+        padding-left: 0;
+        max-width: 220px;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    #header .logo {
+        margin: 0 auto;
+    }
+
+    #header {
+        background: rgba(255, 255, 255, 0.95) !important;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 50;
+        width: 100%;
+    }
+
+    #header .inner.d-flex {
+        align-items: center;
+    }
+
+    #header h1 {
+        display: none;
+    }
+
+    #header .address {
+        text-align: left;
+        font-size: 3vw;
+        margin-top: 2vw;
+        display: none;
+    }
+
+    #header .logo {
+        margin-bottom: 0;
+        line-height: 1em;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #footer address {
+        padding: 20px 3%;
+        line-height: 1.4em;
+    }
+
+    .footer-banners li {
+        width: calc(50% - 5px);
+        margin: 0 10px 10px 0 !important;
+        text-align: center;
+    }
+
+    .footer-banners li:nth-child(2n+2) {
+        margin-right: 0 !important;
+    }
+
+    .footer-info .working-time {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-info .working-time li {
+        text-align: center;
+        max-width: 560px;
+    }
+
+    .footer-info .working-time li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .contact-banner-section .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-banner-section h3 {
+        font-size: 34px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-banner-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 0 0;
+        max-width: 440px;
+    }
+
+    .contact-banner-content .img-bg {
+        width: 200px;
+        right: -100px;
+        bottom: -30px;
+    }
+
+    .contact-banner-content .col-left {
+        margin: 0 0 20px;
+        width: auto;
+    }
+
+    .contact-banner-content .col-right {
+        margin: 0;
+    }
+
+    .contact-banner-content .col-right .btn-mail {
+        width: 340px;
+        max-width: 100%;
+        font-size: 20px;
+        height: 130px;
+    }
+
+    .calling-time li {
+        font-size: 14.5px;
+    }
+
+    .btn-tel.large {
+        padding-left: 40px;
+        font-size: 40px;
+    }
+
+    .video-section .inner.d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-section .col {
+        max-width: 100%;
+    }
+
+    .video-section .col-left {
+        margin-bottom: 50px;
+    }
+
+    .payment-banner-section .banner-img {
+        width: 100%;
+    }
+
+    .payment-banner-section {
+        padding-top: 7vw;
+        margin-top: 70px;
+    }
+
+    .society-clinicial-dentistry {
+        padding: 50px 0 50px;
+    }
+
+    .society-clinicial-dentistry h4 {
+        font-size: 4.7vw;
+        margin-bottom: 1em;
+    }
+
+    .society-clinicial-dentistry .flex-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .society-clinicial-dentistry .block-img {
+        margin: 0 0 30px;
+    }
+
+    .greeting-section {
+        padding-bottom: 50px;
+    }
+
+    .greeting-section .inner.d-flex {
+        flex-direction: column;
+    }
+
+    .greeting-section .block-person {
+        width: 100%;
+        margin: 0 auto 30px;
+        max-width: 690px;
+    }
+
+    .greeting-section .block-person .person-img .person-name {
+        top: 100vw;
+        font-size: 3.5vw;
+    }
+
+    .greeting-section .block-person .person-img {
+        margin: 0;
+        width: auto;
+    }
+
+    .greeting-section .side-ttl {
+        top: 0;
+        font-size: 14vw;
+    }
+
+    .greeting-section .block-text {
+        padding: 0;
+        margin: 0;
+    }
+
+    .greeting-section .block-text .img {
+        position: relative;
+        bottom: inherit;
+        width: 100%;
+        text-align: center;
+        left: inherit;
+        display: none;
+    }
+
+    .greeting-section h3 {
+        font-size: 5.2vw;
+        margin-bottom: 30px;
+    }
+
+    .txt-desc {
+        font-size: 16px;
+        line-height: 2.4em
+    }
+
+    .greeting-section .block-text .txt-desc {
+        line-height: 1.8em;
+    }
+
+    .product-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .treatment-devices-section .product-04 .block-product .product-desc {
+        width: 100%;
+    }
+
+    .treatment-devices-section .block-product {
+        max-width: 100%;
+    }
+
+    .treatment-devices-section .block-table {
+        width: 560px;
+        max-width: 100%;
+        margin: 0 0 0 !important;
+    }
+
+    .treatment-devices-section {
+        padding-bottom: 50px;
+    }
+
+    .contact-banner-section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-bottom: 30px;
+    }
+
+    .treatment-devices-section+.contact-banner-section {
+        margin-top: 0;
+    }
+
+    .product-wrapper {
+        padding-bottom: 50px;
+    }
+
+    .product-wrapper:before {
+        height: calc(100% - 105px) !important;
+    }
+
+    .block-product {
+        margin-bottom: 40px;
+    }
+
+    .treatment-devices-section .product-name {
+        height: 80px;
+    }
+
+    .treatment-devices-section .product-wrapper+.product-wrapper {
+        margin-top: 70px;
+    }
+
+    .group-stage-section .block-stage.treatment-devices {
+        padding-top: 30vw;
+        padding-bottom: 30px;
+        background-size: 100vw auto;
+        background-position: left 18vw top;
+    }
+
+    .group-stage-section .block-stage.treatment-devices .side-ttl {
+        font-size: 7vw;
+        top: 50px;
+        margin: 0;
+        display: none;
+    }
+
+    .group-stage-section .stage-ttl {
+        margin-bottom: 20px;
+    }
+
+    .group-stage-section .stage-ttl h4 {
+        font-size: 5vw;
+    }
+
+    .group-stage-section .stage-ttl dt {
+        font-size: 20px;
+        line-height: 1.1em;
+    }
+
+    .group-stage-section .stage-ttl dt:before {
+        top: 0.4em;
+    }
+
+    .payments-section .index-banner-01 {
+        margin-top: 11vw;
+        margin-bottom: 11vw;
+    }
+
+    .payments-section {
+        margin-top: 15vw;
+        padding: 10vw 0 1px 0;
+    }
+
+    .payments-section .side-ttl {
+        font-size: 10vw;
+        top: 12vw;
+        display: none;
+    }
+
+    .payments-section .section-tag {
+        font-size: 4vw;
+        width: auto;
+        height: auto;
+        padding: 0.34em 2em;
+        top: -1.2em;
+    }
+
+    .payments-section .section-tag:before {
+        width: 100%;
+        background-position: left bottom;
+    }
+
+    .payments-section .block-table {
+        padding-bottom: 20px;
+        margin-left: 0;
+    }
+
+    .payments-section .block-table h4 {
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+
+    .payments-section .block-table table {
+        width: calc(100% - 40px);
+        margin: 0 20px 20px;
+    }
+
+    .payments-section .block-table table:last-child {
+        margin-bottom: 0;
+    }
+
+    .payments-section .block-table table th,
+    .payments-section .block-table table td {
+        width: 100% !important;
+        display: block;
+        text-align: center;
+        padding-top: 0.9em !important;
+        padding-bottom: 0.9em !important;
+        border: none !important;
+    }
+
+    .payments-section .block-table table th.bg-dark-red {
+        border-bottom: solid 2px #fff !important;
+    }
+
+    .payments-section.pink-section .block-table table th.bg-dark-red {
+        border-bottom-color: #fff !important;
+    }
+
+    .adult-ortho-step {
+        padding: 50px 0;
+    }
+
+    .adult-ortho-step .flex-content {
+        flex-direction: column !important;
+    }
+
+    .adult-ortho-step .flex-content .block-img {
+        margin: 0 0 30px !important;
+    }
+
+    .adult-ortho-step .flex-content .block-text {
+        width: 630px;
+        max-width: 100%;
+    }
+
+    .adult-ortho-step .step-ttl {
+        align-items: flex-start;
+    }
+
+    .adult-ortho-step .step-ttl dt {
+        width: 90px;
+        height: 64px;
+        padding-right: 15px;
+    }
+
+    .adult-ortho-step .step-ttl dd {
+        padding-left: 15px;
+    }
+
+    .adult-ortho-step .step-ttl dd .txt-jp {
+        font-size: 24px;
+    }
+
+    .adult-ortho-step .flex-content .block-text .txt-desc {
+        line-height: 2em;
+    }
+
+    .wrap-pickup {
+        padding: 1px 20px 40px !important;
+    }
+
+    .wrap-pickup h5 {
+        margin: 0 -15px !important;
+        font-size: 3.7vw;
+        height: auto;
+        padding: 0.4em 2.5em 1.5em;
+        background-size: 100% 100%;
+    }
+
+    .adult-ortho-step .wrap-pickup .pickup-flex-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .adult-ortho-step .wrap-pickup .pickup-flex-content .block-img {
+        margin: 0 0 20px;
+    }
+
+    .adult-ortho-step .wrap-pickup .pickup-flex-content .block-text .txt-desc {
+        line-height: 2em;
+    }
+
+    .adult-ortho-step .wrap-pickup .bg-img {
+        width: 28vw;
+        left: 5px;
+        top: -12vw;
+    }
+
+    .adult-ortho-step.step-02 .wrap-pickup:after,
+    .adult-ortho-step.step-04 .wrap-pickup:after {
+        display: none;
+    }
+
+    .wrap-pickup:after {
+        bottom: -50px;
+    }
+
+    .wrap-pickup .bg-01,
+    .wrap-pickup .bg-02 {
+        display: none;
+    }
+
+    .adult-ortho-step .wrap-pickup .bg-img.img-right {
+        left: inherit;
+        right: 5px;
+    }
+
+    .adult-ortho-step.step-01 .wrap-pickup .block-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .wrap-pickup .ttl-en {
+        margin-bottom: 0.7em;
+    }
+
+    .adult-ortho-step.step-01 {
+        margin-top: 50px;
+    }
+
+    .adult-orthodontic {
+        background: #fff6f5;
+    }
+
+    .adult-orthodontic:before {
+        display: none;
+    }
+
+    .adult-orthodontic h3 {
+        font-size: 5vw;
+        padding-bottom: 1.2em;
+        margin-bottom: 1.5em;
+        padding-top: 5vw;
+    }
+
+    .adult-orthodontic h3 .ttl-tag {
+        right: 0;
+        width: 80px;
+    }
+
+    .adult-orthodontic h3 .ttl-img {
+        margin-bottom: 40px;
+        width: 100%;
+        text-align: left;
+        padding: 0 100px 0 4vw;
+    }
+
+    .adult-orthodontic .sub-ttl {
+        font-size: 22px;
+    }
+
+    .adult-orthodontic .img-sp {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .product-wrapper-03 .block-product:not(:last-child) {
+        margin: 0 0 70px;
+    }
+
+    .product-wrapper-03 .block-product:last-child {
+        margin-bottom: 0;
+    }
+
+    .block-product {
+        max-width: 100%;
+    }
+
+    .product-wrapper-03 .block-product .product-name {
+        min-width: 200px;
+        height: 70px;
+    }
+
+    .group-stage-section .block-stage.second-stage .inner {
+        padding: 30vw 15px 0 15px;
+    }
+
+    .group-stage-section .block-stage.second-stage .side-ttl {
+        top: 50px;
+        font-size: 11vw;
+        display: none;
+    }
+
+    .group-stage-section .block-stage table th,
+    .group-stage-section .block-stage table td {
+        display: block;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .group-stage-section .block-stage.second-stage:before {
+        width: 100%;
+        opacity: 0.4;
+        background-size: 100% auto;
+    }
+
+    .group-stage-section table:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .product-wrapper-02 .block-product:not(:last-child) {
+        margin: 0 0 70px;
+    }
+
+    .product-wrapper-02 .block-product:last-child {
+        margin-bottom: 0;
+    }
+
+    .block-list-product-wrapper {
+        margin-top: 50px;
+    }
+
+    .block-list-product-wrapper.last-list {
+        margin-top: 70px;
+    }
+
+    .product-wrapper-01 .block-table {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .product-wrapper-01 .block-img {
+        display: none;
+    }
+
+    .product-wrapper-01 .block-product {
+        margin-right: 0;
+    }
+
+    .product-wrapper-01 .product-desc {
+        width: 100%;
+    }
+
+    .group-stage-section .first-stage {
+        padding: 30vw 0 0;
+    }
+
+    .group-stage-section .first-stage .side-ttl {
+        top: 50px;
+        font-size: 13vw;
+        display: none;
+    }
+
+    .group-stage-section .first-stage:before {
+        opacity: 0.6;
+        background-size: 100% auto;
+    }
+
+    .children-orthodontic .best-treatment {
+        padding: 50px 15px;
+        margin-top: 20px;
+        margin: 0 -15px;
+        background: url('../images/bg-29.jpg') center center / cover;
+    }
+
+    .children-orthodontic .best-treatment-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .children-orthodontic .best-treatment .block-img {
+        margin: 20px 0 0;
+    }
+
+    .children-orthodontic .best-treatment .block-text .txt-desc {
+        text-align: left;
+    }
+
+    .children-orthodontic .best-treatment h4 {
+        font-size: 3.3vw;
+        background-position: left center, right center;
+        padding-left: 55px;
+        padding-right: 55px;
+        background-size: auto 5em;
+        max-width: 620px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .child-ortho-map .bg-04 {
+        left: 0;
+        width: 23vw;
+    }
+
+    .child-ortho-map .bg-05 {
+        top: 0;
+        right: 0;
+        width: 26vw;
+    }
+
+    .children-orthodontic .sub-section-01 {
+        background: none;
+    }
+
+    .ortho-map-step {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .ortho-map-step .col-left {
+        max-width: 100%;
+        margin: 0 0 30px;
+    }
+
+    .ortho-map-wrap-step {
+        flex-direction: column;
+    }
+
+    .ortho-map-wrap-step .ortho-map-step {
+        width: 100%;
+        margin: 0 0 30px;
+        padding: 30px;
+    }
+
+    .ortho-map-wrap-step .ortho-map-step:lat-child {
+        margin-bottom: 0;
+    }
+
+    .children-orthodontic .before-ortho {
+        padding: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .children-orthodontic .before-ortho .block-img {
+        margin: 0 0 30px;
+        display: none;
+    }
+
+    .children-orthodontic .before-ortho .block-text h4 {
+        font-size: 5vw;
+    }
+
+    .children-orthodontic .before-ortho .block-text h4 .img {
+        width: 20vw;
+        margin-top: -2vw;
+    }
+
+    .children-orthodontic .before-ortho .block-text table th,
+    .children-orthodontic .before-ortho .block-text table td {
+        display: block;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .children-orthodontic .before-ortho .block-text .txt-desc {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .children-orthodontic .before-ortho .block-text .block-img-sp {
+        margin-bottom: 30px;
+    }
+
+    .child-ortho-content-01 {
+        margin: 30px 0 20px;
+    }
+
+    .child-ortho-content-01 li {
+        width: calc((100% - 5vw) / 3);
+        font-size: 4vw;
+        border-width: 2px;
+        height: 17vw;
+    }
+
+    .child-ortho-content-01 li:not(:last-child) {
+        margin-right: 5vw;
+    }
+
+    .child-ortho-content-01 li:nth-child(1):before,
+    .child-ortho-content-01 li:nth-child(2):before {
+        width: 5vw;
+        background-size: 100% auto;
+        left: calc(100% + 2px);
+    }
+
+    .child-ortho-content-01 li span {
+        margin-top: 0.5em;
+    }
+
+    .children-orthodontic .bg-sp-01 {
+        margin: -13vw -15px -10% -15px;
+        position: relative;
+        z-index: -1;
+        text-align: right;
+        padding: 0 0 0 60%;
+    }
+
+    .children-orthodontic h3 .ttl-tag {
+        top: 0px;
+        width: 70px;
+        left: 0px;
+    }
+
+    .children-orthodontic .bg-01 {
+        display: none;
+    }
+
+    .children-orthodontic h3 .ttl-img {
+        margin-bottom: 6vw;
+        width: 100%;
+        text-align: left;
+        padding-left: 80px;
+        padding-right: 3vw;
+    }
+
+    .children-orthodontic h3 {
+        font-size: 5vw;
+    }
+
+    .children-orthodontic h3 {
+        padding: 6vw 0 7vw;
+    }
+
+    .children-orthodontic .bg-02 {
+        left: inherit;
+        right: 3vw;
+        top: -11vw;
+        width: 12vw;
+    }
+
+    .problem-section {
+        padding-top: 70px;
+        position: relative;
+    }
+
+    .problem-section:before {
+        content: "";
+        border-top: solid 30px #fff;
+        border-left: solid 60px transparent;
+        border-right: solid 60px transparent;
+        position: absolute;
+        top: 0;
+        left: calc(50% - 60px);
+    }
+
+    .problem-section h3 {
+        font-size: 4.7vw;
+        padding-bottom: 30px;
+    }
+
+    .problem-section .content-ttl {
+        font-size: 4.5vw;
+    }
+
+    .problem-section .wrap-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .problem-section .col {
+        max-width: 100%;
+    }
+
+    .problem-section .list-problem li {
+        font-size: 18px;
+        padding-left: 60px;
+        background-size: 30px;
+        background-position: left 20px top 0.65em;
+    }
+
+    .problem-section .problem-box-btn img {
+        margin: 0 !important;
+        max-width: 100%;
+    }
+
+    .problem-section .problem-btn {
+        font-size: 3.4vw;
+    }
+
+    .problem-section .problem-btn .wrap {
+        width: 70%;
+        height: 26vw;
+        right: 3%;
+        top: 25%;
+    }
+
+    .problem-section .col-right .problem-box-btn .wrap {
+        width: 60%;
+    }
+
+    .problem-section .col-left {
+        margin-bottom: 50px;
+    }
+
+    .children-orthodontic {
+        margin-top: 50px;
+    }
+
+    #main {
+        margin-top: 0;
+    }
+
+    .main-visual .inner {
+        margin: 0 10px;
+        width: calc(100% - 20px) !important;
+    }
+
+    .main-visual .visual-decor-bottom {
+        width: 100%;
+        padding: 0 7%;
+    }
+
+    .main-visual .group-visual-ttl {
+        bottom: 30vw;
+    }
+
+    .main-visual .visual-ttl-02 {
+        font-size: 5vw;
+        text-align: right;
+        width: 100%;
+    }
+
+    .main-visual .visual-ttl-en {
+        font-size: 10vw;
+        text-align: right;
+        padding-left: 10vw;
+    }
+
+    .main-visual .visual-ttl-01 {
+        top: 40%;
+    }
+
+    .main-visual .visual-ttl-01 img {
+        width: 31vw;
+    }
+
+    .wrap-child-ortho-map {
+        position: relative;
+        z-index: 1;
+        padding-bottom: 16vw;
+    }
+
+    .wrap-child-ortho-map:before {
+        content: "";
+        width: 30%;
+        height: calc(100%);
+        background: #fae1d3;
+        position: absolute;
+        left: 35%;
+        top: -20px;
+        z-index: -2;
+    }
+
+    .wrap-child-ortho-map:after {
+        content: "";
+        width: 80%;
+        height: 100%;
+        background: url(../images/bg-28.png) center bottom / 100% auto no-repeat;
+        position: absolute;
+        left: 10%;
+        bottom: -48px;
+        z-index: -1;
+    }
+
+    .button-fixed-sp {
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .button-fixed-sp a {
+        width: 100%;
+        height: 80px;
+        font-size: 16px;
+    }
+
+    .btn-mail span {
+        padding-top: 40px;
+        background-size: 30px auto;
+    }
+
+    .main-visual .text-address {
+        left: 3%;
+        top: 52%;
+        width: 26vw;
+        height: 26vw;
+        font-size: 2.6vw;
+        padding-top: 1vw;
+    }
+
+    .journey-section .inner.d-flex {
+        display: block;
+    }
+
+    .journey-section .block {
+        width: 100%;
+        margin: 0 0 30px;
+    }
+
+    .journey-section .block:first-child {
+        margin-right: 0;
+    }
+
+    .journey-section table th {
+        width: 130px;
+    }
+}
+
+/* screen-max:750px */
+
+@media screen and (max-width: 640px) {
+    .contact-banner-section h3 {
+        font-size: 26px;
+    }
+}
+
+/* screen-max:640px */
+
+@media screen and (max-width: 560px) {
+    .video-section iframe {
+        height: 54vw;
+    }
+
+    p {
+        line-height: 2.2em;
+    }
+
+    .block-product .product-name {
+        font-size: 18px;
+        min-width: 300px;
+        margin-left: -10px;
+    }
+
+    table th {
+        font-size: 18px;
+    }
+
+    table td {
+        font-size: 16px;
+    }
+
+    .treatment-devices-section .block-table table th {
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .font-large {
+        font-size: 120%;
+    }
+
+    .payments-section .block-table table th {
+        font-size: 16px;
+    }
+
+    .problem-section .problem-btn .wrap span {
+        padding-top: 9vw;
+    }
+
+    .block-product .product-img .product-tag {
+        left: -10px;
+        bottom: 30px;
+    }
+}
+
+/* screen-max:560px */
+
+@media screen and (max-width: 520px) {
+    .address {
+        font-size: 16px;
+    }
+
+    .contact-banner-section h3 {
+        font-size: 22px;
+    }
+
+    .contact-banner-section h3 .wrap {
+        background-size: auto 100%;
+        padding: 0 25px 0 35px;
+    }
+
+    .contact-banner-content {
+        padding: 25px;
+    }
+
+    .btn-tel.large {
+        padding-left: 40px;
+        font-size: 34px;
+        letter-spacing: 0.05em;
+    }
+
+    .calling-time li {
+        font-size: 12.5px;
+    }
+
+    .calling-time li span {
+        width: 90px;
+    }
+
+    .contact-banner-content .col-right .btn-mail {
+        font-size: 18px;
+        height: 110px;
+        width: 270px;
+    }
+
+    .contact-banner-content .col-right .btn-mail span {
+        background-size: 35px;
+        padding-top: 50px;
+    }
+
+    .block-product .product-img-name {
+        height: 65px;
+        font-size: 15px;
+        min-width: 200px;
+        right: -10px !important;
+    }
+
+    .payments-section .block-table table th {
+        font-size: 14px;
+    }
+
+    .payments-section .block-table h4 {
+        font-size: 18px;
+    }
+
+    .adult-ortho-step .step-ttl dd .txt-jp {
+        font-size: 24px;
+    }
+
+    .adult-orthodontic .sub-ttl {
+        font-size: 18px;
+    }
+    .main-visual .text-address:before {
+        left: -15px;
+        width: 24px;
+        height: 64px;
+    }
+    .main-visual .text-address:after {
+        right: -15px;
+        width: 24px;
+        height: 64px;
+    }
+}
+
+/* screen-max:520px */
+
+@media screen and (max-width: 475px) {}
+
+/* screen-max:475px */
+
+@media screen and (max-width: 425px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    input,
+    button,
+    textarea,
+    select,
+    p,
+    blockquote,
+    th,
+    td,
+    pre,
+    address,
+    li,
+    dt,
+    dd {
+        font-size: 140%;
+    }
+
+    .txt-desc {
+        font-size: 14px;
+        line-height: 2em;
+    }
+
+    .contact-banner-section h3 {
+        font-size: 17px;
+    }
+
+    .contact-banner-section h3 .wrap {
+        padding: 0 20px 0 28px;
+    }
+
+    #footer {
+        margin-top: 100px;
+        margin-bottom: 80px;
+    }
+
+    .contact-banner-section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .video-section h4 {
+        font-size: 26px;
+    }
+
+    .video-section h4 .txt-en {
+        margin-bottom: 0.5em;
+    }
+
+    .video-section {
+        padding-top: 50px;
+    }
+
+    table th {
+        font-size: 16px;
+    }
+
+    table td {
+        font-size: 14px;
+    }
+
+    .adult-ortho-step .step-ttl dd .txt-jp {
+        font-size: 20px;
+    }
+
+    .adult-ortho-step .flex-content .block-text .txt-desc {
+        font-size: 14px;
+    }
+
+    .adult-ortho-step .step-ttl dt {
+        width: 70px;
+        height: 54px;
+    }
+
+    .adult-ortho-step .wrap-pickup .pickup-flex-content .block-text .txt-desc {
+        font-size: 14px;
+    }
+
+    .wrap-pickup .ttl-en {
+        font-size: 40px;
+    }
+
+    .adult-orthodontic .sub-ttl {
+        font-size: 16px;
+    }
+
+    .ortho-map-step,
+    .ortho-map-wrap-step .ortho-map-step {
+        padding: 15px;
+    }
+
+    .ortho-map-step .col-left h5 {
+        font-size: 22px;
+    }
+
+    .children-orthodontic .before-ortho {
+        padding: 20px;
+    }
+
+    .children-orthodontic .before-ortho .block-text .txt-desc {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .problem-section .list-problem li {
+        font-size: 15px;
+        background-position: left 20px top 0.5em;
+    }
+}
+
+/* screen-max:425px */
+
+@media screen and (max-width: 375px) {
+    .footer-banners li {
+        width: 100% !important;
+        margin: 0 0 10px !important;
+    }
+
+    .footer-banners li:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    .address {
+        font-size: 13px;
+    }
+
+    .btn-tel {
+        font-size: 34px;
+    }
+
+    .btn-tel.large {
+        font-size: 31px;
+    }
+
+    .calling-time li {
+        font-size: 11px;
+    }
+
+    .calling-time li span {
+        width: 85px;
+    }
+
+    .contact-banner-content .col-right .btn-mail {
+        font-size: 18px;
+        height: 100px;
+        width: 245px;
+    }
+
+    .contact-banner-content .img-bg {
+        width: 155px;
+        right: -70px;
+    }
+
+    .video-section h4 {
+        font-size: 24px;
+    }
+
+    .adult-ortho-step .step-ttl dd .txt-jp {
+        font-size: 18px;
+    }
+
+    .adult-orthodontic .sub-ttl {
+        font-size: 14px;
+    }
+}
+
+/* screen-max:375px */
+
+
+@media screen and (max-width: 320px) {}
+
+
+/* screen-max:320px */
+
+
+
+/*=============================HACK CSS=============================*/
+
+/* IE */
+@media (-ms-high-contrast: none),
+(-ms-high-contrast: active) {}
+
+
+/* EGDE */
+@supports (-ms-ime-align:auto) {}
+
+
+/* FIREFOX */
+@-moz-document url-prefix() {}
+
+
+/* Safari 10.1+ (which is the latest version of Safari at this time) */
+@media not all and (min-resolution:.001dpcm) {
+    @media {}
+}
