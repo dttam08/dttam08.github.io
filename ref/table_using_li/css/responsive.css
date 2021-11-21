@@ -1,0 +1,86 @@
+@media only screen and (min-width: 751px) and (max-width: 1200px) {
+	.container,
+	.under #content {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+}
+
+@media only screen and (min-width: 751px) {
+	.sp {
+		display: none !important;
+	}
+	a:hover,
+	a:active {
+		color: #006baf;
+		text-decoration: none;
+	}
+
+	a:hover img {
+		opacity: 0.7;
+	}
+	a[target="_blank"]:hover img,
+	.logo a:hover img,
+	.f_logo a:hover img,
+	a:hover img.no_hover {
+		opacity: 1;
+	}
+	#totop a:hover img {
+		opacity: 1;
+	}
+	.pager li a:hover,
+	.pagi li a:hover {
+		opacity: 0.8;
+	}
+	.btn_blog a:hover {
+		background: #43d059;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	input,
+	button,
+	textarea,
+	select,
+	p,
+	blockquote,
+	th,
+	td,
+	pre,
+	address,
+	li,
+	dt,
+	dd {
+		font-size: 140%;
+	}
+	#wrapper {
+		min-width: 100%;
+	}
+	.pc {
+		display: none !important;
+	}
+	/******************Gnavi********************************/
+
+	/***********************Content********************************/
+	/*******************************************************/
+	/******************Footer********************************/
+	.copyright {
+		padding: 10px 0;
+		letter-spacing: 0;
+	}
+}
+
+@media only screen and (max-width: 530px) {
+}
+
+@media only screen and (max-width: 414px) {
+}
+
+@media only screen and (max-width: 374px) {
+}

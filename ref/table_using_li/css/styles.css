@@ -1,0 +1,517 @@
+@charset "UTF-8";
+@import "base.css";
+@import "fonts.css";
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Noto+Sans+JP:wght@100;300;400;500;700&family=Noto+Serif+JP:wght@200;300;400;500;600;700&display=swap");
+body {
+	font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+	font-weight: 400;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	color: #b7880e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+textarea,
+select,
+p,
+blockquote,
+th,
+td,
+pre,
+address,
+li,
+dt,
+dd {
+	font-size: 160%;
+	-webkit-text-size-adjust: none;
+}
+
+li,
+dd,
+dt,
+th,
+td {
+	line-height: 2em;
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	line-height: 2em;
+	margin: 0 0 2em;
+	letter-spacing: 0.075em;
+}
+p[class*="img"] {
+	line-height: 1;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+
+#wrapper {
+	min-width: 1200px;
+	overflow: hidden;
+}
+.container {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+}
+/******************************Header********************************/
+#header {
+	position: relative;
+}
+
+h1 {
+	position: relative;
+	font-size: 14px;
+	font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+	letter-spacing: 0.075em;
+	color: #383735;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+.header-left {
+	position: relative;
+	padding-left: 40px;
+}
+.header-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	z-index: 10;
+}
+.header-logo {
+	position: relative;
+	display: block;
+	margin-top: 29px;
+	margin-bottom: 4px;
+}
+.header-logo::before {
+	position: absolute;
+	content: "";
+	width: 263px;
+	height: 283px;
+	background: url(../images/icon-logo.png) no-repeat;
+	background-size: contain;
+	right: -106px;
+	top: -64px;
+	z-index: -1;
+}
+.header-logo a {
+	display: block;
+}
+.header-logo-desc {
+	position: relative;
+	letter-spacing: 0.1em;
+	font-size: 12px;
+	font-family: "Noto Sans JP", sans-serif;
+	margin-bottom: 0;
+}
+.header-contact {
+	display: flex;
+}
+.contact-web {
+	position: relative;
+	display: flex;
+	margin-left: 10px;
+}
+.contact-web a {
+	display: flex;
+	position: relative;
+	text-decoration: none;
+	background-color: #ee631f;
+	text-align: center;
+	border-radius: 0 0 0 5px;
+}
+.contact-web-title {
+	line-height: 1;
+	padding: 85px 31px 32px;
+	background-image: url(../images/icon-web.png);
+	background-position: top 32px center;
+	background-size: 43px;
+}
+.contact-line-title,
+.contact-web-title {
+	position: relative;
+	display: block;
+	font-size: 22px;
+	font-family: "Noto Sans JP", sans-serif;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	text-align: center;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+.contact-line {
+	position: relative;
+	display: flex;
+}
+.contact-line a {
+	display: flex;
+	position: relative;
+	text-decoration: none;
+	background-color: #00c300;
+	text-align: center;
+	border-radius: 0 0 5px 5px;
+}
+.contact-line-title {
+	line-height: 1;
+	padding: 76px 21px 0px;
+	background-image: url(../images/icon-line.png);
+	background-position: top 25px center;
+	background-size: 44px;
+}
+.contact-line-title .min {
+	font-size: 81%;
+}
+.contact-phone {
+	position: relative;
+	margin-right: 14px;
+	text-align: right;
+}
+.contact-phone a {
+	display: block;
+	position: relative;
+	text-decoration: none;
+}
+.contact-phone .contact-phone-num {
+	position: relative;
+	display: block;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 42px;
+	letter-spacing: 0.087em;
+	line-height: 1.3em;
+	color: #383735;
+	font-weight: 500;
+	background-image: url(../images/icon-phone.png);
+	background-position: top 16px left;
+	background-size: 46px;
+	background-repeat: no-repeat;
+	padding-left: 53px;
+	margin-top: 7px;
+}
+.contact-phone .contact-row {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 6px;
+	margin-top: 4px;
+	margin-bottom: 10px;
+}
+.contact-phone .contact-row span {
+	position: relative;
+	font-family: "Noto Sans JP", sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	letter-spacing: 0.1em;
+	line-height: 1em;
+	margin-right: 14px;
+	color: #383735;
+}
+.contact-phone .contact-row span:last-child {
+	margin-right: 0;
+}
+.contact-phone .contact-row .bg {
+	padding: 6px 4px;
+	color: #fff;
+	background: #8c7740;
+	border-radius: 2px;
+}
+.contact-address {
+	font-family: "Noto Sans JP", sans-serif;
+	letter-spacing: 0.1em;
+	font-size: 14px;
+	font-weight: 400;
+	position: relative;
+	color: #383735;
+}
+.index-h2 {
+	position: absolute;
+	top: calc(50% + 16px);
+	transform: translateY(-50%);
+	left: calc(10% + 8px);
+	z-index: 10;
+}
+.index-h2 .bg {
+	position: relative;
+	display: inline-block;
+	font-size: 36px;
+	letter-spacing: 0.075em;
+	font-family: "Noto Sans JP", sans-serif;
+	font-weight: bold;
+	color: #cbc284;
+	background: #383735;
+	border-radius: 5px;
+	line-height: 1.2em;
+	padding: 18px 23px 24px;
+	margin-bottom: 36px;
+}
+.index-h2 .text {
+	position: relative;
+	display: block;
+	font-size: 48px;
+	letter-spacing: 0.075em;
+	color: #383735;
+	font-family: "Noto Sans JP", sans-serif;
+	line-height: 1.4em;
+	font-weight: bold;
+	text-shadow: rgb(255, 255, 255) 1px 0px 0px,
+		rgb(255, 255, 255) 0.540302px 0.841471px 0px,
+		rgb(255, 255, 255) -0.416147px 0.909297px 0px,
+		rgb(255, 255, 255) -0.989992px 0.14112px 0px,
+		rgb(255, 255, 255) -0.653644px -0.756802px 0px,
+		rgb(255, 255, 255) 0.283662px -0.958924px 0px,
+		rgb(255, 255, 255) 0.96017px -0.279415px 0px,
+		rgb(255, 255, 255) 1px 0px 0px,
+		rgb(255, 255, 255) 0.540302px 0.841471px 0px,
+		rgb(255, 255, 255) -0.416147px 0.909297px 0px,
+		rgb(255, 255, 255) -0.989992px 0.14112px 0px,
+		rgb(255, 255, 255) -0.653644px -0.756802px 0px,
+		rgb(255, 255, 255) 0.283662px -0.958924px 0px,
+		rgb(255, 255, 255) 0.96017px -0.279415px 0px;
+}
+.index-h2 .high {
+	position: relative;
+	color: #b7880e;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 126%;
+}
+#mainvisual {
+	position: relative;
+	display: block;
+	background: url(../images/mvs-bg.jpg) no-repeat;
+	background-size: cover;
+	height: calc(100vh + 23px);
+}
+.mvs-img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+
+/*******************************************************************/
+
+/******************************Gnavi********************************/
+.gnavi {
+	position: absolute;
+	bottom: -42px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+	background: #383735;
+	width: 1360px;
+	padding: 0 80px;
+	border-radius: 5px;
+}
+.gnavi::before {
+	position: absolute;
+	content: "";
+	top: -195px;
+	left: -110px;
+	width: 447px;
+	height: 255px;
+	background: url(../images/icon-menu.png) no-repeat;
+	background-size: contain;
+}
+.gnavi-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+.gnavi-list {
+	display: none;
+}
+.gnavi-item {
+	position: relative;
+}
+.gnavi-item::before {
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 30px;
+	background: #5d5d5d;
+	right: -30px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.gnavi-item:last-child::before {
+	content: none;
+}
+.gnavi-item > a,
+.gnavi-item > label {
+	display: block;
+	position: relative;
+	text-decoration: none;
+	font-family: "Noto Sans JP", sans-serif;
+	color: #cbc284;
+	font-size: 20px;
+	letter-spacing: 0.1em;
+	line-height: 1;
+	padding: 40px 0;
+	font-weight: bold;
+}
+.block-button {
+	position: relative;
+	text-align: center;
+}
+.index [class*="btn"] {
+	position: relative;
+	display: inline-block;
+	padding: 12px 10px;
+	text-decoration: none;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 18px;
+	line-height: 1.4em;
+	color: #cbc284;
+	background: #383735;
+	border-radius: 25px;
+	min-width: 180px;
+	text-align: center;
+	font-weight: bold;
+}
+.index-wrap {
+	position: relative;
+	padding: 275px 0 100px;
+}
+h3 {
+	position: relative;
+	margin-bottom: 32px;
+}
+h3 .en {
+	position: relative;
+	font-family: "Lato", sans-serif;
+	font-size: 32px;
+	color: #383735;
+	letter-spacing: 0.025em;
+	font-weight: 900;
+	display: block;
+	text-align: center;
+	margin-bottom: 15px;
+}
+h3 .jp {
+	position: relative;
+	display: block;
+	letter-spacing: 0.025em;
+	font-family: "Noto Sans JP", sans-serif;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+}
+.news-container h3 .jp {
+	font-size: 20px;
+}
+h3 .high {
+	color: #8c7740;
+}
+.news-container {
+	position: relative;
+	display: flex;
+	box-shadow: 0 5px 40px rgba(4, 0, 0, 0.1);
+	border-radius: 5px;
+}
+.news-title {
+	position: relative;
+	width: 290px;
+	padding: 35px 20px 37px;
+	background: #beaf88;
+	border-radius: 5px 0 0 5px;
+}
+.news-list {
+	position: relative;
+	border-radius: 0 5px 5px 0;
+	width: calc(100% - 290px);
+	background: #fff;
+	padding: 48px 50px 35px;
+}
+.news-list li {
+	position: relative;
+	margin-bottom: 10px;
+}
+.news-list li:last-child {
+	margin-bottom: 0;
+}
+.new-list-date {
+	position: relative;
+	font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+	color: #8a8066;
+	font-weight: bold;
+	margin-right: 30px;
+}
+.new-list-link {
+	display: inline-block;
+	text-decoration: none;
+	color: #383735;
+}
+/*******************************************************************/
+
+/******************************Footer********************************/
+
+/*******************************************************************/
+
+#totop {
+	position: fixed;
+	bottom: 48px;
+	right: 15px;
+	z-index: 9;
+	line-height: 0;
+	margin: 0;
+}
+
+#totop a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 68px;
+	width: 68px;
+	border: 1px solid #728eb0;
+	border-radius: 50%;
+}
+
+.copyright {
+	text-align: center;
+	line-height: 60px;
+	margin-bottom: 0;
+	background: #11ba39;
+	color: #fff;
+}
+/* IE 11 */
+@media screen\0 {
+
+}
+
+/*Safari*/
+
+@media not all and (min-resolution: 0.001dpcm) {
+	@supports (-webkit-appearance: none) and (stroke-color: transparent) {
+	}
+}
