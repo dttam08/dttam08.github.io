@@ -1,0 +1,187 @@
+@media only screen and (min-width:641px) {
+  /***********parallaxContent*********/
+.parallaxContent {
+    position: relative;
+    min-width: 1200px;
+    overflow: hidden
+}
+
+.wrap_content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transition: all 0.4s ease
+}
+
+/*
+.categoryContent_title {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.categoryContent_title.is-active {
+    opacity: 1;
+    visibility: visible;
+}
+*/
+
+/*
+.categoryContent_detail {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.categoryContent_detail.is-active {
+    opacity: 1;
+    visibility: visible;
+}
+*/
+
+.categoryContent_banner {
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s opacity ease;
+}
+
+.categoryContent_banner.is-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.pagenation {
+    position: fixed;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    width: 5px;
+    z-index: 100;
+}
+
+.pagenation_circle {
+    position: fixed;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    width: 5px;
+    z-index: 100;
+}
+
+.pagenation_circle.is-active {
+    background-color: #333;
+    transition: all .3s ease;
+}
+
+/****************************************/
+.scrollProgressBar {
+    position: absolute;
+    top: calc( 50% + 20px);
+    left: 120px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 560px;
+    background-color: #fff;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.scrollProgressBar.is-active {
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+.scrollProgressBar_meter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    width: 1px;
+    height: 100%;
+    background-color: #7f7f7f;
+}
+
+.parallaxContent .js-section {
+    padding: 30px 0;
+    /*background: url(../images/b06_bg.jpg) center no-repeat;
+    background-size: cover;*/
+    position: absolute;
+    z-index: 100;
+    transition: 1s background ease;
+    width: 100%;
+    min-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.parallaxContent .js-section.is-active {
+   /* background: url(../images/b07_bg.jpg) center no-repeat;
+	background-size: cover;*/
+}
+
+.parallaxContent .js-section.is-active > h3 {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.parallaxContent .js-section.is-fixed {
+    position: fixed;
+    z-index: 100;
+}
+}
+/*@media only screen and (max-width:640px) {
+    .parallaxContent {
+        overflow: unset;
+        min-width: 100%;
+        height: auto !important;
+    }
+    .parallaxContent .js-section {
+        position: relative;
+        min-width: 100%;
+        height: auto;
+        background: none;
+    }
+    .categoryContent_detail,
+    .categoryContent_title {
+        opacity: 1;
+        visibility: visible;
+    }
+    .scrollProgressBar {
+        display: none;
+    }
+    .wrap_content {
+        position: static;
+        height: auto;
+        background: url(../images/b07_bg.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .box06 > h3 {
+        position: relative;
+        left: unset;
+        transform: unset;
+        height: 100vw;
+        background: url(../images/b06_bg_sp.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .box06 > h3 svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .box07 {
+        height: auto;
+    }
+    .box07 .container {
+        position: relative;
+        transform: unset;
+        left: unset;
+    }
+    .b07-image-btn .idx-btn {
+        bottom: 80px;
+    }
+}*/
