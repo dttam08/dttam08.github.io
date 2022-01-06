@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "Shimano";
+  src: url("font/Shimano-SquareLightNarrow.eot");
+  src: url("font/Shimano-SquareLightNarrow.eot?#iefix") format("embedded-opentype"), url("font/Shimano-SquareLightNarrow.woff2") format("woff2"), url("font/Shimano-SquareLightNarrow.woff") format("woff"), url("font/Shimano-SquareLightNarrow.ttf") format("truetype"), url("font/Shimano-SquareLightNarrow.svg#Shimano") format("svg");
+}

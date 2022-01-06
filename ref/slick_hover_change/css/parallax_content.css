@@ -1,0 +1,550 @@
+/***********parallaxContent*********/
+.parallaxContent {
+    position: relative;
+    min-width: 1200px;
+    overflow: hidden
+}
+
+.wrap_content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transition: all 0.4s ease
+}
+
+.categoryContent_title {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.categoryContent_title.is-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.categoryContent_detail {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.categoryContent_detail.is-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.categoryContent_banner {
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s opacity ease;
+}
+
+.categoryContent_banner.is-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.pagenation {
+    position: fixed;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    width: 5px;
+    z-index: 100;
+}
+
+.pagenation_circle {
+    position: fixed;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    width: 5px;
+    z-index: 100;
+}
+
+.pagenation_circle.is-active {
+    background-color: #333;
+    transition: all .3s ease;
+}
+
+/****************************************/
+
+.parallaxContent .js-section {
+    padding: 30px 0;
+    background: url(../images/box03_bg.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 100;
+    transition: 1s background ease;
+    width: 100%;
+    min-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.parallaxContent .js-section.is-fixed {
+    position: fixed;
+    z-index: 100;
+}
+
+.parallaxContent .js-section .container {
+    height: 100%;
+
+}
+
+.parallaxContent .js-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 7;
+    transition: opacity 1s ease;
+}
+
+.parallaxContent .js-section.is-active:before {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease;
+}
+
+.index .parallaxContent h5 {
+    line-height: 1.3em;
+    margin-bottom: 40px;
+    width: 100%;
+    font-size: 30px;
+    letter-spacing: -1px
+}
+
+.show_default {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 20;
+}
+
+.show_default .inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.is-active .show_default {
+    z-index: 6;
+}
+
+.parallaxContent .box03 h5 {
+    margin-top: 30px
+}
+
+.bg_img_cicle {
+    width: 100%;
+    position: relative;
+    line-height: 0;
+}
+
+.bg_img_cicle:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 52px;
+    z-index: 0;
+}
+
+.box03.is-active .show_default h5 {
+    display: none
+}
+
+.box03 .bg_img_cicle:after {
+    background: url(../images/box03_01.png) no-repeat center;
+    background-size: contain;
+
+}
+
+.box04 .bg_img_cicle:after {
+    background: url(../images/box04_01.png) no-repeat center;
+    background-size: contain;
+
+}
+
+.box04 .bg_img_cicle .cls4-1,.parallaxContent .box04 .img_cicle {
+    filter: drop-shadow(0px 5px 8px rgb(0, 0, 0, 0.65));
+    -webkit-filter: drop-shadow(0px 5px 8px rgb(0, 0, 0, 0.65));
+    -ms-filter: drop-shadow(0px 5px 8px rgb(0, 0, 0, 0.65));
+}
+
+.box04 .idx_con01 .grptxt {
+    text-align: center;
+    padding: 33px 40px 50px
+}
+
+.box05 .bg_img_cicle:after {
+    background: url(../images/box05_01.png) no-repeat center;
+    background-size: contain;
+
+}
+
+.box05 .img_cicle img {
+    position: relative;
+    top: 1px;
+}
+
+.parallaxContent .img_cicle {
+    text-align: center;
+    line-height: 0;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    top: 0;
+
+}
+
+.idx_con01 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.idx_con01.fr {
+    justify-content: flex-end;
+}
+
+.idx_con01 .img {
+    order: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.idx_con01.fr .img {
+    left: 0;
+    right: auto;
+}
+
+.idx_con01 h4.tit {
+    font-size: 30px;
+    color: #231815;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho";
+    line-height: 1.36em;
+    margin-bottom: 15px;
+    text-align: left
+}
+
+.idx_con01 .grp_txt {
+    width: 650px;
+    position: relative;
+    z-index: 1
+}
+
+.idx_con01 .grp_txt a {
+    border-top: 6px solid #A08871;
+    background: rgba(255, 255, 255, 0.9);
+    display: block;
+    padding: 38px 40px 80px;
+    text-decoration: none;
+    color: #666
+}
+
+.idx_con01 .grp_txt a:hover {
+    background: #fff;
+    border-top: 6px solid #EE8A29;
+}
+
+.idx_con01 .ft_txt {
+    line-height: 1.9em;
+    margin-bottom: 0;
+}
+
+.idx_con01 .num {
+    font-size: 68px;
+    color: #D8CDC4;
+    font-family: 'Crimson Text', serif;
+    line-height: 1em;
+    display: inline-block;
+    position: absolute;
+    left: 3px;
+    letter-spacing: -2px;
+    bottom: -7px;
+}
+
+.idx_img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.idx_img li {
+    line-height: 0;
+}
+
+.idx_img li span {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2px 20px;
+    line-height: 1.4em;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho";
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    min-width: 170px
+}
+
+.idx_img li a {
+    position: relative;
+    display: block
+}
+
+.ico_dot {
+    position: relative
+}
+
+
+.idx_con01.none {
+    background: rgba(255, 255, 255, 0.9);
+    display: block;
+    height: auto
+}
+
+.idx_con01 .grptxt {
+    padding: 40px
+}
+
+
+.grptxt h4.tit {
+    text-align: center;
+    display: block
+}
+
+.img_cicle {
+    width: 660px;
+    height: 660px;
+}
+
+.img_cicle [id *='idx'],
+.img_cicle [id *='idx'] {
+    cursor: pointer
+}
+
+.img_cicle [id *='idx']:hover path {
+    stroke: #cc6714;
+
+}
+
+@media only screen and (max-width:768px) {
+    .parallaxContent .pc {
+        display: none
+    }
+
+    #js-parallaxContent .sp {
+        display: block;
+        margin: 0 auto
+    }
+
+    #js-parallaxContent {
+        min-width: 100% !important;
+        height: auto!important
+    }
+
+    .parallaxContent .js-section {
+        height: auto;
+        padding: 50px 10px;
+        min-width: 100%;
+        position: static !important
+    }
+    .parallaxContent .js-section.is-fixed{
+        position: static !important
+    }
+    .idx_con01 {
+        width: 100%;
+        height: auto;
+        position: static;
+        transform: none;
+        margin-top: 30px
+    }
+
+    .parallaxContent section {
+        background: url(../images/box03_bg.jpg) no-repeat;
+        padding: 40px 10px;
+        background-size: cover;
+        position: static;
+        top: 0px!important
+    }
+
+    .show_default {
+        z-index: 4
+    }
+
+    .wrap_content {
+        position: static;
+        height: auto;
+        transition: none
+    }
+
+    .categoryContent_detail,
+    .categoryContent_title,
+    .categoryContent_banner {
+        opacity: 1;
+        visibility: visible;
+        transition: none
+    }
+    .box03.is-active .show_default h5{
+        display: block
+    }
+    .box03 .bg_img_cicle:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 52px;
+        width: 100%;
+        background: url(../images/box05_01_sp.png) no-repeat center right;
+        background-size: contain;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1
+    }
+
+    .box04 .bg_img_cicle:after,
+    .box05 .bg_img_cicle:after {
+        display: none
+    }
+
+    .idx_con01.fr {
+        justify-content: center
+    }
+
+    .idx_con01 .img {
+        position: static;
+        order: 0;
+        text-align: center;
+        width: 100%;
+        transition: none
+
+    }
+
+    .idx_con01 .grp_txt {
+        width: calc(100% - 40px);
+        margin: -58px auto 0;
+    }
+
+    .idx_con01 .grp_txt a {
+        padding: 25px 25px 13vw;
+        background: rgba(255, 255, 255, 0.9)
+    }
+
+    .box03 h5.white {
+        margin-top: 20px
+    }
+
+    .index .parallaxContent h5 {
+        margin-bottom: 22px;
+        line-height: 1.6em
+    }
+
+    .idx_con01 h4.tit {
+        font-size: 5vw;
+
+    }
+
+    .img_cicle {
+        height: auto;
+        width: 90%
+    }
+
+    .idx_con01 .num {
+        bottom: 0;
+        left: 3px;
+        font-size: 10vw;
+        letter-spacing: 0
+    }
+
+    .idx_con01 .grptxt {
+        padding: 25px
+    }
+
+    .box05 .idx_con01 h4.tit {
+        font-size: 4.8vw
+    }
+
+    .box04 .idx_con01 .grptxt {
+        padding: 22px
+    }
+
+    .idx_img li span {
+        font-size: 3.5vw;
+        letter-spacing: -0.5px;
+        padding: 1vw;
+        min-width: auto;
+        width: calc(100% - 10px);
+        left: 0;
+        right: 0;
+        margin: 0 auto
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .box03 .idx_con01 h4.tit {
+        font-size: 4.2vw;
+        letter-spacing: 0.13vw;
+        line-height: 1.5em
+    }
+
+    .box05 .idx_con01 h4.tit {
+        font-size: 4.1vw;
+    }
+}
+
+
+@media only screen and (max-width:370px) {
+    .idx_con01 .tit br {
+        display: none
+    }
+
+    .box03 .idx_con01 h4.tit {
+        font-size: 5.2vw;
+    }
+
+    .idx_con01 h4.tit {
+        font-size: 5.5vw;
+    }
+
+    .box05 .idx_con01 h4.tit {
+        font-size: 5.1vw;
+    }
+}
+
+/*==============FIX IE 11 ==================*/
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
+    /**********under************/
+
+    .idx_img li span {
+        padding: 7px 19px 2px;
+    }
+}

@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Gothic MB101';
+  font-weight: 400;
+  src: url('font/GothicMB101ProR.otf');
+  src: url('font/GothicMB101ProR.woff2') format('woff2'),
+       url('font/GothicMB101ProR.woff') format('woff'),
+       url('font/GothicMB101ProR.otf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Gothic MB101';
+  font-weight: 500;
+  src: url('font/GothicMB101ProM.otf');
+  src: url('font/GothicMB101ProM.woff2') format('woff2'),
+       url('font/GothicMB101ProM.woff') format('woff'),
+       url('font/GothicMB101ProM.otf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Gothic MB101';
+  font-weight: 600;
+  src: url('font/GothicMB101ProDB.otf');
+  src: url('font/GothicMB101ProDB.woff2') format('woff2'),
+       url('font/GothicMB101ProDB.woff') format('woff'),
+       url('font/GothicMB101ProDB.otf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Gothic MB101';
+  font-weight: 700;
+  src: url('font/GothicMB101ProB.otf');
+  src: url('font/GothicMB101ProB.woff2') format('woff2'),
+       url('font/GothicMB101ProB.woff') format('woff'),
+       url('font/GothicMB101ProB.otf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Gothic MB101';
+  font-weight: 900;
+  src: url('font/GothicMB101ProH.otf');
+  src: url('font/GothicMB101ProH.woff2') format('woff2'),
+       url('font/GothicMB101ProH.woff') format('woff'),
+       url('font/GothicMB101ProH.otf')  format('truetype');
+}
