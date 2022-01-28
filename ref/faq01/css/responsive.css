@@ -1,0 +1,67 @@
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 640px) {
+    h1, h2, h3, h4, h5, h6, input, button, textarea, select, p, blockquote, th, td, pre, address, li, dt, dd {
+        font-size: 140%;
+    }
+    #wrapper {
+        min-width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .pc {
+        display: none;
+    }
+    .sp {
+        display: block;
+    }
+
+    .icon_menu {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 35px;
+    }
+    .icon_menu::before,
+    .icon_menu::after,
+    .icon_menu span::before,
+    .icon_menu span::after {
+        content: '';
+        width: 40px;
+        height: 4px;
+        background-color: #ba9e5d;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+    }
+    .icon_menu::before {
+        top: 0;
+    }
+    .icon_menu::after {
+        bottom: 0;
+    }
+    .icon_menu span::before,
+    .icon_menu span::after {
+        top: 15px;
+    }
+    .icon_menu.active::before,
+    .icon_menu.active::after {
+        opacity: 0;
+    }
+    .icon_menu.active span::before {
+        transform: translateX(-50%) rotate(45deg);
+    }
+    .icon_menu.active span::after {
+        transform: translateX(-50%) rotate(-45deg);
+    }
+}
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 375px) {}
+
+@media only screen and (max-width: 320px) {}

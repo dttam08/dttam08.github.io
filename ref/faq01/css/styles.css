@@ -1,0 +1,219 @@
+@charset "UTF-8";
+@import "base.css";
+@import "fonts.css";
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*==========================================================================*/
+/*//////////////////////////////////////////////////////////////////////////*/
+/*//////                                                              //////*/
+/*//////                  © Branding Technology inc.                  //////*/
+/*//////                                                              //////*/
+/*//////////////////////////////////////////////////////////////////////////*/
+/*                                                                          */
+/*    base.css  --> スタイルの初期設定を行うため、変更しないで下さい。      */
+/*    fonts.css --> フォントの初期設定を行うため、変更しないで下さい。      */
+/*                                                                          */
+/*==========================================================================*/
+/*==========================================================================*/
+/*                           Common-Setting                                 */
+/*==========================================================================*/
+/* 基本タグのフォントサイズを指定（12px -> 120% or 1.2em ） */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    color: #B88F07;
+}
+a:hover,
+a:active {
+    color: #40210F;
+    text-decoration: none
+}
+a:hover img {
+    opacity: 0.7;
+}
+h1, h2, h3, h4, h5, h6, input, button, textarea, select, p, blockquote, th, td, pre, address, li, dt, dd {
+    font-size: 160%;
+    -webkit-text-size-adjust: none;
+}
+li, dd, dt, th, td {
+    line-height: 1.9em;
+}
+img {
+    max-width: 100%;
+}
+p {
+    line-height: 1.9em;
+    margin: 0 0 1.8em;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+body {
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝B", serif;
+    color: #40210F;
+}
+#wrapper {
+    min-width: 1200px;
+    overflow: hidden;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* ============== HEADER ============== */
+
+.icon_menu {
+    display: none;
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+}
+.menu > li {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 28px;
+}
+.menu > li > span,
+.menu > li > a {
+    position: relative;
+    color: #726144;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+}
+.menu > li > span::before,
+.menu > li > a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1px;
+    background-color: #9ab3d7;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.menu > li:hover {
+    background-color: #fdfde9;
+}
+.menu > li:hover > span,
+.menu > li:hover > a {
+    color: #9ab3d7;
+}
+.menu > li:hover > span::before,
+.menu > li:hover > a::before {
+    width: 100%;
+    opacity: 1;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 294px;
+    padding: 25px;
+    background-color: #fdfde9;
+}
+.submenu li:not(:last-child) {
+    margin-bottom: 5px;
+}
+.submenu li a {
+    position: relative;
+    display: inline-flex;
+    color: #9ab3d7;
+}
+/* ============== HEADER FIXED ============== */
+#header {
+    animation: remove_fixed 0.3s linear;
+}
+#header.fixed {
+    position: fixed;
+    width: 100%;
+    max-width: 1920px;
+    animation: header_fixed 0.6s;
+}
+@keyframes header_fixed {
+    0% {
+        opacity: 0.5;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes remove_fixed {
+    0% {
+        opacity: 0.9;
+        transform: translateY(20%)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+/* ============== GNAVI ============== */
+/* ============== MAINVISUAL ============== */
+/* ============== COMMON ============== */
+
+/* ============== BOX01 ============== */
+/* ============== BOX02 ============== */
+/* ============== BOX03 ============== */
+/* ============== BOX04 ============== */
+/* ============== BOX05 ============== */
+/* ============== BOX06 ============== */
+/* ============== BOX07 ============== */
+/* ============== FOOTER ============== */
+
+
+
+/*IE*/
+@media screen\0 {
+   
+}
+/*Edge*/
+@supports (-ms-ime-align:auto) {
+   
+}
+/*FireFox*/
+@-moz-document url-prefix() {
+ 
+}
+/*Other*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   
+}
+/*Safari*/
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) { 
+     
+    } 
+}
+
+@media screen and (max-width: 640px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /*IE*/
+}
+
+
+
+
+
