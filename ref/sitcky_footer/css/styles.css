@@ -1,0 +1,620 @@
+@charset "UTF-8";
+@import "base.css";
+@import "fonts.css";
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/*==========================================================================*/
+/*//////////////////////////////////////////////////////////////////////////*/
+/*//////                                                              //////*/
+/*//////                 © Branding Technology inc.                  //////*/
+/*//////                                                              //////*/
+/*//////////////////////////////////////////////////////////////////////////*/
+/*                                                                          */
+/*    base.css  --> スタイルの初期設定を行うため、変更しないで下さい。      */
+/*    fonts.css --> フォントの初期設定を行うため、変更しないで下さい。      */
+/*                                                                          */
+/*==========================================================================*/
+
+/*==========================================================================*/
+/*                           Common-Setting                                 */
+/*==========================================================================*/
+
+/* 基本タグのフォントサイズを指定（12px -> 120% or 1.2em ） */
+h1, h2, h3, h4, h5, h6, input, button, textarea, select, p, blockquote, th, td, pre, address, li, dt, dd {
+    font-size: 140%;
+    -webkit-text-size-adjust: none;
+}
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+a {
+    color: #D81523;
+}
+a:hover, a:active {
+    text-decoration: none;
+}
+table {
+    width: 100%
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+p {
+    margin: 0 0 1.5em;
+}
+
+section p:last-child, .section p:last-child {
+    margin-bottom: 0;
+}
+p, dd, td, th, li {
+    line-height: 1.71em;
+}
+a:hover img {
+    opacity: 0.7;
+}
+a[target="_blank"]:hover img,
+.logo a:hover img,
+.f_logo a:hover img,
+a:hover img.no_hover {
+    opacity: 1;
+}
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+
+/*==========================================================================*/
+/*                            Container                                     */
+/*==========================================================================*/
+html{
+    height: 100%;
+}
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333;
+    height: 100%;
+}
+
+#wrapper {
+    min-width: 1080px;
+    overflow: hidden;
+ 
+}
+.page_short#wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+/*===================== Header ========================*/
+#header {
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    padding: 0 0 0 40px;
+    z-index: 1000;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16);
+}
+#header .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 290px;
+    margin:0;
+    line-height: 0;
+    flex-shrink: 0;
+}
+.logo a{
+    display: block;
+}
+.h_btn_contact{
+    margin: 0;
+    width: 200px;
+}
+.h_btn_contact a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D81523;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 30px 10px 27px;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+/*===================== End Header ========================*/
+
+/*===================== Top Content ============================*/
+.idx_ttl{
+    position: relative;
+    line-height: 1.5em;
+    margin-bottom: 29px;
+    z-index: 1;
+    border-bottom: solid 1px #ccc;
+    padding: 0 1px 7px;
+}
+.idx_ttl .en{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #D81523;
+    margin-right: 17px;
+}
+.idx_ttl .jp{
+    font-family: 'Noto Sans JP', sans-serif;
+   font-size: 18px;
+   font-weight: bold;
+    color: #333;
+    position: relative;
+    top: -2px;
+}
+.toyota_content {
+    margin-top: 127px;
+    padding: 0 0 42px;
+}
+.idx_list_product{
+    display: flex;
+    flex-wrap: wrap;
+}
+.idx_list_product li{
+    width: 340px;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+.idx_product_item a{
+    display: block;
+    text-decoration: none;
+}
+.idx_product_item .img{
+    position: relative;
+    overflow: hidden;
+    height: 140px;
+    background: #E2E2E2;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.idx_product_item .img img{
+    transition: linear 0.5s;
+    max-height: 100%;
+}
+.idx_product_item a:hover img{
+    opacity: 1;
+}
+.idx_product_item .cate_date{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.idx_product_item .cate_date .cate{
+    width: 120px;
+    background: #D81523;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0 5px 1px;
+}
+.idx_product_item .cate_date .date{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.idx_product_item .ttl{
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 11px;
+    line-height: 1.5em;
+}
+.idx_product_item .des{
+    margin-bottom: 8px;
+    line-height: 1.72em;
+    color: #333;
+}
+.idx_product_item .link{
+    text-align: right;
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+.idx_product_item .link span{
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    padding-left: 10px;
+}
+.idx_product_item .link span:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(../images/idx_ico_link.png) no-repeat center;
+    background-size: contain;
+    width: 8px;
+    height: 8px;
+}
+/*===================== end Top Content ========================*/
+
+
+/*===================== Footer ========================*/
+#footer{
+    background: #000;
+    padding: 6px 0 8px;
+
+}
+.page_short #footer{
+    margin-top: auto;
+}
+#footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.f_menu{
+    display: flex;
+}
+.f_menu li{
+    position: relative;
+    line-height: 1.4em;
+    padding:0 16px;
+}
+.f_menu li:after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 22px;
+    background: rgba(255, 255, 255, 0.6);
+    right: 0;
+    top: 0;
+}
+.f_menu li:last-child{
+    border-right: 0;
+    padding-right: 0;
+}
+.f_menu li:last-child:after{
+    content: none;
+}
+.f_menu li:first-child{
+    padding-left: 0;
+}
+.f_menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+}
+#totop {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    z-index: 100;
+    margin-bottom: 0;
+}
+
+#totop a {
+    position: relative;
+    display: block;
+    background: #D81523;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+#totop a:before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background:url(../images/ico_totop.png) no-repeat center;
+    background-size: 20px auto;
+}
+
+
+#totop:hover img {
+    opacity: 1;
+}
+.copyright{
+    color: #fff;
+    line-height: 1.5em;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    left: 17px;
+    top: 1px;
+}
+
+/*===================== End Footer ========================*/
+/************************* under ******************************/
+@-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+.image_l {
+    float: left;
+    margin: 0 30px 8px 0;
+}
+.image_r {
+    float: right;
+    margin: 0 0 8px 30px;
+}
+.image_c{
+    text-align: center;
+    margin: 0 auto;
+}
+.bold {
+    font-weight: bold;
+}
+.under .logo{
+    line-height: 0;
+}
+.under .toyota_content{
+    width: 1080px;
+    margin: 118px auto 0;
+}
+.under .section,.under section {
+    margin: 0 0 60px;
+}
+.under .section:last-child,.under section:last-child {
+    margin: 0;
+}
+.under_h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 28px;
+    line-height: 1.7em;
+}
+.under_h2{
+    border-left: solid 2px #D81523;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 11px 10px 11px 21px;
+    line-height: 1.5em;
+    color: #333;
+    margin-bottom: 29px;
+    background: #EFEFEF;
+}
+.under_h3{
+    font-size: 21px;
+    font-weight: bold;
+    color: #D81523;
+    margin-bottom: 25px;
+    line-height: 1.5em;
+}
+.under_h4 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin-bottom: 19px;
+    padding-bottom: 9px;
+    border-bottom: solid 1px #000;
+}
+.under_list_num01 {
+    counter-reset: number;
+}
+.under_list_num01 > li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 17px;
+}
+.under_list_num01 > li:last-child {
+    margin-bottom: 0;
+}
+.under_list_num01 > li >.under_frame_link {
+    cursor: pointer;
+    color: #333;
+    font-weight: 500;
+    background: linear-gradient(0deg, #000 1px, transparent 1px);
+    background-repeat: no-repeat;
+    background-position-y: -3px;
+}
+.under_list_num01 > li:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, #000 1px, transparent 1px);
+    background-repeat: no-repeat;
+    background-position-y: -5px;
+    counter-increment: number;
+    width: 17px;
+    content: counter(number)".";
+}
+.under_list_frame {
+    border: solid 1px #E2E2E2;
+    margin-bottom: 60px;
+}
+.under_list_frame_ttl{
+    text-align: center;
+    background: #E2E2E2;
+    line-height: 1.5em;
+    padding: 11px 10px;
+    margin-bottom: 0;
+}
+.under_list_frame_ttl .ttl01{
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    margin-right: 8px;
+}
+.under_list_frame_ttl .ttl02{
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+.under_list_frame_menu{
+    padding:28px 30px 31px 40px;
+}
+.under_list_frame_content{
+    position: relative;
+}
+.under_list_frame_content .under_frame_menu_content {
+    display: none;
+}
+.under_list_frame_content .under_frame_menu_content.active{
+    display: block;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.under_frame {
+    padding: 41px 61px 30px;
+    background: #EFEFEF;
+}
+.under_frame .frame_ttl{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    color: #333;
+    margin-bottom: 18px;
+    line-height: 1.5em;
+}
+.under_frame .frame_des{
+    line-height: 1.72em;
+    margin-bottom: 17px;
+}
+.under_frame .under_link a{
+    color: #333;
+}
+.under_prev_next{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    border-top: solid 1px #333;
+}
+.under_prev_next li{
+    line-height: 1.5em;
+    margin-right: 30px;
+    width: 166px;
+}
+.under_prev_next li:last-child{
+    margin-right: 0;
+}
+.under_prev_next a{
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    background: #000;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    padding: 17px 20px 18px;
+    transition: all 0.3s ease;
+}
+.under_prev_next li.prev a:after, .under_prev_next li.next a:after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+}
+.under_prev_next li.next a:after{
+    right:10px;
+    background: url(../images/under_arrow.png) no-repeat center;
+    background-size: contain;
+}
+.under_prev_next li.prev a:after{
+    left:10px;
+    background: url(../images/under_arrow.png) no-repeat center;
+    background-size: contain;
+    transform: translateY(-50%) scaleX(-1);
+}
+.product_detail_cate{
+    display: inline-block;
+    background: #D81523;
+    padding: 2px 5px;
+    min-width: 120px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 29px;
+}
+.product_detail_img {
+    line-height: 0;
+    text-align: center;
+    margin: 0 auto 29px;
+}
+.product_detail_img img{
+    max-height: 460px;
+}
+.product_des{
+    line-height: 1.75em;
+    margin-bottom: 43px;
+}
+/************************ end under ************************/
+
+/*Fonts*****************/
+/*
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+/*IE*/
+@media screen\0 {
+   .page_short #footer{
+       position: fixed;
+       left:0;
+       bottom: 0;
+       width: 100%;
+   }
+}
