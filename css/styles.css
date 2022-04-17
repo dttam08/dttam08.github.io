@@ -66,7 +66,7 @@ body {
 	position: relative;
 	z-index: 1;
 }
-body::before {
+/* body::before {
 	position: absolute;
 	content: '';
 	background: #ffa500;
@@ -77,14 +77,14 @@ body::before {
 	opacity: 0;
 	transition: all 0.4s ease;
 	z-index: -1;
-}
-body.loaded {
+} */
+/* body.loaded {
 	overflow: hidden;
 }
 body.loaded::before {
 	opacity: 1;
 	z-index: 2000;
-}
+} */
 #wrapper{
 	min-width: 1200px;
 	overflow: hidden;
@@ -106,8 +106,6 @@ body.loaded::before {
 	width: 100%;
 	margin: 50px auto;
 	padding: 40px 30px;
-	box-shadow: 0 0 30px rgba(0,0,0,0.4);
-	border-radius: 20px;
 	border: 1px solid #fff;
 }
 .container {
@@ -117,7 +115,7 @@ body.loaded::before {
 }
 /****************** Header *****************/
 #gnavi {
-	transition: all 0.2s ease;
+	/* transition: all 0.2s ease; */
 	padding: 20px 0;
 }
 #gnavi.fixed {
@@ -134,12 +132,9 @@ body.loaded::before {
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
-#gnavi li {
-	max-width: 18%;
-	width: 100%;
-}
+
 #gnavi a {
 	display: block;
 	text-decoration: none;
@@ -148,8 +143,7 @@ body.loaded::before {
 	font-size: 14px;
 	text-align: center;
 	border: 1px solid #fff;
-	border-radius: 30px;
-	padding: 4px;
+	padding: 4px 20px;
 	transition: all 0.2s ease;
 }
 #gnavi a:hover {
