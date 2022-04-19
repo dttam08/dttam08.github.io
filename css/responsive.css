@@ -73,14 +73,8 @@ h4{
 .idx-list li::before {
   top: 12px;
 }
-.idx-project li {
-  max-width: 48%;
-}
-.idx-list li:nth-child(n + 2) {
-  margin-top: 10px;
-}
-.idx-project li:nth-child(n + 3), .idx-project li:nth-child(n + 4) {
-  margin-top: 20px;
+.idx-project li{
+  width: calc(100% / 2 - 20px);
 }
 .idx-project span {
   font-size: 12px;

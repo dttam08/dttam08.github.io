@@ -106,7 +106,8 @@ body.loaded::before {
 	width: 100%;
 	margin: 50px auto;
 	padding: 40px 30px;
-	border: 1px solid #fff;
+	background: rgba(0,0,0,0.8);
+	/* border: 1px solid #fff; */
 }
 .container {
 	max-width: 1100px;
@@ -123,7 +124,7 @@ body.loaded::before {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #ffa500;
+	background: #0e6224;
 	z-index: 1000;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
@@ -268,16 +269,13 @@ h4{
 }
 .idx-project {
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
 }
 .idx-project li {
-	max-width: 320px;
-	width: 100%;
+	width: calc(100% / 3 - 20px);
+	margin: 20px 10px;
 }
-.idx-project li:nth-child(n + 4) {
-	margin-top: 30px;
-}
+
 .idx-project a {
 	position: relative;
 	display: block;

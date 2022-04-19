@@ -1,0 +1,273 @@
+
+@media screen and (min-width: 751px) {
+	.under-anchor li a:hover {
+		background: #39509d;
+	}
+	.under-bbnr a:hover,
+	.under-fbnr a:hover,
+	.blog-list li:hover {
+		transform: translateY(-5px);
+	}
+	.under .under-first {
+		margin-bottom: 150px;
+	}
+	.blog-page a:hover {
+		background: #b92222;
+		color: #fff;
+	}
+	.topic_path li a:hover {
+		color: #39509d;
+	}
+	.blog-list li a:hover img {
+		opacity: 1;
+	}
+	.blog-list li:hover {
+		opacity: 0.85;
+	}
+	.under .lett{
+		letter-spacing: 0;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	/************************* under ******************************/
+	.under .container {
+		padding: 0 10px;
+	}
+	.image_r,
+	.image_l {
+		float: none;
+		text-align: center;
+		margin: 0 0 30px;
+	}
+	.image_c {
+		width: 100%;
+		margin: 0 0 30px;
+	}
+	.under .section,
+	.under section {
+		margin: 0 0 50px;
+	}
+	.tbl-res tr,
+	.tbl-res th,
+	.tbl-res td {
+		display: block;
+		width: 100% !important;
+	}
+	.table-scroll,
+	.img_scroll {
+		overflow-x: scroll;
+	}
+	.under-anchor.row2 li {
+		width: 100%;
+	}
+	.table-note {
+		display: block;
+	}
+	form#fmail table.mailform tr th {
+		width: 100%;
+	}
+	.table-scroll {
+		overflow-x: scroll;
+	}
+	.table-scroll > table {
+		min-width: 750px;
+	}
+	.under h2 {
+		font-size: 6vw;
+	}
+	.topic_path {
+		display: inline-block;
+		margin: 10px 0 30px;
+	}
+	.under h3 {
+		font-size: 30px;
+	}
+	.under h4 {
+		font-size: 24px;
+	}
+	.under h5 {
+		font-size: 20px;
+	}
+	.under #content p {
+		margin-bottom: 1.1em;
+	}
+	.under-anchor li a {
+		font-size: 16px;
+	}
+	.under-btn::before {
+		right: 10px;
+	}
+	.under-flex {
+		display: flex !important;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.under-flex [class*="image"] {
+		order: 2;
+	}
+	.under-flex h4,
+	.under-flex h5 {
+		order: 1;
+	}
+	.under-flex p {
+		order: 3;
+	}
+	.under-table {
+		border: none;
+	}
+	.under-table th,
+	.under-table td {
+		border: solid #ddd;
+		border-width: 0 1px 0 1px;
+	}
+	.under-table tr:last-child td:last-child {
+		border-bottom: 1px solid #ddd;
+	}
+	.under-step dt {
+		font-size: 18px;
+		max-width: 98%;
+		padding: 10px 16px;
+		top: -7px;
+	}
+	.pickup-wrap {
+		padding: 50px 0;
+		margin-bottom: 40px;
+	}
+	.pickup-title {
+		font-size: 20px;
+	}
+	.under-bbnr a {
+		font-size: 20px;
+	}
+	.under-step dt .num {
+		display: block;
+	}
+	.under-step dl {
+		margin-bottom: 140px;
+	}
+	.under-step.mt50 {
+		margin-top: 100px !important;
+	}
+	.topic_path li {
+		display: inline;
+		font-size: 12px;
+		margin-right: 10px;
+	}
+	.topic_path li::after{
+		margin-left: 5px;
+	}
+	.pickup-title::before {
+		font-size: 16vw;
+	}
+	.under-qa dt {
+		font-size: 16px;
+		padding: 10px;
+	}
+	.under-anchor li {
+		width: 30%;
+	}
+	.under-first.with-anchor .under-h3desc {
+		margin-bottom: 20px;
+	}
+	.under-first.with-anchor {
+		margin-bottom: 50px;
+	}
+	.contact-phone {
+		padding: 20px 10px;
+	}
+	.blog-list .img {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.blog-list .content {
+		width: 100%;
+		padding:0;
+		order: 2;
+	}
+	.blog-list .date {
+	    font-size: 16px;
+		position: relative;
+		top: 2px;
+	}
+	.blog-list .title {
+		font-size: 20px;
+	}
+	.under #mainvisual{
+		margin-top: 70px;
+		height: 280px;
+	}
+	/************************ end under ************************/
+}
+
+@media screen and (max-width: 640px) {
+	/************************* under ******************************/
+	.under-anchor li {
+		width: 50%;
+	}
+	/************************ end under ************************/
+}
+
+@media screen and (max-width: 475px) {
+	/************************* under ******************************/
+	.under #mainvisual {
+		height: 280px;
+	}
+	.under h2 {
+		font-size: 7vw;
+	}
+	.under h3 {
+		font-size: 26px;
+	}
+	.under-anchor li a {
+		font-size: 14px;
+	}
+	.under h4 {
+		font-size: 22px;
+	}
+	.under h5 {
+		font-size: 17px;
+	}
+	.table-note {
+		font-size: 11px;
+	}
+	.under-qa dd {
+		padding: 10px;
+	}
+	.under .mb30 {
+		margin-bottom: 1em !important;
+	}
+	.under-anchor li {
+		width: 100%;
+	}
+	.contact-phone-num {
+		font-size: 32px;
+	}
+	.contact-phone-num a {
+		background-position: left top 4px;
+	}
+	.under-step dt {
+		padding: 10px 9px;
+		top: -12px;
+	}
+	/************************ end under ************************/
+}
+@media screen and (max-width: 414px) {
+	.under h5 {
+		font-size: 16px;
+	}
+	.under h3 {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 375px) {
+	/************************* under ******************************/
+
+	/************************ end under ************************/
+}
+
+@media screen and (max-width: 320px) {
+	/************************* under ******************************/
+	/************************ end under ************************/
+}

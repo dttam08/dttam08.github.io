@@ -151,11 +151,7 @@ $(function() {
                     $('#gnavi').stop().slideToggle(300);
                 }
             });
-            $('.menu_close').click(function(){
-                $('#gnavi').stop().slideUp();
-                $('.menu_icon').removeClass('active');
-            })
-         
+
             $(window).bind("load resize", function() {
                 var vW = $(window).width();
                 if (vW > 750) {
