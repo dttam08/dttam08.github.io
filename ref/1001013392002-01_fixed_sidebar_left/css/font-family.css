@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'BebasNeueRounded';
+  src: url('font/BebasNeueRounded.eot');
+  src: url('font/BebasNeueRounded.eot?#iefix') format('embedded-opentype'),
+       url('font/BebasNeueRounded.woff2') format('woff2'),
+       url('font/BebasNeueRounded.woff') format('woff'),
+       url('font/BebasNeueRounded.otf')  format('truetype'),
+       url('font/BebasNeueRounded.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'Senobi Gothic';
+  font-weight: 400;
+  src: url('font/Senobi-Gothic-Regular.eot');
+  src: url('font/Senobi-Gothic-Regular.eot?#iefix') format('embedded-opentype'),
+       url('font/Senobi-Gothic-Regular.woff2') format('woff2'),
+       url('font/Senobi-Gothic-Regular.woff') format('woff'),
+       url('font/Senobi-Gothic-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Senobi Gothic';
+  font-weight: 500;
+  src: url('font/Senobi-Gothic-Medium.eot');
+  src: url('font/Senobi-Gothic-Medium.eot?#iefix') format('embedded-opentype'),
+       url('font/Senobi-Gothic-Medium.woff2') format('woff2'),
+       url('font/Senobi-Gothic-Medium.woff') format('woff'),
+       url('font/Senobi-Gothic-Medium.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Senobi Gothic';
+  font-weight: 700;
+  src: url('font/Senobi-Gothic-Bold.eot');
+  src: url('font/Senobi-Gothic-Bold.eot?#iefix') format('embedded-opentype'),
+       url('font/Senobi-Gothic-Bold.woff2') format('woff2'),
+       url('font/Senobi-Gothic-Bold.woff') format('woff'),
+       url('font/Senobi-Gothic-Bold.ttf')  format('truetype');
+}

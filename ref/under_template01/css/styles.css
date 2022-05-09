@@ -1,0 +1,175 @@
+@charset "UTF-8";
+@import "base.css";
+@import "fonts.css";
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400&family=Lora&display=swap');
+
+
+/*==========================================================================*/
+/*//////////////////////////////////////////////////////////////////////////*/
+/*//////                                                              //////*/
+/*//////                 © Branding Technology inc.                  //////*/
+/*//////                                                              //////*/
+/*//////////////////////////////////////////////////////////////////////////*/
+/*                                                                          */
+/*    base.css  --> スタイルの初期設定を行うため、変更しないで下さい。      */
+/*    fonts.css --> フォントの初期設定を行うため、変更しないで下さい。      */
+/*                                                                          */
+/*==========================================================================*/
+
+/*==========================================================================*/
+/*                           Common-Setting                                 */
+/*==========================================================================*/
+
+/* 基本タグのフォントサイズを指定（12px -> 120% or 1.2em ） */
+h1, h2, h3, h4, h5, h6, input, button, textarea, select, p, blockquote, th, td, pre, address, li, dt, dd {
+    font-size: 150%;
+    -webkit-text-size-adjust: none;
+}
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+a {
+    color: #482a1d;
+}
+a:hover, a:active {
+    text-decoration: none;
+}
+table {
+    width: 100%
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+p {
+    margin: 0 0 1.5em;
+}
+
+section p:last-child, .section p:last-child {
+    margin-bottom: 0;
+}
+p, dd, td, th, li {
+    line-height: 2.34em;
+}
+a:hover img {
+    opacity: 0.7;
+}
+a[target="_blank"]:hover img,
+.logo a:hover img,
+.f_logo a:hover img,
+a:hover img.no_hover {
+    opacity: 1;
+}
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+
+/*==========================================================================*/
+/*                            Container                                     */
+/*==========================================================================*/
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    color: #171e27;
+}
+#wrapper {
+    min-width: 1200px;
+    overflow: hidden;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*===================== Header ========================*/
+.logo {
+    line-height: 0;
+}
+.logo a{
+    display: block;
+}
+#header {
+
+}
+/*===================== End Header ========================*/
+
+
+/*===================== Gnavi ========================*/
+#gnavi{
+
+}
+
+/*===================== End Gnavi ========================*/
+
+/*===================== Top Mainvisual ============================*/
+#mainvisual{
+
+}
+/*===================== end Top Mainvisual ========================*/
+
+/*===================== Top Content ============================*/
+.box01{
+
+}
+/*===================== end Top Content ========================*/
+
+
+/*===================== Footer ========================*/
+#footer{
+
+}
+#totop {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    z-index: 100;
+    margin-bottom: 0;
+}
+#totop a{
+    display: block;
+}
+#totop:hover {
+    opacity: 0.7;
+}
+#totop:hover img{
+    opacity: 1;
+}
+
+/*===================== End Footer ========================*/
+
+
+/*Fonts*****************/
+/*
+font-family: 'Cormorant', serif;
+font-family: 'Lora', serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Noto Serif JP', serif;
+*/
+
+
+/*IE*/
+@media screen\0 {
+   
+}
+/*Edge*/
+@supports (-ms-ime-align:auto) {
+   
+
+}
+/*FireFox*/
+@-moz-document url-prefix() {
+ 
+}
+
+/*Safari*/
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) { 
+     
+    } 
+}
