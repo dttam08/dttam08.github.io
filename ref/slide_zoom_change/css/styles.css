@@ -1,0 +1,279 @@
+@charset "UTF-8";
+@import "base.css";
+@import "fonts.css";
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&display=swap');
+/*==========================================================================*/
+/*//////////////////////////////////////////////////////////////////////////*/
+/*//////                                                              //////*/
+/*//////                 © Branding Technology inc.                  //////*/
+/*//////                                                              //////*/
+/*//////////////////////////////////////////////////////////////////////////*/
+/*                                                                          */
+/*    base.css  --> スタイルの初期設定を行うため、変更しないで下さい。      */
+/*    fonts.css --> フォントの初期設定を行うため、変更しないで下さい。      */
+/*                                                                          */
+/*==========================================================================*/
+
+/*==========================================================================*/
+/*                           Common-Setting                                 */
+/*==========================================================================*/
+
+/* 基本タグのフォントサイズを指定（12px -> 120% or 1.2em ） */
+h1, h2, h3, h4, h5, h6, input, button, textarea, select, p, blockquote, th, td, pre, address, li, dt, dd {
+    font-size: 160%;
+    -webkit-text-size-adjust: none;
+}
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+a {
+    color: #1eaa39;
+}
+a:hover, a:active {
+    text-decoration: none;
+}
+table {
+    width: 100%
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+p {
+    margin: 0 0 1.5em;
+}
+
+section p:last-child, .section p:last-child {
+    margin-bottom: 0;
+}
+p, dd, td, th, li {
+    line-height: 1.75em;
+}
+a:hover img {
+    opacity: 0.7;
+}
+a[target="_blank"]:hover img,
+.logo a:hover img,
+.f_logo a:hover img,
+a:hover img.no_hover {
+    opacity: 1;
+}
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+
+/*==========================================================================*/
+/*                            Container                                     */
+/*==========================================================================*/
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #000;
+}
+#wrapper {
+    min-width: 1200px;
+    overflow: hidden;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/*===================== Top Mainvisual ============================*/
+#main_img_cover:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 200px;
+    background: #f7f7f7;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#main_img {width: 90%; margin: 0 auto; position: relative; z-index: 9;}
+.main_text_b { width: 85%; max-width: 1200px; position: absolute; top: 15%; left: 0; right: 0; margin: auto;z-index: 10;}
+.main_text_b h2 {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+.main_text_b p { line-height: 1.4;}
+
+.main_img_list_outer { width: 100%;}
+.main_img_list {
+    position: relative;
+    overflow: hidden;
+    height: 95vw;
+}
+.main_img_list img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.main_circle { width: 60px; height: 60px; background: rgba(0,0,0,0.6); border-radius: 50%; position: absolute; bottom: 20px; right:20px ;}
+.main_circle ul { display: flex; flex-wrap: wrap; justify-content: center;}
+.main_circle ul li { color: #fff; font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif; line-height: 60px;}
+.main_circle ul li:nth-child(2) { margin: 0 5px;}
+:root {
+    --ts-duration1: 2s;
+    --ts-duration2: calc(var(--ts-duration1) / 2);
+    --ts-duration3: calc(var(--ts-duration1) * 2 / 3);
+    --ts-duration4: 5s;
+    --ts-delay1: 0.8s;
+    --ts-delay2: calc(var(--ts-delay1) / 2);
+  }
+  .kv_slider {
+    background: #eee;
+  }
+  .kv_slider:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 100%;
+    background: conic-gradient(from 45deg, #999 0 120deg, #999 120deg 240deg, #ccc 240deg);
+    animation: spin 1s linear infinite forwards;
+  }
+  .kv_slider.kv_slide_init {
+    background: transparent;
+  }
+  .kv_slider.kv_slide_init .main_img_list_outer,
+  .kv_slider.kv_slide_init .main_circle {
+    opacity: 1;
+    transition: 0.4s;
+  }
+  .kv_slider .main_img_list_outer,
+  .kv_slider .main_circle {
+    opacity: 0;
+  }
+  
+  .main_img_list li {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path: circle(100% at center);
+    clip-path: circle(100% at center);
+  }
+  .main_img_list li.is_active {
+    opacity: 1;
+  }
+  .main_img_list li.is_active .each_img_wrap {
+    transition: transform var(--ts-duration1) cubic-bezier(0.55, 0.05, 0.22, 0.99) var(--ts-delay2);
+    transform: translateZ(0) scale(1);
+  }
+  .main_img_list li.is_active .each_img_color {
+    opacity: 1;
+    transition: var(--ts-duration2) var(--ts-delay1);
+  }
+  .main_img_list li.is_inactive {
+    opacity: 1;
+    z-index: 2;
+    transition: clip-path var(--ts-duration3) cubic-bezier(0.43, 0.05, 0.17, 1);
+    clip-path: circle(0 at center);
+  }
+  .main_img_list li.is_inactive .each_img_wrap {
+    transition: transform var(--ts-duration1) cubic-bezier(0.43, 0.05, 0.17, 1) 0s;
+    transform: translateZ(0) scale(1.1);
+  }
+  .main_img_list li.is_inactive .each_img_color {
+    opacity: 1;
+  }
+  .main_img_list li .each_img_color {
+    opacity: 0;
+    z-index: 1;
+  }
+  .main_img_list li .each_img_mono {
+    z-index: 0;
+    filter: grayscale(1);
+  }
+  .main_img_list .each_img_wrap {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(0) scale(1.5);
+  }
+  .main_img_list .each_img_wrap img {
+    position: absolute;
+    display: block;
+  }
+  
+  .main_circle {
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+  }
+  .main_circle.is_init:before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+    animation: circleProgress var(--ts-duration4) linear forwards infinite;
+  }
+  
+  @keyframes circleProgress {
+    0% {
+      width: 0%;
+    }
+    10% {
+      width: 0%;
+    }
+    90% {
+      width: 100%;
+    }
+    96% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+/*===================== end Top Mainvisual ========================*/
+
+/*===================== Top Content ============================*/
+
+/*===================== end Top Content ========================*/
+
+
+/*===================== Footer ========================*/
+
+/*===================== End Footer ========================*/
+
+
+/*Fonts*****************/
+/*
+
+*/

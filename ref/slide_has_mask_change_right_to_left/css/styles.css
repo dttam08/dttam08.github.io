@@ -1,0 +1,230 @@
+@charset "UTF-8";
+@import "base.css";
+@import "fonts.css";
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&display=swap');
+/*==========================================================================*/
+/*//////////////////////////////////////////////////////////////////////////*/
+/*//////                                                              //////*/
+/*//////                 © Branding Technology inc.                  //////*/
+/*//////                                                              //////*/
+/*//////////////////////////////////////////////////////////////////////////*/
+/*                                                                          */
+/*    base.css  --> スタイルの初期設定を行うため、変更しないで下さい。      */
+/*    fonts.css --> フォントの初期設定を行うため、変更しないで下さい。      */
+/*                                                                          */
+/*==========================================================================*/
+
+/*==========================================================================*/
+/*                           Common-Setting                                 */
+/*==========================================================================*/
+
+/* 基本タグのフォントサイズを指定（12px -> 120% or 1.2em ） */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+textarea,
+select,
+p,
+blockquote,
+th,
+td,
+pre,
+address,
+li,
+dt,
+dd {
+  font-size: 160%;
+  -webkit-text-size-adjust: none;
+}
+
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+  display: block;
+}
+
+a {
+  color: #1eaa39;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+table {
+  width: 100%
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+section p:last-child,
+.section p:last-child {
+  margin-bottom: 0;
+}
+
+p,
+dd,
+td,
+th,
+li {
+  line-height: 1.75em;
+}
+
+a:hover img {
+  opacity: 0.7;
+}
+
+a[target="_blank"]:hover img,
+.logo a:hover img,
+.f_logo a:hover img,
+a:hover img.no_hover {
+  opacity: 1;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+
+/*==========================================================================*/
+/*                            Container                                     */
+/*==========================================================================*/
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #000;
+}
+
+#wrapper {
+  min-width: 1200px;
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*===================== Header ========================*/
+
+#header {}
+
+/*===================== End Header ========================*/
+
+
+/*===================== Gnavi ========================*/
+/*===================== End Gnavi ========================*/
+
+/*===================== Top Mainvisual ============================*/
+.idx_mainvi {
+  height: calc(100vh - 98px);
+}
+
+.idx_mainvi_slide {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  /* background-color: #003c8a;
+  z-index: 0; */
+}
+
+.idx_mainvi_slide_inner {
+  position: relative;
+  z-index: 1;
+}
+
+.idx_mainvi_slide .slider_unit {
+  width: 100%;
+  height: 100%;
+}
+
+.idx_mainvi_slide .slider_unit .slide_item {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  outline: 0px none #000;
+  overflow: hidden;
+}
+
+.idx_mainvi_slide .slider_unit .slide_item .slide_img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.idx_mainvi .slide01{
+  background-image: url(../images/slide-img01.jpg);
+}
+.idx_mainvi .slide02{
+  background-image: url(../images/slide-img02.jpg);
+}
+.idx_mainvi .slide03{
+  background-image: url(../images/slide-img03.jpg);
+}
+.idx_mainvi_slide .slider_unit .slide_item .slide_img>span {
+  width: calc(100% + 100px);
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateX(100px);
+  transform: translateX(100px);
+  outline: 0px none #000;
+  display: block;
+}
+
+.idx_mainvi_slide .slider_unit .slide_item{
+  z-index: 0;
+}
+
+.idx_mainvi_slide .slider_unit .slide_item.is_active {
+  -webkit-transition: width 1.5s cubic-bezier(0.09, 0.34, 0.63, 1);
+  transition: width 1.5s cubic-bezier(0.09, 0.34, 0.63, 1);
+  width: 100vw;
+}
+.idx_mainvi_slide .slider_unit .slide_item.show{
+  z-index: 1;
+}
+
+.idx_mainvi_slide .slider_unit .slide_item.is_active .slide_img>span {
+  -webkit-transition: -webkit-transform 5s linear;
+  transition: -webkit-transform 7s linear;
+  transition: transform 7s linear;
+  transition: transform 7s linear, -webkit-transform 7s linear;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+
+}
+
+/*===================== end Top Mainvisual ========================*/
