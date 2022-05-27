@@ -38,6 +38,9 @@ p, dd, td, th, li {
 p {
 	margin: 0 0 1.4em;
 }
+p:last-child{
+	margin: 0;
+}
 img {
 	max-width: 100%;
 	vertical-align: bottom;
@@ -348,5 +351,45 @@ section p:last-child, .section p:last-child {
 	text-decoration: underline;
 }
 .ref_list li{
+	position: relative;
 	margin-bottom: 20px;
+	padding-left: 30px;
+}
+.ref_list li:before{
+	position: absolute;
+	content: '';
+	left:0;
+	top: 11px;
+	width: 10px;
+	height: 10px;
+	background: #ffa500;
+	border-radius: 50%;
+
+}
+/*NOTE CODE PAFE*/
+.note_code_item{
+	border: solid 1px #fff;
+	padding: 30px 10px;
+	margin-bottom: 40px;
+}
+.note_code_item:last-child{
+	margin-bottom: 0;
+}
+.note_code_item pre{
+	color: #fff;
+}
+.note_code_item link{
+	display: block;
+	color: #fff;
+}
+.note_code_item h2{
+	font-size: 18px;
+	background: #fff;
+	color: #000;
+	padding: 10px;
+}
+
+.text_link_page a{
+	color: #fff;
+	text-align: center;
 }

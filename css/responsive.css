@@ -121,9 +121,11 @@ h4{
   line-height: 1.4em;
   padding: 25px 10px 2px;
 }
-
+#main.ref_main{
+  padding: 30px;
 }
-@media only screen and (max-width: 640px) {
+}
+@media only screen and (max-width: 750px) {
   #wrapper {
     padding: 0 3% 47px;
   }
@@ -152,12 +154,19 @@ h4{
   .main-des {
     max-width: 100%;
   }
+
 }
 @media only screen and (max-width: 475px) {
   .main-img {
     height: 45vw;
     width: 45vw;
     margin: 0 auto 20px;
+  }
+  #main.ref_main{
+    padding: 30px 10px;
+  }
+  .ref_list li{
+    padding-left: 20px;
   }
 }
 @media not all and (min-resolution:.001dpcm) { 
