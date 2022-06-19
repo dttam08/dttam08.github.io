@@ -1,0 +1,386 @@
+@media screen and (min-width:751px){
+    .under_bnr li a:hover {
+        transform: translateY(-5px);
+    }
+    .under_pickup.has_center{
+        align-items:center;
+    }
+    .box_row.has_w50{
+        width: 50%;
+    }
+    .under_doctor .box_info.no_line::before{
+        content: none;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .under_pickup .box_txt .ttl span {
+        top: 58px;
+        left: 0;
+        font-size: 110px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .under #content{
+        padding: 0 10px;
+	}
+    .under_doctor .box_img {
+        right: 60px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+	.under #content{
+        width: 100%;
+	}
+    .image_r,
+    .image_l {
+	    float: none;
+	    text-align: center;
+	    margin: 0 0 30px;
+	}
+	.image_c {
+		width: 100%;
+		margin: 0 0 30px;
+	}
+	.under .section,
+    .under section {
+		margin: 0 0 60px;
+	}
+	.under .section:last-child,
+    .under section:last-child {
+		margin: 0;
+	}
+
+	.tbl_scroll table{
+		min-width: 640px;
+		table-layout: fixed;
+	}
+	.tbl_block tr,
+    .tbl_block th,
+    .tbl_block td {
+		display: block;
+		width: 100% !important;
+		border-bottom: none;
+	}
+	.tbl_scroll,
+    .img_scroll {
+		overflow-x: scroll;
+	}
+	.tbl_block {
+		border-bottom: 1px solid #dcdddd;
+	}
+    .under #mainvisual .container {
+        min-height: 150px;
+    }
+    .under #mainvisual h2 {
+        font-size: 32px;
+    }
+    .under #mainvisual h2 span {
+        top: calc(50% - 2px);
+        font-size: 60px;
+    }
+    .topic_path {
+        margin: 15px 0 30px;
+    }
+    .topic_path li,
+    .topic_path li a {
+        font-style: 14px;
+    }
+    .under #mainvisual{
+        margin-top: 64px;
+    }
+    .under h3 {
+        font-size: 28px;
+    }
+    .under h4 {
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        font-size: 26px;
+    }
+    .under h5 {
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+    .under h6 {
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+    .under_link .ttl_box {
+        font-size: 24px;
+    }
+    .under_link .ttl_sm {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .under_link .ttl_sm span {
+        font-size: 28px;
+    }
+    .under_link {
+        width: 100%;
+    }
+    .under_link ul {
+        padding: 20px 20px 0;
+    }
+    .under_link ul.col03 li:last-child {
+        margin: 0 auto 20px;
+    }
+    .under_link li {
+        max-width: 300px;
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .under_link li .ttl {
+        font-size: 14px;
+    }
+    .under_link li .box_img {
+        margin-bottom: 5px;
+    }
+    .under_link li .box_img span {
+        bottom: 5px;
+        left: 10px;
+        font-size: 24px;
+    }
+    .under_link li .box_img::before {
+        border-width: 50px 0 0 50px;
+    }
+    .under_doctor {
+        margin-top: 45px;
+        padding-bottom: 40px;
+    }
+    .under_doctor .ttl_box {
+        margin-bottom: 50px;
+        font-size: 28px;
+    }
+    .under_doctor .ttl_box .txt_en {
+        top: calc(50% - 2px);
+        font-size: 60px;
+    }
+    .under_doctor .box_ct {
+        padding: 60px 30px 30px;
+    }
+    .under_doctor .box_img {
+        position: relative;
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 430px;
+        margin-bottom: 30px;
+    }
+    .under_doctor .box_img::before {
+        width: 40vw;
+        height: 60vw;
+    }
+    .under_doctor .box_img .name .namejp {
+        font-size: 20px;
+    }
+    .under_doctor .box_img .name {
+        width: 200px;
+        height: 50px;
+    }
+    .under_doctor .box_info .ttl {
+        font-size: 20px;
+    }
+    .under_doctor .box_row {
+        margin-bottom: 30px;
+    }
+    .under_doctor .box_info::before {
+        height: calc(100% - 10px);
+    }
+    .under_doctor .box_col:first-child {
+        margin-bottom: 30px;
+    }
+    .under_doctor .box_col{
+        width: 100%;
+    }
+    .under_doctor::before {
+        top: 22px;
+        height: calc(100% - 22px);
+    }
+    .under_frame {
+        padding: 30px;
+    }
+    .under_frame .ttl_frame {
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+    .under_bnr.col03 {
+        justify-content: center;
+    }
+    .under_bnr li {
+        width: 80% !important;
+    }
+    .under_bnr li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .under_bnr li a {
+        padding: 20px 10px;
+        font-size: 18px;
+    }
+    .under_cta {
+        justify-content: center;
+        padding: 50px 0;
+    }
+    .under_cta li {
+        height: 200px;
+    }
+    .under_cta li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .under_cta li .ttl {
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    .under_cta li a {
+        width: 230px;
+        height: 50px;
+        font-size: 14px;
+    }
+    .under_pickup .box_txt {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-top: 0;
+    }
+    .under_pickup .box_txt .ttl {
+        margin-bottom: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .under_pickup .box_txt .ttl span {
+        top: calc(50% - 5px);
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        font-size: 60px;
+    }
+    .under_pickup .box_img {
+        width: 100%;
+        text-align: center;
+    }
+    .under_tbl th {
+        font-size: 16px;
+    }
+    .under_tbl th,
+    .under_tbl td {
+        padding: 15px 20px;
+    }
+    .under_tbl iframe {
+        height: 250px;
+    }
+    .under_staff {
+        padding: 30px 30px 70px;
+    }
+    .under_staff .img {
+        position: static;
+    }
+    .under_staff .box_info {
+        width: 100%;
+        padding: 30px;
+    }
+    .under_staff .box_info ul {
+        width: 50%;
+    }
+    .under_staff .box_info ul:first-child {
+        margin-left: 0;
+    }
+    .under_staff .box_name .pos {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .under_staff .box_name .name {
+        font-size: 30px;
+    }
+    .under_staff .box_name .pos,
+    .under_staff .box_name .name {
+        text-shadow: 0 0 3px rgba(255,255,255,0.3), 0 0 3px rgba(255,255,255,0.3), 0 0 3px rgba(255,255,255,0.3), 0 0 3px rgba(255,255,255,0.3), 0 0 3px rgba(255,255,255,0.3), 0 0 3px rgba(255,255,255,0.3), 0 0 3px rgba(255,255,255,0.3), 0 0 3px rgba(255,255,255,0.3), 0 0 3px rgba(255,255,255,0.3);
+    }
+    .under_staff::before {
+        font-size: 50px;
+    }
+    .under_doctor .box_img .name .pos{
+        top: 1px;
+    }
+    .under_tbl_list_txt li{
+        flex-wrap: wrap;
+    }
+    .under_tbl_list_txt .ttl{
+        width: 100%;
+    }
+    .under_tbl_list_txt .txt{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .under_staff .box_info {
+        flex-wrap: wrap;
+    }
+    .under_staff .box_info ul {
+        width: 100%;
+        margin: 0 0 30px;
+    }
+    .under_staff .box_info ul:last-child {
+        margin-bottom: 0;
+    }
+    .under_staff .img {
+        width: 250px;
+    }
+    .under_staff .box_name {
+        top: 170px;
+        left: 60px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+}
+
+@media screen and (max-width: 414px) {
+    .under_link .ttl_box {
+        font-size: 21px;
+    }
+    .under_staff .box_name {
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .under_link ul {
+        justify-content: center;
+    }
+    .under_link li {
+        width: 100%;
+    }
+    .under_bnr li {
+        width: 100% !important;
+    }
+    .under_cta li .ttl {
+        font-size: 20px;
+    }
+    .under_link li .ttl{
+        font-size: 13px;
+    }
+    .under_doctor .box_info {
+        padding-left: 15px;
+    }
+    .under_doctor .box_info .list li {
+        font-size: 13px;
+        letter-spacing: 0;
+    }
+    .under_doctor .box_info::before {
+        width: 2px;
+    }
+    .under h5 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .under_frame .ttl_frame {
+        font-size: 17px;
+    }
+    .under h5{
+        letter-spacing: 0;
+    }
+}
