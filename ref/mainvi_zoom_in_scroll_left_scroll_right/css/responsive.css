@@ -630,7 +630,7 @@
     height: 55px;
     font-size: 12px;
   }
-  .f-call {
+  .f_call {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -638,17 +638,17 @@
     width: 100%;
     background: #d1d6da;
   }
-  .f-call ul {
+  .f_call ul {
     display: flex;
   }
-  .f-call li {
+  .f_call li {
     width: 28%;
     line-height: 1.3em;
   }
-  .f-call li:nth-child(2) {
+  .f_call li:nth-child(2) {
     width: 44%;
   }
-  .f-call a {
+  .f_call a {
     display: flex;
     height: 100%;
     text-decoration: none;
@@ -661,16 +661,16 @@
     font-size: 14px;
     letter-spacing: 0.05em;
   }
-  .f-call li:nth-child(1) a {
+  .f_call li:nth-child(1) a {
     background: #f7ab01;
     color: #fff;
   }
-  .f-call li:nth-child(2) a {
+  .f_call li:nth-child(2) a {
     background: #0b3190;
     color: #fff;
     letter-spacing: -0.1em;
   }
-  .f-call a:before {
+  .f_call a:before {
     content: '';
     position: relative;
     background: url("../images/f_call_tel.png") no-repeat center center;
@@ -681,10 +681,10 @@
     height: 17px;
     top: 3px;
   }
-  .f-call li:nth-child(2) a:before {
+  .f_call li:nth-child(2) a:before {
     background-image: url("../images/f_call_mail.png");
   }
-  .f-call li:nth-child(3) a:before {
+  .f_call li:nth-child(3) a:before {
     background-image: url("../images/f_call_map.png");
     height: 30px;
     top: 0;
@@ -1175,7 +1175,7 @@
   .f-main-map-txt {
     font-size: 13px;
   }
-  .f-call a {
+  .f_call a {
     font-size: 10px;
   }
   .copyright {

@@ -47,19 +47,19 @@ $(function () {
     },
 
     toTop: function () {
-      $("#totop, .f-call").hide();
+      $("#totop, .f_call").hide();
       $(window).scroll(function () {
         var vW = $(window).width();
         if ($(this).scrollTop() > 100) {
           $('#totop').fadeIn();
           if (vW < 641) {
-            $('.f-call').fadeIn();
+            $('.f_call').fadeIn();
           } else {
-            $('.f-call').fadeOut();
+            $('.f_call').fadeOut();
           }
         } else {
           $('#totop').fadeOut();
-          $('.f-call').fadeOut();
+          $('.f_call').fadeOut();
         }
       });
 
@@ -117,7 +117,7 @@ $(function () {
           $('.menu-icon').removeClass('active');
           $('.over').removeClass('flag');
           $('#gnavi').removeClass('active');
-          $('.f-call').fadeOut();
+          $('.f_call').fadeOut();
         } else {
           $('.over').addClass('flag');
         }

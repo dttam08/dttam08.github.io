@@ -43,19 +43,19 @@ $(function () {
     },
 
     toTop: function () {
-      $("#totop, .f-call").hide();
+      $("#totop, .f_call").hide();
       $(window).scroll(function () {
         var vW = $(window).width();
         if ($(this).scrollTop() > 100) {
           $('#totop').fadeIn();
           if (vW < 641) {
-            $('.f-call').fadeIn();
+            $('.f_call').fadeIn();
           } else {
-            $('.f-call').stop().fadeOut();
+            $('.f_call').stop().fadeOut();
           }
         } else {
           $('#totop').stop().fadeOut();
-          $('.f-call').stop().fadeOut();
+          $('.f_call').stop().fadeOut();
         }
       });
     },

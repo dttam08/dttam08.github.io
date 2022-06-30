@@ -730,20 +730,20 @@
     right: 3%;
     width: 40px;
   }
-  .f-call {
+  .f_call {
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 10;
     width: 100%;
   }
-  .f-call ul {
+  .f_call ul {
     display: flex;
   }
-  .f-call ul li {
+  .f_call ul li {
     width: 50%;
   }
-  .f-call ul li a {
+  .f_call ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -757,24 +757,24 @@
     font-weight: bold;
     font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝B", serif;
   }
-.f-call ul li:last-child a {
+.f_call ul li:last-child a {
     background: #0b9281;
     color: #ff0;
     font-size: 14px;
 }
-  .f-call ul li a:before {
+  .f_call ul li a:before {
     content: '';
     position: relative;
     display: inline-block;
     margin-right: 8px;
   }
-  .f-call ul li:nth-child(1) a:before {
+  .f_call ul li:nth-child(1) a:before {
     background: url("../images/h_tel.png") no-repeat;
     width: 18px;
     height: 18px;
     background-size: 100% auto;
   }
-  .f-call ul li:nth-child(2) a:before {
+  .f_call ul li:nth-child(2) a:before {
     background: url("../images/h_contact.png") no-repeat;
     width: 14px;
     height: 10px;
@@ -1012,10 +1012,10 @@
   .idx-h4 {
     font-size: 19px;
   }
-  .f-call ul li:last-child a {
+  .f_call ul li:last-child a {
     font-size: 12px;
   }
-  .f-call ul li a {
+  .f_call ul li a {
     font-size: 16px;
   }
   .under-list01 li {

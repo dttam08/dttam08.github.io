@@ -64,7 +64,7 @@ $(document).on('scroll', function() {
 $(document).ready(function()
 {
     "use strict";
-    $("#totop, .f-call").hide();
+    $("#totop, .f_call").hide();
 
     
     $(window).scroll(function()

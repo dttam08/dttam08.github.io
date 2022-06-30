@@ -63,7 +63,7 @@ $(function () {
     setOneViewSP: function(){
      $(window).on("load resize", function(){
        var VW = $(window).width();
-       var fCallH = $(".f-call").outerHeight();
+       var fCallH = $(".f_call").outerHeight();
        var hHeader = $("#header").outerHeight();
        var h2TopH = $("#index #mainvisual h2").outerHeight();
       var spaceH  = fCallH + h2TopH ;

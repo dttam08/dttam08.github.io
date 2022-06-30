@@ -47,22 +47,22 @@ $(function () {
     },
 
     toTop: function () {
-      $("#totop, .f-fixed, .f-call").hide();
+      $("#totop, .f-fixed, .f_call").hide();
       $(window).scroll(function () {
         var vW = $(window).width();
         if ($(this).scrollTop() > 100) {
           $('#totop').fadeIn();
           if (vW < 641) {
             $('.f-fixed').fadeOut();
-            $('.f-call').fadeIn();
+            $('.f_call').fadeIn();
           } else {
             $('.f-fixed').fadeIn();
-            $('.f-call').fadeOut();
+            $('.f_call').fadeOut();
           }
         } else {
           $('#totop').fadeOut();
           $('.f-fixed').fadeOut();
-          $('.f-call').fadeOut();
+          $('.f_call').fadeOut();
         }
       });
     },

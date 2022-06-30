@@ -1070,7 +1070,7 @@
     }
 
     /*Contact bottom fixed*/
-    .f-call {
+    .f_call {
         display: flex;
         height: 50px;
         width: 100%;
@@ -1083,44 +1083,44 @@
         transition: all 0.3s ease;
     }
 
-    .f-call.show {
+    .f_call.show {
         opacity: 1;
         visibility: visible;
     }
 
-    .f-call li {
+    .f_call li {
         display: flex;
         width: 100%;
     }
 
-    .f-call li:first-child {
+    .f_call li:first-child {
         background: #008300;
     }
 
-    .f-call li:first-child img {
+    .f_call li:first-child img {
         position: relative;
         top: 10px;
     }
 
-    .f-call li:last-child img {
+    .f_call li:last-child img {
         position: relative;
         top: 4px;
     }
 
-    .f-call li:last-child {
+    .f_call li:last-child {
         background: #fff;
         border-right: 0;
     }
 
-    .f-call li:last-child a {
+    .f_call li:last-child a {
         color: #008300;
     }
 
-    .f-call li img {
+    .f_call li img {
         width: 20px;
     }
 
-    .f-call li a {
+    .f_call li a {
         display: flex;
         flex: 1;
         color: #fff;
@@ -1133,7 +1133,7 @@
         letter-spacing: .05em
     }
 
-    .f-call li a span {
+    .f_call li a span {
         line-height: 2em;
     }
 

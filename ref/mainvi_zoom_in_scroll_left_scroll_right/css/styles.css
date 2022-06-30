@@ -1865,7 +1865,7 @@ h1 {
   color: #fff;
   padding: 12px 0 15px;
 }
-.f-call, .f-link-menu .f-main-btn:first-child {
+.f_call, .f-link-menu .f-main-btn:first-child {
   display: none;
 }
 /*=====================================Under=====================================*/

@@ -1874,7 +1874,7 @@ body {
 #totop:hover {
     opacity: 0.7;
 }
-.f-call{
+.f_call{
     display: none;
 }
 .f-map iframe{

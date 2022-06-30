@@ -579,7 +579,7 @@
 		display:none;
 	}
 	/*Contact bottom fixed*/
-	.f-call {
+	.f_call {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -591,7 +591,7 @@
         visibility: hidden;
         transition: all 0.3s ease;
     }
-    .f-call.show {
+    .f_call.show {
         opacity: 1;
         visibility: visible;
     }

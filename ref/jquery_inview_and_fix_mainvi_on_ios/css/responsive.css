@@ -644,7 +644,7 @@
   .f02-add {
     margin: 0 3% 20px;
   }
-  .f-call {
+  .f_call {
     display: block;
     position: fixed;
     z-index: 10;
@@ -652,13 +652,13 @@
     left: 0;
     width: 100%;
   }
-  .f-call ul {
+  .f_call ul {
     display: flex;
   }
-  .f-call ul li {
+  .f_call ul li {
     width: 33.33333%;
   }
-  .f-call ul a {
+  .f_call ul a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -671,17 +671,17 @@
     padding: 10px 3px;
     font-weight: bold;
   }
-  .f-call ul li:nth-child(2) a {
+  .f_call ul li:nth-child(2) a {
     background: #55453d;
   }
-  .f-call ul li:nth-child(3) a {
+  .f_call ul li:nth-child(3) a {
     background: #978032;
   }
-  .f-call-txt {
+  .f_call-txt {
     font-size: 80%;
     display: block;
   }
-  .f-call ul a:before {
+  .f_call ul a:before {
     content: '';
     position: relative;
     display: inline-block;
@@ -691,12 +691,12 @@
     height: 21px;
     margin-right: 8px;
   }
-  .f-call li:nth-child(2) a:before {
+  .f_call li:nth-child(2) a:before {
     background-image: url("../images/h_contact.png");
     width: 20px;
     height: 15px;
   }
-  .f-call li:nth-child(3) a:before {
+  .f_call li:nth-child(3) a:before {
     background-image: url("../images/f_map.png");
     width: 16px;
     height: 25px;
@@ -988,7 +988,7 @@
   .b08-itm-img {
     width: 130px;
   }
-  .f-call ul a {
+  .f_call ul a {
     font-size: 12px;
     letter-spacing: 0;
   }

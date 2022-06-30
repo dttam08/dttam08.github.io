@@ -1365,7 +1365,7 @@ svg.clip-svg {
   transform: translate3d(104%, 0, 0) rotate(10deg);
   opacity: 0;
 }
-.f-call {
+.f_call {
   display: none;
 }
 /*

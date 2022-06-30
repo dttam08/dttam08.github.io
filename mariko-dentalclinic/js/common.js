@@ -57,13 +57,13 @@ $(function () {
         if ($(this).scrollTop() > 100) {
           $('#totop').fadeIn();
           if (vW < 641) {
-            $('.f-call').addClass('show');
+            $('.f_call').addClass('show');
           } else {
-            $('.f-call').removeClass('show');
+            $('.f_call').removeClass('show');
           }
         } else {
           $('#totop').fadeOut();
-          $('.f-call').removeClass('show');
+          $('.f_call').removeClass('show');
         }
       });
     },
@@ -110,7 +110,7 @@ $(function () {
       $(window).on('resize load scroll', function () {
         var vW = $(window).width();
         var pTop = $(window).scrollTop();
-        var fCallH = $(".f-call").outerHeight();
+        var fCallH = $(".f_call").outerHeight();
         if (vW <= 640) {
           if (pTop > 0) {
             $("#footer").css("marginBottom", fCallH);

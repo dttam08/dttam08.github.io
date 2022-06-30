@@ -1,3 +1,8 @@
+@media screen and (min-width: 769px) and (max-width:1440px){
+  .idx_project.list01 li {
+    width: 27%;
+  }
+}
 @media screen and (max-width: 1200px) {
   #wrapper {
     padding: 0 3%;
@@ -73,17 +78,16 @@ h4{
 .idx-list li::before {
   top: 12px;
 }
-.idx-project li{
+.idx_project li, .idx_project.list01 li {
   width: calc(100% / 2 - 20px);
 }
-.idx-project span {
+.idx_project span {
   font-size: 12px;
   margin-top: 10px;
 }
-.f-call {
+.f_call {
   display: flex;
   width: 100%;
-  border-top: #fff 1px solid;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -91,26 +95,25 @@ h4{
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
-.f-call.show {
+.f_call.show {
   opacity: 1;
   visibility: visible;
 }
-.f-call li {
+.f_call li {
   width: 50%;
 }
-.f-call li:first-child {
+.f_call li:first-child {
   border-right: #fff 1px solid;
 }
-.f-call li:last-child a {
+.f_call li:last-child a {
     background: #151935 url('../images/ico_mail.png') top 5px center no-repeat;
     background-size: 20px;
 }
-.f-call li a {
+.f_call li a {
   height: 100%;
   display: flex;
-  background: #ffa500 url('../images/ico_tel.png') top 5px center no-repeat;
+  background: #0e6224 url('../images/ico_tel.png') top 5px center no-repeat;
   background-size: 20px;
   align-items: center;
   justify-content: center;

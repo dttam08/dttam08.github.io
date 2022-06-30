@@ -209,7 +209,7 @@
   .idx-mv .idx-btn-skip{
     display: none;
   }
-  .f-call{
+  .f_call{
     display: none;
   }
   .f-info .f-list-txt01 li:nth-child(3), .f-info .f-list-txt01 li:nth-child(4){
@@ -1253,7 +1253,7 @@ p, dd, td, th, li {
   }
 
   /* footer */
-  .f-call {
+  .f_call {
     display: flex;
     height: 50px;
     width: 100%;
@@ -1266,20 +1266,20 @@ p, dd, td, th, li {
     visibility: hidden;
     transition: all 0.3s ease;
   }
-  .f-call.show {
+  .f_call.show {
     opacity: 1;
     visibility: visible;
   }
-  .f-call li {
+  .f_call li {
     display: flex;
     width: 50%;
     background: #5a3f33;
   }
-  .f-call li:last-child {
+  .f_call li:last-child {
     background: #796A56;
   }
 
-  .f-call li a {
+  .f_call li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1291,7 +1291,7 @@ p, dd, td, th, li {
     width: 100%;
     padding: 11px 5px 5px 5px;
   }
-  .f-call li:first-child a:before {
+  .f_call li:first-child a:before {
     position: relative;
     top: -1px;
     display: inline-block;
@@ -1302,7 +1302,7 @@ p, dd, td, th, li {
     height: 18px;
     margin-right: 5px;
   }
-  .f-call li:last-child a:before {
+  .f_call li:last-child a:before {
     position: relative;
     top: -1px;
     display: inline-block;
@@ -1929,7 +1929,7 @@ p, dd, td, th, li {
     display: block;
     margin-right: 0;
   }
-  .f-call li a {
+  .f_call li a {
     font-size: 16px;
   }
   /* undr */
@@ -2069,7 +2069,7 @@ p, dd, td, th, li {
   .b05-slide .sm{
     font-size: 16px;
   }
-  .f-call li a {
+  .f_call li a {
     font-size: 14px;
   }
   .f-list01 .idx-btn, .idx-btn{

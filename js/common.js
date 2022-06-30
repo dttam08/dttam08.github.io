@@ -13,14 +13,14 @@ $(function() {
 				  if($(this).scrollTop() > 100){
 					  $('#totop').fadeIn();
 					  if($(window).width() > 640){
-					  	$('.f-call').removeClass('show');
+					  	$('.f_call').removeClass('show');
 					  } else {
-					  	$('.f-call').addClass('show');
+					  	$('.f_call').addClass('show');
 					  }
 				  }
 				  else{
 					  $('#totop').fadeOut();
-					  $('.f-call').removeClass('show');
+					  $('.f_call').removeClass('show');
 				  }
 
 			});
