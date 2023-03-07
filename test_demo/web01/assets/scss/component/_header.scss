@@ -134,6 +134,7 @@
         padding: 15px;
         border-bottom: solid 1px #1f66a5;
         @include g.mq('md'){
+            border:0;
             display: inline-block;
             &:hover{
                 color: #007dc6;

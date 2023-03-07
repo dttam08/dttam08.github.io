@@ -210,14 +210,14 @@ $(window).on('load scroll', function () {
     }
 });
 
-// $(window).on('load', function () {
-//     $('body').addClass('is_loaded');
-//     if($('.js_preloading').length){
-//         setTimeout(function(){
-//             fadeInSection();
-//         },2600);
-//     }
-//     else{
-//         fadeInSection();
-//     }
-// }); 
+$(window).on('load', function () {
+    $('body').addClass('is_loaded');
+    if($('.js_preloading').length){
+        setTimeout(function(){
+            fadeInSection();
+        },2600);
+    }
+    else{
+        fadeInSection();
+    }
+}); 
