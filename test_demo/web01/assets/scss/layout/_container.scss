@@ -1,0 +1,15 @@
+@use "../global" as g;
+
+/*!
+layout > container
+------------------------------
+*/
+
+.container {
+    padding: 0 15px;
+    @include g.mq('md'){
+        max-width: g.$width-content;
+        margin:0 auto;
+    }
+}
+
