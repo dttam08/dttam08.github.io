@@ -90,3 +90,42 @@
     text-align: center;
     margin-bottom: 35px;
 }
+.c_note{
+    color: #007dc6;
+    margin-bottom: 20px;
+    font-size: g.rem(12);
+}
+.c_tbl{
+    &_scroll{
+        overflow-x: auto;
+        @include g.mq('md'){
+            overflow-x: inherit;
+        }
+    }
+    min-width: 640px;
+    @include g.mq('md'){
+        min-width: auto;
+    }
+    th,td{
+        border: solid 1px #007dc6;
+        vertical-align: middle;
+        line-height: 1.5em;
+        padding: 10px;
+        width: 45%;
+    }
+    th:first-child,td:first-child{
+        width: 10%;
+        text-align: center;
+    }
+    th{
+        background: hsl(202, 100%, 69%);
+        color: #fff;
+    }
+}
+.drugstore{
+    padding: 60px 0;
+    @include g.mq('md'){
+        padding: 100px 0;
+    }
+}
+    
