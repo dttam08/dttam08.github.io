@@ -817,6 +817,38 @@ component > footer
   margin-bottom: 35px;
 }
 
+.c_note {
+  color: #007dc6;
+  margin-bottom: 20px;
+  font-size: 0.75rem;
+}
+
+.c_tbl {
+  min-width: 640px;
+}
+.c_tbl_scroll {
+  overflow-x: auto;
+}
+.c_tbl th, .c_tbl td {
+  border: solid 1px #007dc6;
+  vertical-align: middle;
+  line-height: 1.5em;
+  padding: 10px;
+  width: 45%;
+}
+.c_tbl th:first-child, .c_tbl td:first-child {
+  width: 10%;
+  text-align: center;
+}
+.c_tbl th {
+  background: hsl(202deg, 100%, 69%);
+  color: #fff;
+}
+
+.drugstore {
+  padding: 60px 0;
+}
+
 @-webkit-keyframes shine {
   100% {
     left: 125%;
@@ -1036,6 +1068,7 @@ div * {
   .h_menu_container {
     padding: 0 15px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     max-width: 1160px;
   }
@@ -1124,6 +1157,15 @@ div * {
   }
   .c_btn i {
     opacity: 0;
+  }
+  .c_tbl_scroll {
+    overflow-x: inherit;
+  }
+  .c_tbl {
+    min-width: auto;
+  }
+  .drugstore {
+    padding: 100px 0;
   }
   .container {
     max-width: 1160px;
