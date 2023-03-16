@@ -19,6 +19,12 @@
 	<main id="main" class="ref_main">
         <div class="note_code_list">
             <div class="note_code_item">
+                <h2>FIX LỖI OUT OF DATE</h2>
+                <p><img src="../images/trick/out_of_date.png" alt=""></p>
+                <p>gõ lệnh: npx browserslist@latest --update-db</p>
+                <p>Nguồn : https://github.com/browserslist/browserslist/issues/663</p>
+            </div>
+            <div class="note_code_item">
                 <h2>SET COUNTER NUM với số 0</h2>
                 <pre>
                     .under_list_num { 
@@ -51,62 +57,72 @@
             <div class="note_code_item">
                 <h2>ANCHOR LINK bình thường</h2>
                 <pre>
-                    //smoothScroll
-                        smoothScroll: function() {
-                            $(window).on("load", function() {
-                                $('a[href^="#"]').click(function() {
-                                    var wWidth = $(window).width();
-                                    if ($($(this).attr("href")).length) {
-                                        var p = $($(this).attr("href")).offset();
-                                    
-                                        $(".menu_icon").removeClass("active");
-                                        if (wWidth <= 750) {
-                                            $("html,body").animate({
-                                                    scrollTop: p.top - 20,
-                                                },
-                                                800
-                                            );
-                                            $("#gnavi").stop().slideUp();
-                                        } else {
-                                            $("#gnavi").removeAttr('style');
-                                            if($("#header").hasClass('fixed')){
-                                                $('html,body').animate({ scrollTop: p.top - 100}, 800);
-                                            }
-                                            else{
-                                                $('html,body').animate({ scrollTop: p.top - 100}, 800);
-                                            }
-                                        
-                                        }
-                                    }
-                                    return false;
-                                });
-                            });
-                        },
-                        // Anchor scroll
-                        anchorScroll: function() {
-                            $(window).on("load", function() {
-                                var hash1 = location.hash;
-                                var $root = $("html, body");
-                                if (hash1 !== "") {
-                                    var top01 = $(hash1).offset().top;
-                                    if ($(window).width() > 750) {
-                                        if($("#header").hasClass('fixed')){
-                                            $('html,body').animate({ scrollTop: top01 - 100}, 800);
-                                        }
-                                        else{
-                                            $('html,body').animate({ scrollTop: top01 - 100}, 800);
-                                        }
-                                    
-                                    } else {
-                                        $root.animate({
-                                                scrollTop: top01 - 20,
-                                            },
-                                            800
-                                        );
-                                    }
+                $(window).on('load', function () {
+                    $('a[href^="#"]').click(function () {
+                        const getID = $(this).attr('href');
+                        const vw = $(window).width();
+                        if (getID.length > 1) {
+                            if ($($(this).attr('href')).length) {
+                                const p = $($(this).attr('href')).offset();
+                                $('.menu_icon').removeClass('active');
+                                if(vw > 767){
+                                    $('#h_menu').removeAttr('style');
+                                    $('html,body').animate(
+                                        { 
+                                            scrollTop: p.top - 120 
+                                        },800
+                                    );
                                 }
-                            });
-                        },
+                                else{
+                                    $('#h_menu').stop().slideUp();
+                                    $('html,body').animate(
+                                    { 
+                                        scrollTop: p.top - 70 
+                                    },800);
+                                }
+                            }
+                        }
+                        return false;
+                    });
+    
+                    // $("a[href^='#']").on("click", function (e) {
+                    //     let id = $(this).attr("href");
+                    //     const $target = $(id);
+    
+                    //     if ($target.length > 0) { // item with that id exists
+                    //         e.preventDefault();
+    
+                    //         $('html, body').animate({
+                    //             scrollTop: $target.offset().top // Scroll to this location.
+                    //         }, {
+                    //             duration: 800,
+                    //             step: ( now, fx ) => {
+                    //                 //  location will change as images etc. are lazy loaded
+                    //                 //  Where is the target now located on the page?
+                    //                 let realPos = $target.offset().top;
+                    //                 if (fx.end !== realPos) {
+                    //                     fx.end = realPos;
+                    //                 }
+                    //             },
+                    //         });
+    
+                    //         // if supported, update the URL
+                    //         if (window.history && window.history.pushState) {
+                    //             history.pushState("", document.title, id);
+                    //         }
+                    //     }
+                    // });
+                });
+                const hash1 = location.hash;
+                const root = 'html, body';
+                if (hash1 !== '') {
+                    const top = $(hash1).offset().top;
+                    if ($(window).width() > 767) {
+                        $(root).animate({ scrollTop: top - 120 }, 800);
+                    } else {
+                        $(root).animate({ scrollTop: top - 70 }, 800);
+                    }
+                }
                 </pre>
             </div>
             <div class="note_code_item">
