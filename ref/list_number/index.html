@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        .c_list_number {
+            counter-reset: list-num;
+        }
+
+        .c_list_number .item {
+            position: relative;
+            padding-left: 22px;
+            margin-bottom: 15px;
+            font-size: 15px;
+            letter-spacing: 0.05em;
+            line-height: 1.8em;
+        }
+
+        .c_list_number .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .c_list_number .item::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: none;
+            border: 0;
+            counter-increment: list-num;
+            content: counter(list-num) ".";
+        }
+
+
+        /*LIST COUNTER INCLUDE ZERO*/
+        .c_list_number01 { 
+            counter-reset: list-num;
+        }
+        .c_list_number01 li{
+            position: relative;
+            padding-left: 30px;
+        }
+        .c_list_number01 li:before {
+            font-family: 'Cormorant', serif;
+            color: #a6884c;
+            font-weight: 300;
+            font-size: 14px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: none;
+            border: 0;
+            counter-increment: list-num;
+            content: counter(list-num,decimal-leading-zero) '.';
+            top: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="c_list_number">
+        <li class="item">学費を納入し入学します。「スカラネット」で進学届を提出します。</li>
+        <li class="item">授業料等減免の申請をします。</li>
+        <li class="item">給付型奨学金の支給と、減免分の返金手続きがはじまります。</li>
+    </ul>
+    <ul class="c_list_number01">
+        <li class="item">学費を納入し入学します。「スカラネット」で進学届を提出します。</li>
+        <li class="item">授業料等減免の申請をします。</li>
+        <li class="item">給付型奨学金の支給と、減免分の返金手続きがはじまります。</li>
+    </ul>
+</body>
+
+</html>

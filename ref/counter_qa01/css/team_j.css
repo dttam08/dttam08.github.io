@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+.koutou_qa {
+  padding: clamp(30px, 7.1135430917vw + -24.7031463748px, 82px) 0 clamp(60px, 5.4719562244vw + 17.9206566347px, 100px);
+}
+.koutou_qa .c_headding_line01 {
+  letter-spacing: 0.05em;
+  margin-bottom: 51px;
+}
+.koutou_qa_list {
+  margin-bottom: 25px;
+}
+.koutou_qa_item {
+  counter-increment: number;
+  margin-bottom: 49px;
+}
+.koutou_qa_item:last-child {
+  margin-bottom: 0;
+}
+.koutou_qa_ttl {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  line-height: 1.5em;
+  margin-bottom: 18px;
+}
+.koutou_qa_ttl::before {
+  font-family: "Barlow", sans-serif;
+  content: "Q" counter(number);
+  position: relative;
+  top: -4px;
+  left: 6px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.5em;
+  margin: 0 34px 0 0;
+}
+.koutou_qa_desc {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.koutou_qa_desc::before {
+  font-family: "Barlow", sans-serif;
+  content: "A" counter(number);
+  position: relative;
+  top: -4px;
+  left: 6px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.5em;
+  margin: 0 34px 0 0;
+}
+
