@@ -1,0 +1,20 @@
+@use "sass:math";
+$baseFontSize: 16;
+  @function rem($pixels) {
+    // @return math.div($pixels, $baseFontSize) * 1rem;
+    @return $pixels * 1px;
+}
+
+$baseWodth: 1600;
+  @function width($pixels) {
+    @return math.div($pixels, $baseFontSize) * 100vw;
+}
+
+@function clamped($min-px, $max-px, $min-bp, $max-bp) {
+  $slope: math.div($max-px - $min-px, $max-bp - $min-bp);
+  $slope-vw: $slope * 100;
+  $intercept-rems: ($min-px - $slope * $min-bp) * 1px;
+  $min-rems: ($min-px) * 1px;
+  $max-rems: ($max-px) * 1px;
+  @return clamp(#{$min-rems}, #{$slope-vw}vw + #{$intercept-rems}, #{$max-rems});
+}

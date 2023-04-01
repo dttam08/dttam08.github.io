@@ -1,0 +1,144 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/**************modal**************/
+.btn_open_modal {
+  background: #e52572;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.c_modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  padding: 20px;
+}
+.c_modal.show {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+.c_modal_wrap {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  background: #fff;
+  z-index: 200;
+  padding: 45px 20px;
+  height: 90vh;
+  border: solid 3px #2A3E76;
+}
+.c_modal_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 10px;
+}
+.c_modal_overlay {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 101;
+  width: 100%;
+  height: 100%;
+}
+.c_modal_ttl {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #333;
+  line-height: 1.6em;
+  margin-bottom: 20px;
+}
+.c_modal_close {
+  background: #2A3E76;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.c_modal_close span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.c_modal_close span::before, .c_modal_close span::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 0px;
+  transition: all 0.5s ease;
+}
+.c_modal_close span::before {
+  transform: rotate(45deg);
+}
+.c_modal_close span::after {
+  transform: rotate(-45deg);
+}
+.c_modal iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/**************end modal***************/
+
+@media screen and (min-width: 768px) {
+  .btn_open_modal {
+    transition: all 0.5s;
+  }
+  .btn_open_modal:hover {
+    opacity: 0.8;
+  }
+  .c_modal_wrap {
+    padding: 45px;
+  }
+  .c_modal_container {
+    padding: 30px;
+  }
+  .c_modal_close {
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s;
+  }
+  .c_modal_close:hover {
+    opacity: 0.8;
+  }
+  .c_modal_close span::before, .c_modal_close span::after {
+    width: 20px;
+  }
+}
+/*# sourceMappingURL=modal.css.map */

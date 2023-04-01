@@ -7,7 +7,7 @@ $current_category_name = $category_name;
   <?php if( $current_category_id==$category_id ) $current_category_url = $category_url; ?>
 </ONCategory>
 <!doctype html>
-<html lang="ja">
+<html lang="vi">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=-100%, user-scalable=yes" />
