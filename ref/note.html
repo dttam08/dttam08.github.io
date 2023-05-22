@@ -25,6 +25,43 @@
                 <p>Nguồn : https://github.com/browserslist/browserslist/issues/663</p>
             </div>
             <div class="note_code_item">
+                <h2>SLICK CHẠY TỪ TỪ</h2>
+                <pre>
+                    $(document).ready(function(){
+                        $(".enterprise_frame").slick({
+                            speed: 5000,
+                            autoplay: true,
+                            autoplaySpeed: 0,
+                            cssEase: 'linear',
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            swipeToSlide: true,
+                            focusOnSelect: false,
+                            pauseOnHover:false,
+                            pauseOnFocus:false,    
+                            dots:false,
+                            arrows: false,
+                            responsive: [
+                                {
+                                    breakpoint: 768,
+                                    settings: {
+                                        slidesToShow: 3,
+                                    },
+                                },
+                                {
+                                    breakpoint: 480,
+                                    settings: {
+                                        slidesToShow: 2,
+                                    },
+                                },
+                            ],
+                        });
+                        
+                    })
+                </pre>
+            </div>
+            <div class="note_code_item">
                 <h2>SET COUNTER NUM với số 0</h2>
                 <pre>
                     .under_list_num { 
